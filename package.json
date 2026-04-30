@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "node scripts/rendericons.js && vite",
+    "build": "node scripts/rendericons.js && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
+    "preview": "node scripts/rendericons.js && vite preview",
     "prettier": "prettier . --write"
   },
   "dependencies": {
