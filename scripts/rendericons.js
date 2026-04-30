@@ -24,9 +24,9 @@ library.add(fas, far);
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-let dataPath = path.join(__dirname, '..\\public\\data');
-let iconsPath = path.join(__dirname, '..\\public\\img\\markers');
-let outPath = path.join(__dirname, '..\\public\\img\\rendered');
+let dataPath = path.join(__dirname, '../public/data');
+let iconsPath = path.join(__dirname, '../public/img/markers');
+let outPath = path.join(__dirname, '../public/img/rendered');
 let games = ['all'];
 let loggingLevelName = 'info';
 
