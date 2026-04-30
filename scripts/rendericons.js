@@ -26,7 +26,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 let dataPath = path.join(__dirname, '..\\public\\data');
 let iconsPath = path.join(__dirname, '..\\public\\img\\markers');
-let outPath = path.join(__dirname, '..\\public\\img\\markers');
+let outPath = path.join(__dirname, '..\\public\\img\\rendered');
 let games = ['all'];
 let loggingLevelName = 'info';
 
@@ -63,7 +63,7 @@ const cliOptions = {
     type: 'string',
     short: 'l',
     default: loggingLevelName,
-    help: 'set logging level (quiet, error, info, debug) ['+ loggingLevelName + ']',
+    help: 'set logging level (quiet, error, info, debug) [' + loggingLevelName + ']',
   },
   help: { type: 'boolean', short: 'h', default: false, help: 'display usage text' },
 };
@@ -202,7 +202,7 @@ for (const classConfig of Object.values(gameClasses)) {
       variants.forEach((v) => {
         const gvname = gname + (v ? '.' + v : '');
         if (iconName in iconConfigs) {
-          iconConfigs[gname].variants = (iconConfigs[gname].variants ?? []).concat({ iconName: gvname, variant: v });
+          iconConfigs[gname].variants = (iconConfigs[gname].variants ?? new Set()).add(gvname);
         } else if (!v) {
           log_info(gname, 'not found in iconConfigs.json (', gvname, ')');
         }
@@ -303,23 +303,28 @@ if (!fs.existsSync(outPath)) {
 let iconCount = 0;
 
 // Go through all the icon configurations that have 'fa' in their style
-for (const [iconName, config] of Object.entries(iconConfigs)) {
+for (const [configName, config] of Object.entries(iconConfigs)) {
   if (config.style?.startsWith('fa')) {
     // Go through all the variants we've found in our instance/class data
     // If we didn't find any variants do the default version anyway
-    for (const variant of config.variants ?? [{ iconName: iconName, variant: '' }]) {
+    for (let variantConfigName of config.variants ?? [configName]) {
+      let variant = variantConfigName.split('.')[1] || '';
+      if (['sl', 'slc', 'siu', 'sw'].includes(variant))
+        // make sure we're not confusing game for a variant
+        variant = '';
+
       // If this variant isn't specifically specified elsewhere then create a PNG for it
-      if (variant.iconName == iconName || !(variant.iconName in iconConfigs)) {
+      if (variantConfigName == configName || !(variantConfigName in iconConfigs)) {
         const buffer = renderFAIconToImageURL(
           config.type == 'pin',
           config.style,
           config.iconName,
-          variant.variant || config.bg,
+          variant || config.bg,
           config.fg,
           48
         );
-        const outPNG = path.join(outPath, variant.iconName + '.png');
-        log_trace('Config: ', iconName, ' => ', outPNG);
+        const outPNG = path.join(outPath, variantConfigName + '.png');
+        log_trace('Config: ', configName, ' => ', outPNG);
         fs.writeFileSync(outPNG, buffer);
         iconCount++;
       }

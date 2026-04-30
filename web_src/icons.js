@@ -35,7 +35,8 @@ import { isSupraColor } from './supraDefs.js';
 export class Icons {
   static _iconConfigsFile = 'data/iconConfigs.json';
 
-  static _imgPath = 'img/markers/'; // Relative path to marker icon directory
+  static _staticImgPath = 'img/markers/';
+  static _renderedImgPath = 'img/rendered/';
 
   // All FA generated icons are png, everything else is given by the style
   static getImgExt(style) {
@@ -101,8 +102,10 @@ export class Icons {
       .join('-');
     opts.iconConfig = this.getConfig(opts.className);
     opts.iconConfig.bg = isSupraColor(opts.variant) ? opts.variant : opts.iconConfig.bg;
+
     const ext = Icons.getImgExt(opts.iconConfig.style);
-    opts.iconUrl = `${this._imgPath}${[baseName, opts.variant, opts.game, ext].filter(Boolean).join('.')}`;
+    const imgPath = opts.iconConfig.style?.startsWith('fa') ? Icons._renderedImgPath : Icons._staticImgPath;
+    opts.iconUrl = `${imgPath}${[baseName, opts.variant, opts.game, ext].filter(Boolean).join('.')}`;
 
     return opts;
   }
