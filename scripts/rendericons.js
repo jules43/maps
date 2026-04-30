@@ -273,7 +273,14 @@ function renderFAIconToImageURL(
   // We draw FA icons in three layers, a shadow, a slightly smaller background,
   // and then some centred icon to actually represent it.
   drawFAIcon('fas', isPin ? faPin : faPoint, '#000000', size);
-  drawFAIcon('fas', isPin ? faPin : faPoint, bg || '#808080', outlineSize);
+
+  if(fg == 'variant' || !fg)
+    fg = '#FFFFFF';
+
+  if(bg == 'variant' || !bg)
+    bg = '#808080'
+
+  drawFAIcon('fas', isPin ? faPin : faPoint, bg, outlineSize);
 
   if (style == 'fapng' || style == 'fasvg') {
     drawImageIcon(
@@ -286,7 +293,7 @@ function renderFAIconToImageURL(
     drawFAIcon(
       style,
       iconName,
-      fg || '#FFFFFF',
+      fg,
       isPin ? pinIconSize : ptIconSize,
       isPin ? pinCentreYOffset : ptCentreYOffset
     );
@@ -319,8 +326,8 @@ for (const [configName, config] of Object.entries(iconConfigs)) {
           config.type == 'pin',
           config.style,
           config.iconName,
-          variant || config.bg,
-          config.fg,
+          (config.bg?.startsWith('v:') ? variant || config.bg.slice(2) : config.bg),
+          (config.fg?.startsWith('v:') ? variant || config.fg.slice(2) : config.fg),
           48
         );
         const outPNG = path.join(outPath, variantConfigName + '.png');
