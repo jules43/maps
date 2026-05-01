@@ -326,7 +326,7 @@ for (const [configName, config] of Object.entries(iconConfigs)) {
           config.type == 'pin',
           config.style,
           config.iconName,
-          (config.bg?.startsWith('v:') ? variant || config.bg.slice(2) : config.bg),
+          (!config.fg?.startsWith('v:') ? variant || config.bg.slice(2) : config.bg),
           (config.fg?.startsWith('v:') ? variant || config.fg.slice(2) : config.fg),
           48
         );
