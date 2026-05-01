@@ -180,3 +180,8 @@ Also in SIU we also override the coin size for the giant coin on the front of th
 
 Once you are happy with the updated appearance of the map, commit your changes to the branch, push the result to your fork and add a PR to the SupraCommunity maps project. Someone will review your PR and once approved it can be merged into the main branch. 
 
+## Variant Colour Values
+Mappings from variant colours to # colours are held in [supraDefs.js](../web_src/supraDefs.js). For example: "bg":"aqua" will make the background colour #00FFFF. If the colour name is not in this list, it will use the default mapping from Node.js or you can use a "#hhhhhh" colour directly.  
+
+If you commit changes to it and run a build, the icons will use the new colours.
+
