@@ -274,11 +274,9 @@ function renderFAIconToImageURL(
   // and then some centred icon to actually represent it.
   drawFAIcon('fas', isPin ? faPin : faPoint, '#000000', size);
 
-  if(fg == 'variant' || !fg)
-    fg = '#FFFFFF';
+  if (fg == 'variant' || !fg) fg = '#FFFFFF';
 
-  if(bg == 'variant' || !bg)
-    bg = '#808080'
+  if (bg == 'variant' || !bg) bg = '#808080';
 
   drawFAIcon('fas', isPin ? faPin : faPoint, bg, outlineSize);
 
@@ -290,13 +288,7 @@ function renderFAIconToImageURL(
       isPin ? pinCentreYOffset : ptCentreYOffset
     );
   } else {
-    drawFAIcon(
-      style,
-      iconName,
-      fg,
-      isPin ? pinIconSize : ptIconSize,
-      isPin ? pinCentreYOffset : ptCentreYOffset
-    );
+    drawFAIcon(style, iconName, fg, isPin ? pinIconSize : ptIconSize, isPin ? pinCentreYOffset : ptCentreYOffset);
   }
 
   return canvas.toBuffer('image/png');
@@ -322,12 +314,14 @@ for (const [configName, config] of Object.entries(iconConfigs)) {
 
       // If this variant isn't specifically specified elsewhere then create a PNG for it
       if (variantConfigName == configName || !(variantConfigName in iconConfigs)) {
+        // Choose variant colour for background or foreground but not both
+        const useVariantForFG = config.fg && config.fg.startsWith('v:');
         const buffer = renderFAIconToImageURL(
           config.type == 'pin',
           config.style,
           config.iconName,
-          (!config.fg?.startsWith('v:') ? variant || config.bg.slice(2) : config.bg),
-          (config.fg?.startsWith('v:') ? variant || config.fg.slice(2) : config.fg),
+          (useVariantForFG ? '' : variant) || config.bg?.replace(':v', ''),
+          useVariantForFG ? variant || config.fg.slice(2) : config.fg,
           48
         );
         const outPNG = path.join(outPath, variantConfigName + '.png');
