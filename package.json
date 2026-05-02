@@ -10,7 +10,7 @@
     "prebuild": "node scripts/rendericons.js",
     "build": "vite build",
     "lint": "eslint .",
-    "prepreview": "node scripts/rendericons.js",
+    "prepreview": "node scripts/rendericons.js && vite build",
     "preview": "vite preview",
     "prettier": "prettier . --write"
   },
