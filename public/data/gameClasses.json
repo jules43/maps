@@ -923,7 +923,7 @@
     "friendly": "Stomp Damage +100%",
     "icon": "stomp_damage",
     "layer": "upgrades",
-    "nospoiler": null,
+    "nospoiler": "shop",
     "lines": "dev",
     "friendly_key": "07F9D0314668FF0667D0D2BD34688E54"
   },
@@ -949,7 +949,7 @@
     "friendly": "Stomp Radius +5m",
     "icon": "stomp_damage",
     "layer": "upgrades",
-    "nospoiler": null,
+    "nospoiler": "shop",
     "lines": "dev",
     "friendly_key": "B1719A254CE02025EF93958E38475BB1"
   },
@@ -1839,7 +1839,7 @@
     "friendly": "BBQ help needed!",
     "icon": "meat",
     "layer": "quest",
-    "nospoiler": "quest",
+    "nospoiler": null,
     "lines": "dev",
     "friendly_key": "06D76A2A4DD2B89934061ABFBC1C64DC",
     "description": "Where did this meat come from? It really makes you think.",
