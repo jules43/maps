@@ -258,7 +258,7 @@
     "friendly": "Gold Barrel",
     "icon": "barrel_gold",
     "layer": "extra",
-    "nospoiler": "extra",
+    "nospoiler": null,
     "lines": "dev"
   },
   "BarrelRed_C": {
@@ -1385,7 +1385,7 @@
     "icon": "awesome",
     "layer": "extra",
     "nospoiler": null,
-    "lines": null
+    "lines": "dev"
   },
   "_PlayerPosition": {
     "friendly": "Player Position",
@@ -1690,7 +1690,7 @@
     "icon": "brick",
     "layer": "extra",
     "nospoiler": null,
-    "lines": "extra",
+    "lines": "dev",
     "friendly_key": "",
     "description": "",
     "description_key": ""
@@ -1862,7 +1862,7 @@
     "icon": "nomnomflies",
     "layer": "extra",
     "nospoiler": null,
-    "lines": null,
+    "lines": "dev",
     "description": "They're attracted to bright purple things and eat anything orange"
   },
   "Matchbox_C": {
