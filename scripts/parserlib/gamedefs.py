@@ -39,6 +39,7 @@ exported_properties = [
     'spawns',  # generates some other class (chest or quest)
     'coins',  # generates coins when taken (coin chest, pots, bricks and various coin types)
     'cost',
+    'loop',  # Crash loop
     'price_type',  # cost when purchased (shops, quests...) and units (defaults to coins)
     'icon',  # explicit icon override
     'variant',  # variant allows change of marker

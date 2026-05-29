@@ -13,7 +13,7 @@ from .gamedefs import colors, brick_types, price_types, exported_properties
 from .slgamedefs import marker_types, starts_with, ends_with, properties, slcoin_defaults
 from .utils import camel_to_snake
 from .utils import optColor, optKey, getVec, getRot, getQuat, getXYZ
-from .utils import objectRef
+from .utils import objectRef, get_last_int
 
 
 def export_markers(game: str, datadir: Path, sourcedir: Path) -> None:  # noqa: C901 - disable complexity warning
@@ -145,6 +145,11 @@ def export_markers(game: str, datadir: Path, sourcedir: Path) -> None:  # noqa: 
             def class_from_objectname(props: dict, prop: str):
                 c = props.get(prop, {}).get('ObjectName')
                 return c.split("'")[1] if c else None
+
+            if loop := p.get('Loop'):
+                data[-1]['loop'] = get_last_int(loop)
+            if area == 'CrashChurchLoop6':
+                data[-1]['loop'] = '6'
 
             optKey(data[-1], 'spawns', class_from_objectname(p, 'Spawnthing'))
             optKey(data[-1], 'spawns', class_from_objectname(p, 'Class'))
