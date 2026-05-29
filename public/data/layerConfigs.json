@@ -53,7 +53,6 @@
 
     "jumppads"   : { "type": "markers", "category": "Travel",        "name": "Pads",          "name_key": "", "defaultIcon": "jumppad",       "defaultActive": false, "zDepth":  3, "games": ["sl", "slc", "siu"] },
     "pipesys"    : { "type": "markers", "category": "Travel",        "name": "Pipes",         "name_key": "", "defaultIcon": "pipe",          "defaultActive": false, "zDepth":  4, "games": ["sl", "siu"       ] },
-    "noSpoiler"  : { "type": "markers", "category": "Miscellaneous", "name": "No Spoilers",   "name_key": "", "defaultIcon": "question_mark", "defaultActive": true,  "zDepth":  7, "games": [                  ] },
     "closedChest": { "type": "markers", "category": "Collectables",  "name": "Chests",        "name_key": "", "defaultIcon": "chest",         "defaultActive": true,  "zDepth":  5, "games": ["sl", "slc", "siu"] },
     "shop"       : { "type": "markers", "category": "Collectables",  "name": "Shop",          "name_key": "", "defaultIcon": "shop",          "defaultActive": true,  "zDepth":  6, "games": ["sl", "slc", "siu"] },
     "collectable": { "type": "markers", "category": "Collectables",  "name": "Collectables",  "name_key": "", "defaultIcon": "question_mark", "defaultActive": true,  "zDepth": 10, "games": ["sl", "slc", "siu"] },
@@ -63,7 +62,7 @@
     "coin"       : { "type": "markers", "category": "Collectables",  "name": "Coins",         "name_key": "", "defaultIcon": "awesome",       "defaultActive": false, "zDepth":  8, "games": ["sl", "slc", "siu"] },
     "graves"     : { "type": "markers", "category": "Quests",        "name": "Graves",        "name_key": "", "defaultIcon": "question_mark", "defaultActive": false, "zDepth":  9, "games": ["sl"              ] },
     "extra"      : { "type": "markers", "category": "Miscellaneous", "name": "Extras",        "name_key": "", "defaultIcon": "question_mark", "defaultActive": false, "zDepth":  2, "games": ["sl", "slc", "siu"] },
-    
+
     "swnospoiler"  : { "type": "markers", "category": "Miscellaneous",      "name": "No Spoilers",        "name_key": "", "defaultIcon": "swmisc",          "defaultActive": true,  "zDepth": 2, "games": ["sw"] },
     "clouds"       : { "type": "markers", "category": "Puzzle Clouds",      "name": "Puzzle Clouds",      "name_key": "", "defaultIcon": "cloud:v",         "defaultActive": true,  "zDepth": 7, "games": ["sw"] },
     "swlaunchers"  : { "type": "markers", "category": "Supra Launchers",    "name": "Supra Launchers",    "name_key": "", "defaultIcon": "swmisc",          "defaultActive": false, "zDepth": 9, "games": ["sw"] },
