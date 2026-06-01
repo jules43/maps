@@ -881,6 +881,16 @@
     "description": "The latest innovation in technology - giving you a visual representation of your health status. Bright parts of the bar indicate how far your health automatically regenerates.",
     "description_key": "BB5DF8434319B7EFB1FDE8BBB314961A"
   },
+  "BuyHealthBarVisibilityDLC2_C": {
+    "friendly": "Health Bars",
+    "icon": "see_health_bar",
+    "layer": "upgrades",
+    "nospoiler": "shop",
+    "lines": "dev",
+    "friendly_key": "583FE6684513DB51620F7EA7E140D9D3",
+    "description": "You can now see the healthbars of enemies!",
+    "description_key": "43A42A8D473499630C8E4C88DA52F5D9"
+  },
   "BuyShowProgress_C": {
     "friendly": "Awesome-Meter",
     "icon": "awesome",
