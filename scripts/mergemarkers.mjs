@@ -240,7 +240,7 @@ function compareMarkers(newMarkers, oldMarkers) {
     } else {
       diffs[alt] = {};
       Object.keys(marker).forEach((prop) => {
-        if (prop in compareProperties) {
+        if (compareProperties.includes(prop)) {
           diffs[alt][prop] = `+${marker[prop]}`;
         }
       });
