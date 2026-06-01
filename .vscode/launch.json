@@ -52,6 +52,15 @@
             "args": ["--game", "siu", "-f", "..\\source\\siu\\SIUComplete.sav"]
         },
         {
+            "name": "mergemarkers.mjs",
+            "type": "node",
+            "request": "launch",
+            "program": "mergemarkers.mjs",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceRoot}\\scripts",
+            "args": [""]
+        },
+        {
             "name": "Node: Current File",
             "type": "node",
             "request": "launch",
