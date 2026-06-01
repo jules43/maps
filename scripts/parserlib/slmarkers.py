@@ -8,9 +8,11 @@ from mathutils import Matrix, Vector
 from sklearn.neighbors import KDTree
 
 from .config import config
-from .fileio import read_savedpadpipes, load_json_file, save_json_file
+from .fileio import read_savedpadpipes, load_json_file, save_json_file, load_blueprint_keys
 from .gamedefs import colors, brick_types, price_types, exported_properties
-from .slgamedefs import marker_types, starts_with, ends_with, properties, slcoin_defaults
+from .slgamedefs import marker_types, starts_with, ends_with
+from .slgamedefs import properties, slcoin_defaults, sl_custom_data, slcoin_spawners
+
 from .utils import camel_to_snake
 from .utils import optColor, optKey, getVec, getRot, getQuat, getXYZ
 from .utils import objectRef, get_last_int
@@ -20,6 +22,8 @@ def export_markers(game: str, datadir: Path, sourcedir: Path) -> None:  # noqa: 
     maps = {}  # dictionary from map name to json data list
     area_mtx = {}  # Transform for each area map geometry
     data = []  # Output marker data
+
+    bp_defaults = load_blueprint_keys(sourcedir=sourcedir, def_keys=properties + ['LootTableOnEnemy'], type_keys={})
 
     pipes = {}
     objects = {}
@@ -91,6 +95,9 @@ def export_markers(game: str, datadir: Path, sourcedir: Path) -> None:  # noqa: 
             if not o.get('Outer') or not (p := o.get('Properties')):
                 continue
 
+            if otype in bp_defaults:
+                p = bp_defaults[otype] | p
+
             def getObject(p):
                 ref = objectRef(p)
                 return maps[ref[0]][ref[1]]
@@ -137,22 +144,32 @@ def export_markers(game: str, datadir: Path, sourcedir: Path) -> None:  # noqa: 
             t = matrix.to_translation()
             data[-1].update({'lat': t.y, 'lng': t.x, 'alt': t.z})
 
-            p = o.get('Properties', {})
-
             for key in properties:
                 optKey(data[-1], camel_to_snake(key), p.get(key))
-
-            def class_from_objectname(props: dict, prop: str):
-                c = props.get(prop, {}).get('ObjectName')
-                return c.split("'")[1] if c else None
 
             if loop := p.get('Loop'):
                 data[-1]['loop'] = get_last_int(loop)
             if area == 'CrashChurchLoop6':
                 data[-1]['loop'] = '6'
 
+            def class_from_objectname(props: dict, prop: str):
+                c = props.get(prop, {}).get('ObjectName')
+                return c.split("'")[1] if c else None
+
+            # Monster chests
+            if p.get('LootTableOnEnemy'):
+                optKey(
+                    data[-1],
+                    'spawns',
+                    class_from_objectname(
+                        p['LootTableOnEnemy'][0]['Value']['LootTableArray_3_B8AFDECC48A0B4732ED40986919EF942'][0],
+                        'LootClass_2_8EFED80A484D228EC2A5EEA71E4C844A',
+                    ),
+                )
+
             optKey(data[-1], 'spawns', class_from_objectname(p, 'Spawnthing'))
             optKey(data[-1], 'spawns', class_from_objectname(p, 'Class'))
+            optKey(data[-1], 'spawns', class_from_objectname(p, 'Loot'))
             optKey(data[-1], 'other_pipe', pipes.get(':'.join((area, o['Name']))))
             optKey(data[-1], 'custom_color', optColor(p.get('CustomColor')))
 
@@ -420,21 +437,14 @@ def cleanup_objects(  # noqa: C901 - disable complexity warning
     # Note: consider checking for 'dev' layers as well as undefined
     game_classes = load_json_file(path=datadir.joinpath('gameClasses.json'))
 
-    def is_class_used(item: dict) -> bool:
-        return (
-            (gc := game_classes.get(item['type']))
-            and game in gc.get('games', ['sl', 'slc', 'siu'])
-            and (gc.get('layer') or gc.get('nospoiler'))
-        )
-
-    for item in data[:]:
-        if not is_class_used(item):
-            data.remove(item)
-
     # Walk the remaining instances and fix up entries
     # We loop over a copy to allow us to remove entries we don't want
     for o in data[:]:
         alt = ':'.join((o['area'], o['name']))
+
+        # Some classes it's just too difficult to extract the spawn or variant data
+        # so we hard code a table and merge it in based on the unique id
+        o |= sl_custom_data.get(alt, {})
 
         # Merge the various gold properties into one (we'll remove the properties later)
         # and deal with defaults for all coin or coin spawning classes
@@ -460,14 +470,18 @@ def cleanup_objects(  # noqa: C901 - disable complexity warning
         # variant is set to the brick type
         if o['type'] == 'MinecraftBrick_C':
             if game == 'siu':
+                # If BrickType is defined then get it. If it's not defined
+                # then it's gold if the 'coins' value is not the default from the blueprint
                 if type(bt := o.get('brick_type')) is str:
                     o['variant'] = bt.rsplit('::')[-1].lower()
+                elif o.get('coins') != 3:
+                    o['variant'] = 'gold'
                 else:
-                    o['variant'] = brick_types[4 if not bt and o.get('coins') else 0]
-                if o['variant'] == 'gold' and not o.get('coins'):
-                    o['coins'] = 3
-                if o.get('coins') is not None and o['variant'] != 'gold':
-                    print(f'Non gold coin containing MinecraftBrick_C:{o["variant"]}:{o["coins"]}')
+                    o['variant'] = 'stone'
+                if o['variant'] != 'gold' and o.get('coins'):
+                    del o['coins']
+            elif game == 'sl':
+                o['type'] = 'SL:MinecraftBrick_C'
 
         # Player icon changes colour based on game
         if o['type'] == 'PlayerStart':
@@ -492,10 +506,10 @@ def cleanup_objects(  # noqa: C901 - disable complexity warning
         # Anything that provides coins and spawns we clear the spawns field (chests can't do both)
         # There's also a chest that has coins in it but also has a "spawns" (SIU ChestAreaEnd_78)
         if o.get('coins') is not None:
-            if o['type'] not in slcoin_defaults:  # don't add subclass to coins
+            if o['type'] in slcoin_spawners:
                 o['type'] = 'Coin:' + o['type']
-            if o.get('spawns') is not None:
-                del o['spawns']
+                if o.get('spawns') is not None:
+                    del o['spawns']
 
         # Create line data
 
@@ -534,6 +548,20 @@ def cleanup_objects(  # noqa: C901 - disable complexity warning
 
     # Convert piles of non-rotating coins to stack markers
     create_coinstacks(data_lookup, data)
+
+    def is_class_used(item: dict) -> bool:
+        return (
+            (gc := game_classes.get(item['type']))
+            and game in gc.get('games', ['sl', 'slc', 'siu'])
+            and (
+                gc.get('layer') and gc['layer'] != 'dev'
+                or gc.get('nospoiler') and gc['nospoiler'] != 'dev'
+            )
+        )
+
+    for item in data[:]:
+        if not is_class_used(item):
+            data.remove(item)
 
     # Strip properties we don't need to export
     for o in data:

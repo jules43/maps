@@ -21,7 +21,8 @@
     "area": "DLC2_Complete",
     "lat": 2163.7373046875,
     "lng": 10409.3681640625,
-    "alt": 2817.6240234375
+    "alt": 2817.6240234375,
+    "spawns": "BP_PurchaseHealth+1_C"
   },
   {
     "name": "Bones2",
@@ -69,7 +70,8 @@
     "area": "DLC2_Complete",
     "lat": -46420.46484375,
     "lng": 6186.591796875,
-    "alt": 3302.95703125
+    "alt": 3302.95703125,
+    "coins": 3
   },
   {
     "name": "BP_A3_RobBoss_2",
@@ -77,7 +79,8 @@
     "area": "DLC2_Complete",
     "lat": -43828.8515625,
     "lng": 7263.4423828125,
-    "alt": 1807.8572998046875
+    "alt": 1807.8572998046875,
+    "spawns": "BP_PurchaseHealth+1_C"
   },
   {
     "name": "BP_A3_StrengthQuest_2",
@@ -93,7 +96,8 @@
     "area": "DLC2_Complete",
     "lat": -11983.7578125,
     "lng": 64093.80859375,
-    "alt": 4094.28271484375
+    "alt": 4094.28271484375,
+    "coins": 30
   },
   {
     "name": "BP_Area2_Uncloged_Quest_10",
@@ -101,7 +105,9 @@
     "area": "DLC2_Complete",
     "lat": -8006.755859375,
     "lng": 60487.296875,
-    "alt": 4265.0
+    "alt": 4265.0,
+    "spawns": "Coin:Chest_C",
+    "coins": 30
   },
   {
     "name": "BP_BoneDetector_2",
@@ -193,7 +199,8 @@
     "area": "DLC2_Complete",
     "lat": -9945.6474609375,
     "lng": 17196.806640625,
-    "alt": 3408.571533203125
+    "alt": 3408.571533203125,
+    "spawns": "BuyHealthBarVisibilityDLC2_C"
   },
   {
     "name": "BP_MonsterChest3_2",
@@ -201,7 +208,8 @@
     "area": "DLC2_Complete",
     "lat": -48014.71484375,
     "lng": 43832.578125,
-    "alt": 251.35140991210938
+    "alt": 251.35140991210938,
+    "spawns": "BP_PurchaseHealth+1_C"
   },
   {
     "name": "BP_MonsterChest_2",
@@ -209,7 +217,8 @@
     "area": "DLC2_Complete",
     "lat": -42638.0,
     "lng": 3219.0,
-    "alt": 2383.774169921875
+    "alt": 2383.774169921875,
+    "spawns": "BP_DoubleHealthLoot_C"
   },
   {
     "name": "BP_ParanoidQuest_2",
@@ -217,7 +226,8 @@
     "area": "DLC2_Complete",
     "lat": -28347.85546875,
     "lng": 14974.4609375,
-    "alt": -152.20645141601562
+    "alt": -152.20645141601562,
+    "spawns": "BP_PurchaseHealth+1_C"
   },
   {
     "name": "BP_Purchase_Crouch_2",
@@ -225,7 +235,8 @@
     "area": "DLC2_Complete",
     "lat": 15517.7568359375,
     "lng": 22243.890625,
-    "alt": 3172.55419921875
+    "alt": 3172.55419921875,
+    "cost": 10
   },
   {
     "name": "BP_Purchase_FasterPickaxe_2",
@@ -269,7 +280,9 @@
     "area": "DLC2_Complete",
     "lat": -28511.005859375,
     "lng": 11402.515625,
-    "alt": -70.26774597167969
+    "alt": -70.26774597167969,
+    "spawns": "BP_Purchase_FasterPickaxe_C",
+    "cost": 50
   },
   {
     "name": "BP_TrophyDetector_2",
@@ -277,7 +290,8 @@
     "area": "DLC2_Complete",
     "lat": -49300.0,
     "lng": -61380.0,
-    "alt": 10070.0
+    "alt": 10070.0,
+    "cost": 500
   },
   {
     "name": "BP_UnlockMap_2",
@@ -5525,22 +5539,6 @@
     "coins": 10
   },
   {
-    "name": "DestroyablePots4",
-    "type": "DestroyablePots_C",
-    "area": "DLC2_Complete",
-    "lat": 1068.0810546875,
-    "lng": 10337.2705078125,
-    "alt": 3172.36083984375
-  },
-  {
-    "name": "DestroyablePots44_2",
-    "type": "DestroyablePots_C",
-    "area": "DLC2_Complete",
-    "lat": -9692.0927734375,
-    "lng": 17372.642578125,
-    "alt": 3384.576904296875
-  },
-  {
     "name": "DestroyablePots45",
     "type": "Coin:DestroyablePots_C",
     "area": "DLC2_Complete",
@@ -5559,38 +5557,6 @@
     "coins": 1
   },
   {
-    "name": "DestroyablePots47",
-    "type": "DestroyablePots_C",
-    "area": "DLC2_Complete",
-    "lat": -10268.9951171875,
-    "lng": 17522.55078125,
-    "alt": 3384.576904296875
-  },
-  {
-    "name": "DestroyablePots48_2",
-    "type": "DestroyablePots_C",
-    "area": "DLC2_Complete",
-    "lat": -24578.0,
-    "lng": 19892.0,
-    "alt": -207.0
-  },
-  {
-    "name": "DestroyablePots49",
-    "type": "DestroyablePots_C",
-    "area": "DLC2_Complete",
-    "lat": -24146.0,
-    "lng": 19886.0,
-    "alt": -207.0
-  },
-  {
-    "name": "DestroyablePots50_6",
-    "type": "DestroyablePots_C",
-    "area": "DLC2_Complete",
-    "lat": -24746.0,
-    "lng": 19922.0,
-    "alt": -210.0
-  },
-  {
     "name": "DestroyablePots51_9",
     "type": "Coin:DestroyablePots_C",
     "area": "DLC2_Complete",
@@ -5598,14 +5564,6 @@
     "lng": 19949.998046875,
     "alt": -203.3948974609375,
     "coins": 1
-  },
-  {
-    "name": "DestroyablePots52_12",
-    "type": "DestroyablePots_C",
-    "area": "DLC2_Complete",
-    "lat": -25018.0,
-    "lng": 19956.0,
-    "alt": -210.0
   },
   {
     "name": "DestroyablePots53",
@@ -5624,22 +5582,6 @@
     "lng": 315.2940368652344,
     "alt": 3266.0,
     "coins": 1
-  },
-  {
-    "name": "DestroyablePots5_1",
-    "type": "DestroyablePots_C",
-    "area": "DLC2_Complete",
-    "lat": 1108.861328125,
-    "lng": 10261.3681640625,
-    "alt": 3172.36083984375
-  },
-  {
-    "name": "DestroyablePots6",
-    "type": "DestroyablePots_C",
-    "area": "DLC2_Complete",
-    "lat": 1156.6719970703125,
-    "lng": 10213.556640625,
-    "alt": 3176.125244140625
   },
   {
     "name": "BankElectricityPuzzle_1_ExplodingBattery",
@@ -5873,8 +5815,8 @@
     "alt": 1833.4017333984375,
     "target": {
       "x": 5635.47119140625,
-      "y": -44154.50254023075,
-      "z": 1833.1768946743039
+      "y": -49402.735241651535,
+      "z": 1892.8887093452847
     },
     "linetype": "jumppad",
     "variant": "blue"
@@ -5889,7 +5831,7 @@
     "target": {
       "x": -275.865234375,
       "y": -41541.0,
-      "z": 1537.3007000000075
+      "z": 1540.2839000000665
     },
     "linetype": "jumppad",
     "variant": "red",
@@ -6087,9 +6029,9 @@
     "lng": 35262.24609375,
     "alt": 1002.8065185546875,
     "target": {
-      "x": 34238.38847279549,
-      "y": -36836.34429755062,
-      "z": 918.230564691547
+      "x": 28490.700981616974,
+      "y": -37238.69583366811,
+      "z": -161.70825567240345
     },
     "linetype": "jumppad",
     "variant": "blue",
@@ -6119,10 +6061,12 @@
     "lng": 64113.53515625,
     "alt": 673.0908203125,
     "target": {
-      "x": 63904.4281861186,
-      "y": -52484.66501760483,
-      "z": 672.9271773948685
+      "x": 62445.37109375,
+      "y": -58610.859375,
+      "z": 703.9044799804688
     },
+    "other_pad": "DLC2_Complete:Jumppad28",
+    "twoway": 1,
     "linetype": "jumppad",
     "variant": "blue",
     "notsaved": true
@@ -6135,10 +6079,12 @@
     "lng": 62445.37109375,
     "alt": 703.9044799804688,
     "target": {
-      "x": 62626.28716111183,
-      "y": -57665.44063985348,
-      "z": 800.8140234107985
+      "x": 64113.53515625,
+      "y": -51438.91796875,
+      "z": 673.0908203125
     },
+    "twoway": 2,
+    "other_pad": "DLC2_Complete:Jumppad27",
     "linetype": "jumppad",
     "variant": "blue",
     "notsaved": true
@@ -6198,9 +6144,9 @@
     "lng": 53220.69921875,
     "alt": 1975.7183837890625,
     "target": {
-      "x": 52785.40169918537,
-      "y": -50063.12952530384,
-      "z": 2002.1459562820478
+      "x": 50126.34942689538,
+      "y": -53232.05766764283,
+      "z": 420.7723268894897
     },
     "linetype": "jumppad",
     "variant": "red"
@@ -6550,104 +6496,14 @@
     "alt": 1896.056396484375
   },
   {
-    "name": "MinecraftBrick100",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -5501.6162109375,
-    "lng": 63750.0,
-    "alt": 4636.24755859375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick101",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -5301.6162109375,
-    "lng": 63750.0,
-    "alt": 4636.24755859375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick102",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -5101.6162109375,
-    "lng": 63750.0,
-    "alt": 4436.24755859375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick103",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -5101.6162109375,
-    "lng": 63750.0,
-    "alt": 4636.24755859375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick104",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -5301.6162109375,
-    "lng": 63950.0,
-    "alt": 4636.24755859375,
-    "variant": "stone"
-  },
-  {
     "name": "MinecraftBrick105",
     "type": "Coin:MinecraftBrick_C",
     "area": "DLC2_Complete",
     "lat": -5301.6162109375,
     "lng": 63950.0,
     "alt": 4436.24755859375,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick106",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -5101.6162109375,
-    "lng": 63950.0,
-    "alt": 4636.24755859375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick107",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -5101.6162109375,
-    "lng": 63950.0,
-    "alt": 4436.24755859375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick108_52",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -8852.9990234375,
-    "lng": 56278.39453125,
-    "alt": 513.1370849609375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick109",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -8852.9990234375,
-    "lng": 56278.39453125,
-    "alt": 713.1370849609375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick11",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 6571.4072265625,
-    "lng": 23591.484375,
-    "alt": 4015.83544921875,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick110",
@@ -6660,32 +6516,14 @@
     "variant": "gold"
   },
   {
-    "name": "MinecraftBrick111",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -8994.4208984375,
-    "lng": 56136.97265625,
-    "alt": 713.1370849609375,
-    "variant": "stone"
-  },
-  {
     "name": "MinecraftBrick112_58",
     "type": "Coin:MinecraftBrick_C",
     "area": "DLC2_Complete",
     "lat": -23750.0,
     "lng": 39013.140625,
     "alt": 2922.737548828125,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick113",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -23750.0,
-    "lng": 39213.08203125,
-    "alt": 2922.737548828125,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick114",
@@ -6694,35 +6532,8 @@
     "lat": -23750.0,
     "lng": 39410.88671875,
     "alt": 2922.737548828125,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick115",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -23552.37109375,
-    "lng": 39013.140625,
-    "alt": 2922.737548828125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick116",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -23552.37109375,
-    "lng": 39213.08203125,
-    "alt": 2922.737548828125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick117",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -23552.37109375,
-    "lng": 39410.88671875,
-    "alt": 2922.737548828125,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick118",
@@ -6731,44 +6542,8 @@
     "lat": -24966.546875,
     "lng": 9538.29296875,
     "alt": -130.55247497558594,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick119",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -25120.734375,
-    "lng": 9411.763671875,
-    "alt": -130.55247497558594,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick12",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 6571.4072265625,
-    "lng": 23591.484375,
-    "alt": 4299.7451171875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick120",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -25092.923828125,
-    "lng": 9692.2919921875,
-    "alt": -130.55247497558594,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick121",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -24966.548828125,
-    "lng": 9538.2919921875,
-    "alt": 67.08224487304688,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick122_73",
@@ -6777,215 +6552,8 @@
     "lat": -31196.234375,
     "lng": 22212.134765625,
     "alt": -86.67320251464844,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick123",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -31196.234375,
-    "lng": 22212.134765625,
-    "alt": 114.42840576171875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick124",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -30995.92578125,
-    "lng": 22212.134765625,
-    "alt": -86.67320251464844,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick125",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -31196.234375,
-    "lng": 22015.87109375,
-    "alt": -86.67158508300781,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick126_79",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -32220.578125,
-    "lng": 20515.0625,
-    "alt": -87.03345489501953,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick127",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -32419.83203125,
-    "lng": 20515.0625,
-    "alt": -87.03345489501953,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick128",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -32618.734375,
-    "lng": 20515.0625,
-    "alt": -87.03345489501953,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick129",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -32419.83203125,
-    "lng": 20714.544921875,
-    "alt": -87.03345489501953,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick13",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 6462.71533203125,
-    "lng": 23853.888671875,
-    "alt": 4299.7451171875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick130_2",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -43285.0,
-    "lng": 3660.0,
-    "alt": 1595.16943359375,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick131",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -43285.0,
-    "lng": 3408.0,
-    "alt": 1595.16943359375,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick132_2",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -23526.140625,
-    "lng": 34007.5859375,
-    "alt": 1736.6708984375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick133_90",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -39467.9140625,
-    "lng": 1125.2281494140625,
-    "alt": 4205.99560546875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick134",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -39467.9140625,
-    "lng": 928.1380004882812,
-    "alt": 4205.99560546875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick135",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -39269.33984375,
-    "lng": 928.1380004882812,
-    "alt": 4205.99560546875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick136",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -39269.33984375,
-    "lng": 928.1380615234375,
-    "alt": 4404.0498046875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick137",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -48478.91015625,
-    "lng": -1564.63916015625,
-    "alt": 1804.1336669921875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick138",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -23457.73828125,
-    "lng": 33819.6484375,
-    "alt": 1751.1160888671875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick139_100",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -39624.4765625,
-    "lng": 6639.03857421875,
-    "alt": 1846.3101806640625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick14",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -12472.7841796875,
-    "lng": 64128.40234375,
-    "alt": 570.8310546875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick140",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -39624.4765625,
-    "lng": 6639.0546875,
-    "alt": 2043.444091796875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick141",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -23526.140625,
-    "lng": 34007.5859375,
-    "alt": 1936.6708984375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick142_2",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -21615.267578125,
-    "lng": -48448.7578125,
-    "alt": 16143.8271484375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick143_108",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -33191.93359375,
-    "lng": 20629.146484375,
-    "alt": 1459.0927734375,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick144",
@@ -6994,17 +6562,8 @@
     "lat": -33191.93359375,
     "lng": 21955.517578125,
     "alt": 1459.0927734375,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick145",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -32348.978515625,
-    "lng": 21694.28515625,
-    "alt": 1459.0927734375,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick146_113",
@@ -7017,33 +6576,6 @@
     "variant": "gold"
   },
   {
-    "name": "MinecraftBrick147",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 15854.2021484375,
-    "lng": 17897.51171875,
-    "alt": 5546.107421875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick148",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 15743.521484375,
-    "lng": 17731.86328125,
-    "alt": 5746.01416015625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick149",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 15853.8193359375,
-    "lng": 17896.908203125,
-    "alt": 5746.01416015625,
-    "variant": "stone"
-  },
-  {
     "name": "MinecraftBrick150",
     "type": "Coin:MinecraftBrick_C",
     "area": "DLC2_Complete",
@@ -7054,122 +6586,14 @@
     "variant": "gold"
   },
   {
-    "name": "MinecraftBrick151",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 15688.7783203125,
-    "lng": 18008.06640625,
-    "alt": 5546.107421875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick152",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 15578.09765625,
-    "lng": 17842.41796875,
-    "alt": 5746.01416015625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick153",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 15688.3955078125,
-    "lng": 18007.462890625,
-    "alt": 5746.01416015625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick154",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 15523.265625,
-    "lng": 18118.66015625,
-    "alt": 5546.107421875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick155",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 6565.556640625,
-    "lng": 10389.404296875,
-    "alt": 3775.5380859375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick156",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 6565.556640625,
-    "lng": 10389.404296875,
-    "alt": 3575.5380859375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick157",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 9082.388671875,
-    "lng": 8230.421875,
-    "alt": 3940.072998046875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick158_134",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 23015.53125,
-    "lng": 16619.48828125,
-    "alt": 3881.268310546875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick159",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 9082.388671875,
-    "lng": 8230.421875,
-    "alt": 3655.5380859375,
-    "variant": "stone"
-  },
-  {
     "name": "MinecraftBrick160_136",
     "type": "Coin:MinecraftBrick_C",
     "area": "DLC2_Complete",
     "lat": 22900.791015625,
     "lng": 16791.208984375,
     "alt": 3881.263916015625,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick161",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 9357.5107421875,
-    "lng": 8302.99609375,
-    "alt": 3940.0712890625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick162",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 22899.880859375,
-    "lng": 16792.759765625,
-    "alt": 4082.901123046875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick163",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 22788.96875,
-    "lng": 16958.75390625,
-    "alt": 4082.901123046875,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick168_153",
@@ -7190,15 +6614,6 @@
     "alt": 1841.1324462890625,
     "coins": 10,
     "variant": "gold"
-  },
-  {
-    "name": "MinecraftBrick16_52",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -1994.2532958984375,
-    "lng": 18102.494140625,
-    "alt": 5289.83740234375,
-    "variant": "metal"
   },
   {
     "name": "MinecraftBrick170",
@@ -7271,69 +6686,6 @@
     "variant": "gold"
   },
   {
-    "name": "MinecraftBrick177_168",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -36501.53515625,
-    "lng": 4602.70654296875,
-    "alt": 3044.120361328125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick178",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -36501.53515625,
-    "lng": 4802.49951171875,
-    "alt": 3044.120361328125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick179",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -48238.15234375,
-    "lng": 5541.17822265625,
-    "alt": 2518.839599609375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick180",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -49663.7578125,
-    "lng": 5551.44482421875,
-    "alt": 1909.455322265625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick181",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -50695.16015625,
-    "lng": 5537.1298828125,
-    "alt": 2771.342041015625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick19",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -9775.8525390625,
-    "lng": 55921.63671875,
-    "alt": 2354.166259765625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick190_19",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -12426.759765625,
-    "lng": 16246.2568359375,
-    "alt": 6433.82958984375,
-    "variant": "stone"
-  },
-  {
     "name": "MinecraftBrick191",
     "type": "Coin:MinecraftBrick_C",
     "area": "DLC2_Complete",
@@ -7342,87 +6694,6 @@
     "alt": 6433.82958984375,
     "coins": 5,
     "variant": "gold"
-  },
-  {
-    "name": "MinecraftBrick192",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -12398.333984375,
-    "lng": 16526.875,
-    "alt": 6433.82958984375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick193_24",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -15659.6572265625,
-    "lng": 14262.2568359375,
-    "alt": 5091.19189453125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick194",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -15506.2841796875,
-    "lng": 14388.126953125,
-    "alt": 5091.19189453125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick195",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -15659.1376953125,
-    "lng": 14262.6845703125,
-    "alt": 5288.595703125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick196",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -12273.8857421875,
-    "lng": 16371.716796875,
-    "alt": 6630.2099609375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick197",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -14861.3232421875,
-    "lng": 21620.1796875,
-    "alt": 4769.31201171875,
-    "variant": "diamond"
-  },
-  {
-    "name": "MinecraftBrick198",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -14705.8828125,
-    "lng": 21743.51953125,
-    "alt": 4769.31201171875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick199",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -14858.736328125,
-    "lng": 21618.076171875,
-    "alt": 4966.7158203125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick20",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 9292.7021484375,
-    "lng": 15022.3095703125,
-    "alt": 3190.53173828125,
-    "variant": "stone"
   },
   {
     "name": "MinecraftBrick200",
@@ -7435,266 +6706,14 @@
     "variant": "gold"
   },
   {
-    "name": "MinecraftBrick201",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -15138.2939453125,
-    "lng": 21647.240234375,
-    "alt": 4769.31201171875,
-    "variant": "diamond"
-  },
-  {
-    "name": "MinecraftBrick202",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -14986.0693359375,
-    "lng": 21772.185546875,
-    "alt": 4966.513671875,
-    "variant": "diamond"
-  },
-  {
-    "name": "MinecraftBrick203",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -15137.44921875,
-    "lng": 21647.939453125,
-    "alt": 4966.513671875,
-    "variant": "diamond"
-  },
-  {
-    "name": "MinecraftBrick204",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -14835.0009765625,
-    "lng": 21896.212890625,
-    "alt": 4769.31201171875,
-    "variant": "diamond"
-  },
-  {
-    "name": "MinecraftBrick205",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -14831.546875,
-    "lng": 21899.001953125,
-    "alt": 4966.513671875,
-    "variant": "diamond"
-  },
-  {
-    "name": "MinecraftBrick206",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -15111.33984375,
-    "lng": 21924.81640625,
-    "alt": 4769.31201171875,
-    "variant": "diamond"
-  },
-  {
-    "name": "MinecraftBrick207",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -15265.87890625,
-    "lng": 21797.90234375,
-    "alt": 4769.31201171875,
-    "variant": "diamond"
-  },
-  {
-    "name": "MinecraftBrick208",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -15111.328125,
-    "lng": 21924.806640625,
-    "alt": 4970.5322265625,
-    "variant": "diamond"
-  },
-  {
-    "name": "MinecraftBrick209",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -15262.7080078125,
-    "lng": 21800.560546875,
-    "alt": 4970.5322265625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick210",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -15012.658203125,
-    "lng": 21491.779296875,
-    "alt": 4769.31201171875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick211",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -15012.6630859375,
-    "lng": 21491.779296875,
-    "alt": 4969.5244140625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick212",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -15288.0908203125,
-    "lng": 21524.177734375,
-    "alt": 4769.31201171875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick213_54",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -14677.78125,
-    "lng": 22021.453125,
-    "alt": 4769.31201171875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick214",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -15288.0927734375,
-    "lng": 21524.1796875,
-    "alt": 4968.609375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick215",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -14734.8583984375,
-    "lng": 21464.984375,
-    "alt": 4769.31201171875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick216",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -14706.443359375,
-    "lng": 21744.205078125,
-    "alt": 4967.93115234375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick217_55",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -14678.341796875,
-    "lng": 22022.138671875,
-    "alt": 4967.93115234375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick218_57",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -14554.58203125,
-    "lng": 21871.328125,
-    "alt": 4769.31201171875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick219",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -15414.5859375,
-    "lng": 21678.326171875,
-    "alt": 4769.31201171875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick21_5",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 9151.2802734375,
-    "lng": 15163.7314453125,
-    "alt": 3190.53173828125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick220",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -15414.587890625,
-    "lng": 21678.328125,
-    "alt": 4968.609375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick221_60",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -28565.4453125,
-    "lng": 16424.0859375,
-    "alt": -70.25227355957031,
-    "variant": "diamond"
-  },
-  {
-    "name": "MinecraftBrick222",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -28355.296875,
-    "lng": 16407.796875,
-    "alt": -70.25227355957031,
-    "variant": "metal"
-  },
-  {
-    "name": "MinecraftBrick223",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -41877.2890625,
-    "lng": -1411.583740234375,
-    "alt": 2490.0,
-    "variant": "stone"
-  },
-  {
     "name": "MinecraftBrick224",
     "type": "Coin:MinecraftBrick_C",
     "area": "DLC2_Complete",
     "lat": -12551.9072265625,
     "lng": 40495.51953125,
     "alt": 948.931884765625,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick225",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -12551.306640625,
-    "lng": 40494.8203125,
-    "alt": 1149.6090087890625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick226",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -12553.1923828125,
-    "lng": 40494.8203125,
-    "alt": 1349.39697265625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick227",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -12351.46484375,
-    "lng": 40494.8203125,
-    "alt": 1349.39697265625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick228",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -12351.46484375,
-    "lng": 40694.84375,
-    "alt": 1349.39697265625,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick231",
@@ -7703,26 +6722,8 @@
     "lat": -19673.203125,
     "lng": 41256.796875,
     "alt": -330.0,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick232",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -17500.0,
-    "lng": 30620.0,
-    "alt": -2080.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick233",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -17500.0,
-    "lng": 30620.0,
-    "alt": -2280.0,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick234_19",
@@ -7731,35 +6732,8 @@
     "lat": -14380.0,
     "lng": 32430.0,
     "alt": -2400.0,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick235",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -14580.0,
-    "lng": 32430.0,
-    "alt": -2400.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick236",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -14180.0,
-    "lng": 32430.0,
-    "alt": -2400.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick237_24",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -29650.0,
-    "lng": 16250.0,
-    "alt": 420.0,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick238",
@@ -7780,15 +6754,6 @@
     "alt": 900.0,
     "coins": 4,
     "variant": "gold"
-  },
-  {
-    "name": "MinecraftBrick23_2",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -23460.177734375,
-    "lng": 21543.32421875,
-    "alt": -67.82820129394531,
-    "variant": "stone"
   },
   {
     "name": "MinecraftBrick240",
@@ -7841,15 +6806,6 @@
     "variant": "gold"
   },
   {
-    "name": "MinecraftBrick245_38",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -29831.47265625,
-    "lng": 21376.568359375,
-    "alt": 403.6053161621094,
-    "variant": "stone"
-  },
-  {
     "name": "MinecraftBrick246",
     "type": "Coin:MinecraftBrick_C",
     "area": "DLC2_Complete",
@@ -7858,78 +6814,6 @@
     "alt": 403.6053161621094,
     "coins": 2,
     "variant": "gold"
-  },
-  {
-    "name": "MinecraftBrick247",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -29632.150390625,
-    "lng": 21175.68359375,
-    "alt": 403.6052551269531,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick248_43",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -33736.84765625,
-    "lng": 19839.73828125,
-    "alt": -79.80071258544922,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick249",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -33736.84765625,
-    "lng": 19839.73828125,
-    "alt": 224.0423583984375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick24_7",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 9009.8583984375,
-    "lng": 15305.1533203125,
-    "alt": 3190.53173828125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick250_47",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -31203.697265625,
-    "lng": 16839.517578125,
-    "alt": 683.1514892578125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick251",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -31403.697265625,
-    "lng": 16839.517578125,
-    "alt": 683.1514892578125,
-    "variant": "metal"
-  },
-  {
-    "name": "MinecraftBrick252",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -31603.697265625,
-    "lng": 16839.517578125,
-    "alt": 683.1514892578125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick253",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -31203.697265625,
-    "lng": 17039.517578125,
-    "alt": 683.1514892578125,
-    "variant": "metal"
   },
   {
     "name": "MinecraftBrick254",
@@ -7942,123 +6826,6 @@
     "variant": "gold"
   },
   {
-    "name": "MinecraftBrick255",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -31603.697265625,
-    "lng": 17039.517578125,
-    "alt": 683.1514892578125,
-    "variant": "metal"
-  },
-  {
-    "name": "MinecraftBrick256",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -31203.697265625,
-    "lng": 17239.517578125,
-    "alt": 683.1514892578125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick257",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -31403.697265625,
-    "lng": 17239.517578125,
-    "alt": 683.1514892578125,
-    "variant": "metal"
-  },
-  {
-    "name": "MinecraftBrick258",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -31603.697265625,
-    "lng": 17239.517578125,
-    "alt": 683.1514892578125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick259",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -31403.697265625,
-    "lng": 16839.517578125,
-    "alt": 883.1514892578125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick25_11",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 9292.7021484375,
-    "lng": 15022.3095703125,
-    "alt": 3390.53173828125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick26",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -31356.20703125,
-    "lng": 17746.17578125,
-    "alt": 688.4395751953125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick260",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -31603.697265625,
-    "lng": 16839.517578125,
-    "alt": 883.1514892578125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick261",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -31203.697265625,
-    "lng": 17039.517578125,
-    "alt": 883.1514892578125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick262",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -31403.697265625,
-    "lng": 17039.517578125,
-    "alt": 883.1514892578125,
-    "variant": "metal"
-  },
-  {
-    "name": "MinecraftBrick263",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -31603.697265625,
-    "lng": 17039.517578125,
-    "alt": 883.1514892578125,
-    "variant": "metal"
-  },
-  {
-    "name": "MinecraftBrick264",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -31403.697265625,
-    "lng": 17239.517578125,
-    "alt": 883.1514892578125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick265_64",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -23950.0,
-    "lng": 20850.0,
-    "alt": 403.5732421875,
-    "variant": "stone"
-  },
-  {
     "name": "MinecraftBrick266",
     "type": "Coin:MinecraftBrick_C",
     "area": "DLC2_Complete",
@@ -8069,167 +6836,14 @@
     "variant": "gold"
   },
   {
-    "name": "MinecraftBrick267",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -24347.796875,
-    "lng": 20891.9375,
-    "alt": 403.5732421875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick268",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -24169.8671875,
-    "lng": 20672.0703125,
-    "alt": 403.5732421875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick269",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -24127.9296875,
-    "lng": 21069.8671875,
-    "alt": 403.5732421875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick270",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -24148.8984375,
-    "lng": 20870.96875,
-    "alt": 603.5732421875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick271",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -27208.12890625,
-    "lng": 16002.419921875,
-    "alt": 604.228515625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick272",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -27236.962890625,
-    "lng": 15804.509765625,
-    "alt": 604.228515625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick273",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -27265.796875,
-    "lng": 15606.599609375,
-    "alt": 404.228515625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick274_75",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -27700.0,
-    "lng": 4400.0,
-    "alt": 1378.3450927734375,
-    "variant": "metal"
-  },
-  {
     "name": "MinecraftBrick275",
     "type": "Coin:MinecraftBrick_C",
     "area": "DLC2_Complete",
     "lat": -28010.96875,
     "lng": 14240.9794921875,
     "alt": -130.55247497558594,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick276",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -27811.833984375,
-    "lng": 14238.3271484375,
-    "alt": -130.55247497558594,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick277",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -27612.396484375,
-    "lng": 14235.6650390625,
-    "alt": -130.55247497558594,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick278",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -27814.49609375,
-    "lng": 14039.125,
-    "alt": -130.55247497558594,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick279",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -27811.8359375,
-    "lng": 14238.326171875,
-    "alt": 67.08224487304688,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick27_2",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -17415.439453125,
-    "lng": 25258.64453125,
-    "alt": -1540.1341552734375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick28",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 11425.2138671875,
-    "lng": 10675.2109375,
-    "alt": 3300.483154296875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick280",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -28210.953125,
-    "lng": 14243.6474609375,
-    "alt": -130.55247497558594,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick281",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -28014.48046875,
-    "lng": 14041.79296875,
-    "alt": -130.55247497558594,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick282",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -28011.8203125,
-    "lng": 14240.994140625,
-    "alt": 67.08224487304688,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick283",
@@ -8238,53 +6852,8 @@
     "lat": -32818.55859375,
     "lng": 13705.041015625,
     "alt": -530.552490234375,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick284",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -32819.40625,
-    "lng": 13705.0556640625,
-    "alt": -332.9177551269531,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick285",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -30874.91015625,
-    "lng": 13279.08984375,
-    "alt": -287.1344909667969,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick286",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -31329.53515625,
-    "lng": 12935.1201171875,
-    "alt": -356.645263671875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick287",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -17215.439453125,
-    "lng": 25058.64453125,
-    "alt": -1140.1341552734375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick288",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -24326.830078125,
-    "lng": 21090.8359375,
-    "alt": 403.5732421875,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick289",
@@ -8297,113 +6866,14 @@
     "variant": "gold"
   },
   {
-    "name": "MinecraftBrick290",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -24100.0,
-    "lng": 14740.0,
-    "alt": 90.0,
-    "variant": "metal"
-  },
-  {
-    "name": "MinecraftBrick292_98",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -46379.4296875,
-    "lng": 42681.3203125,
-    "alt": -549.197265625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick293_101",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -47381.625,
-    "lng": 43081.34765625,
-    "alt": -502.6898498535156,
-    "variant": "stone"
-  },
-  {
     "name": "MinecraftBrick294",
     "type": "Coin:MinecraftBrick_C",
     "area": "DLC2_Complete",
     "lat": -47536.23046875,
     "lng": 42954.47265625,
     "alt": -502.6898498535156,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick295",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -47690.83984375,
-    "lng": 42827.59765625,
-    "alt": -502.6898498535156,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick296",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -47845.4453125,
-    "lng": 42700.72265625,
-    "alt": -502.6898498535156,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick297",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -47254.74609375,
-    "lng": 42926.73828125,
-    "alt": -502.6898498535156,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick298",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -47409.3515625,
-    "lng": 42799.86328125,
-    "alt": -502.6898498535156,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick2_2",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -13351.5556640625,
-    "lng": 13091.0302734375,
-    "alt": 199.94923400878906,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick3",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -13351.556640625,
-    "lng": 13091.04296875,
-    "alt": 413.7093505859375,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick30",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -37066.921875,
-    "lng": -379.4332580566406,
-    "alt": 2493.4169921875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick302_115",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -48115.8671875,
-    "lng": 50458.34375,
-    "alt": 2165.118896484375,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick303",
@@ -8412,35 +6882,8 @@
     "lat": -48270.47265625,
     "lng": 50331.46484375,
     "alt": 2165.118896484375,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick304_125",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -48115.8671875,
-    "lng": 50458.34375,
-    "alt": 2365.118896484375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick305",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -48242.7421875,
-    "lng": 50612.94921875,
-    "alt": 2165.118896484375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick306",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -48397.3515625,
-    "lng": 50486.07421875,
-    "alt": 2165.118896484375,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick307_132",
@@ -8453,32 +6896,14 @@
     "variant": "gold"
   },
   {
-    "name": "MinecraftBrick308",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -48397.3515625,
-    "lng": 50486.07421875,
-    "alt": 2365.118896484375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick309",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -48270.4765625,
-    "lng": 50331.46875,
-    "alt": 2365.118896484375,
-    "variant": "stone"
-  },
-  {
     "name": "MinecraftBrick310_135",
     "type": "Coin:MinecraftBrick_C",
     "area": "DLC2_Complete",
     "lat": -46233.43359375,
     "lng": 55401.89453125,
     "alt": 2200.624755859375,
-    "variant": "gold",
-    "coins": 3
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick311",
@@ -8499,33 +6924,6 @@
     "alt": 2200.624755859375,
     "coins": 4,
     "variant": "gold"
-  },
-  {
-    "name": "MinecraftBrick314",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -1994.2532958984375,
-    "lng": 18102.494140625,
-    "alt": 4890.146484375,
-    "variant": "metal"
-  },
-  {
-    "name": "MinecraftBrick315",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -2029.1278076171875,
-    "lng": 17704.017578125,
-    "alt": 5289.83740234375,
-    "variant": "metal"
-  },
-  {
-    "name": "MinecraftBrick316",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -2029.100830078125,
-    "lng": 17704.326171875,
-    "alt": 4890.146484375,
-    "variant": "stone"
   },
   {
     "name": "MinecraftBrick317",
@@ -8558,77 +6956,14 @@
     "variant": "gold"
   },
   {
-    "name": "MinecraftBrick320",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -23331.55859375,
-    "lng": 20601.875,
-    "alt": 1552.9019775390625,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick321_148",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -25661.6875,
-    "lng": 25621.25390625,
-    "alt": 2580.7578125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick322",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -25461.6875,
-    "lng": 25621.25390625,
-    "alt": 2580.7578125,
-    "variant": "stone"
-  },
-  {
     "name": "MinecraftBrick323",
     "type": "Coin:MinecraftBrick_C",
     "area": "DLC2_Complete",
     "lat": -25461.6875,
     "lng": 25421.25390625,
     "alt": 2580.7578125,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick324",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -25461.6875,
-    "lng": 25221.25390625,
-    "alt": 2580.7578125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick325",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -25661.6875,
-    "lng": 25421.25390625,
-    "alt": 2580.7578125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick326",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -25461.6875,
-    "lng": 25621.25390625,
-    "alt": 2780.7578125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick327",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -25461.6875,
-    "lng": 25421.25390625,
-    "alt": 2780.7578125,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick328",
@@ -8651,113 +6986,14 @@
     "variant": "gold"
   },
   {
-    "name": "MinecraftBrick32_66",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -24812.59765625,
-    "lng": 9664.6328125,
-    "alt": -130.55247497558594,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick330",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -2064.002685546875,
-    "lng": 17305.541015625,
-    "alt": 5289.83740234375,
-    "variant": "metal"
-  },
-  {
-    "name": "MinecraftBrick331",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -2064.002685546875,
-    "lng": 17305.541015625,
-    "alt": 4889.83740234375,
-    "variant": "metal"
-  },
-  {
-    "name": "MinecraftBrick332",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -49434.41015625,
-    "lng": 53050.1640625,
-    "alt": 2005.118896484375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick333",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -49561.28515625,
-    "lng": 53204.7734375,
-    "alt": 2005.118896484375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick334_163",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -10500.0,
-    "lng": 61200.0,
-    "alt": 400.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick335",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -9061.1826171875,
-    "lng": 57953.46484375,
-    "alt": 400.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick336",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -49349.62109375,
-    "lng": 53262.03515625,
-    "alt": 2005.118896484375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick339_172",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -17700.0,
-    "lng": 54000.0,
-    "alt": 4900.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick33_2",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -3725.876220703125,
-    "lng": 65068.34765625,
-    "alt": 8927.4072265625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick34",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 9151.2802734375,
-    "lng": 15163.7314453125,
-    "alt": 3390.53173828125,
-    "variant": "stone"
-  },
-  {
     "name": "MinecraftBrick340",
     "type": "Coin:MinecraftBrick_C",
     "area": "DLC2_Complete",
     "lat": -17811.11328125,
     "lng": 54166.296875,
     "alt": 4900.0,
-    "variant": "gold",
-    "coins": 3
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick341_176",
@@ -8770,203 +7006,14 @@
     "variant": "gold"
   },
   {
-    "name": "MinecraftBrick342",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -17700.0,
-    "lng": 65900.0,
-    "alt": 3673.055908203125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick343",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -17900.0,
-    "lng": 65700.0,
-    "alt": 3673.055908203125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick344",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -17900.0,
-    "lng": 65900.0,
-    "alt": 3873.055908203125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick345",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -18100.0,
-    "lng": 65900.0,
-    "alt": 3673.055908203125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick346",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -18700.0,
-    "lng": 65000.0,
-    "alt": 3673.055908203125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick347",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -18700.0,
-    "lng": 65200.0,
-    "alt": 3673.055908203125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick348",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -18700.0,
-    "lng": 65200.0,
-    "alt": 3873.055908203125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick349",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -15045.57421875,
-    "lng": 66843.8515625,
-    "alt": 3479.95361328125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick350",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -14969.0361328125,
-    "lng": 67028.6328125,
-    "alt": 3479.95361328125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick351",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -14969.05078125,
-    "lng": 67028.59375,
-    "alt": 3679.95361328125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick352_189",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -7586.91357421875,
-    "lng": 57647.36328125,
-    "alt": 2874.235107421875,
-    "variant": "stone"
-  },
-  {
     "name": "MinecraftBrick353_192",
     "type": "Coin:MinecraftBrick_C",
     "area": "DLC2_Complete",
     "lat": -9938.7705078125,
     "lng": 65459.328125,
     "alt": 577.4940185546875,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick354_195",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -9797.3486328125,
-    "lng": 65600.75,
-    "alt": 577.4940185546875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick355",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -9655.9267578125,
-    "lng": 65459.328125,
-    "alt": 577.4940185546875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick356",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -9797.3486328125,
-    "lng": 65600.75,
-    "alt": 777.4940185546875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick357",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -9655.9267578125,
-    "lng": 65459.328125,
-    "alt": 777.4940185546875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick358",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -9797.3486328125,
-    "lng": 65317.90625,
-    "alt": 577.4940185546875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick359",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -10080.1923828125,
-    "lng": 65317.90625,
-    "alt": 577.4940185546875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick36",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 6605.39013671875,
-    "lng": 10585.400390625,
-    "alt": 3575.5380859375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick365",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -42718.37109375,
-    "lng": 20355.279296875,
-    "alt": 3000.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick366",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -42519.33203125,
-    "lng": 20335.677734375,
-    "alt": 3000.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick367_212",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -42737.97265625,
-    "lng": 20156.244140625,
-    "alt": 3000.0,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick37_2",
@@ -8979,59 +7026,14 @@
     "variant": "gold"
   },
   {
-    "name": "MinecraftBrick383_236",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -11160.0947265625,
-    "lng": -59981.8046875,
-    "alt": 7933.1484375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick384_239",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 176.3837432861328,
-    "lng": -56618.09765625,
-    "alt": 6823.91552734375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick385",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 364.6730041503906,
-    "lng": -56550.734375,
-    "alt": 6823.91552734375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick386",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 124.85298919677734,
-    "lng": -56443.25,
-    "alt": 6844.41552734375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick387",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 176.3837432861328,
-    "lng": -56618.09765625,
-    "alt": 7023.91552734375,
-    "variant": "stone"
-  },
-  {
     "name": "MinecraftBrick388",
     "type": "Coin:MinecraftBrick_C",
     "area": "DLC2_Complete",
     "lat": 364.6730041503906,
     "lng": -56550.734375,
     "alt": 7023.91552734375,
-    "variant": "gold",
-    "coins": 3
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick389_246",
@@ -9040,17 +7042,8 @@
     "lat": -3898.392822265625,
     "lng": -46750.1015625,
     "alt": 5799.779296875,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick38_2",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -20177.48828125,
-    "lng": 44370.14453125,
-    "alt": 580.1383056640625,
-    "variant": "obsidian"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick390_249",
@@ -9059,35 +7052,8 @@
     "lat": -19860.197265625,
     "lng": 12455.5078125,
     "alt": 2724.9453125,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick391",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -19765.916015625,
-    "lng": 12631.892578125,
-    "alt": 2724.9453125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick392_253",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -20662.2734375,
-    "lng": 25153.27734375,
-    "alt": 2863.686767578125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick393",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -20839.037109375,
-    "lng": 25247.794921875,
-    "alt": 2863.686767578125,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick394_257",
@@ -9096,8 +7062,8 @@
     "lat": -19205.83984375,
     "lng": 22723.521484375,
     "alt": 2683.95361328125,
-    "variant": "gold",
-    "coins": 3
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick395_260",
@@ -9106,17 +7072,8 @@
     "lat": -14145.7255859375,
     "lng": 64842.87890625,
     "alt": 14068.8095703125,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick396_263",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -13945.7255859375,
-    "lng": 64842.87890625,
-    "alt": 14068.8095703125,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick397",
@@ -9125,62 +7082,8 @@
     "lat": -13945.7255859375,
     "lng": 65042.87890625,
     "alt": 14068.8095703125,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick398",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -12351.46484375,
-    "lng": 40294.359375,
-    "alt": 1347.2547607421875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick399",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -12351.46484375,
-    "lng": 40294.359375,
-    "alt": 1146.897705078125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick39_19",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 14691.115234375,
-    "lng": 22146.400390625,
-    "alt": 3514.239501953125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick400",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -12351.46484375,
-    "lng": 40294.359375,
-    "alt": 945.6572875976562,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick401",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -12351.46484375,
-    "lng": 40694.5546875,
-    "alt": 1149.7152099609375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick402",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -12351.46484375,
-    "lng": 40695.59765625,
-    "alt": 949.4119873046875,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick403",
@@ -9189,44 +7092,8 @@
     "lat": -12351.5498046875,
     "lng": 40495.51953125,
     "alt": 948.931884765625,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick404",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -12351.41796875,
-    "lng": 40494.8203125,
-    "alt": 1149.6090087890625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick405",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -12709.4072265625,
-    "lng": 40494.8203125,
-    "alt": 1522.10791015625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick406",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -12709.4072265625,
-    "lng": 40494.8203125,
-    "alt": 1721.6951904296875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick407",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -12709.4072265625,
-    "lng": 40494.8203125,
-    "alt": 1921.2376708984375,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick408",
@@ -9235,26 +7102,8 @@
     "lat": -23886.3359375,
     "lng": 38383.640625,
     "alt": 1804.65576171875,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick409",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -23712.720703125,
-    "lng": 38483.8515625,
-    "alt": 1804.65576171875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick410",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -23885.771484375,
-    "lng": 38383.9453125,
-    "alt": 2004.7117919921875,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick411",
@@ -9263,161 +7112,8 @@
     "lat": -27023.150390625,
     "lng": 32465.720703125,
     "alt": 1790.62060546875,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick412_2",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -14859.8369140625,
-    "lng": 42553.25,
-    "alt": 3425.5361328125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick413",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -14859.8369140625,
-    "lng": 42353.25,
-    "alt": 3425.5361328125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick414",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -14859.8369140625,
-    "lng": 42153.25,
-    "alt": 3425.5361328125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick415",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -14859.8369140625,
-    "lng": 41953.25,
-    "alt": 3425.5361328125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick416",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -14859.8369140625,
-    "lng": 42553.25,
-    "alt": 3625.5361328125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick417",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -14859.8369140625,
-    "lng": 42353.25,
-    "alt": 3625.5361328125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick418",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -14859.8369140625,
-    "lng": 42153.25,
-    "alt": 3625.5361328125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick419",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -14859.8369140625,
-    "lng": 41953.25,
-    "alt": 3625.5361328125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick42",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 15701.1748046875,
-    "lng": 19642.505859375,
-    "alt": 3171.560546875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick420",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -14859.8369140625,
-    "lng": 42553.25,
-    "alt": 3825.5361328125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick421",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -14859.8369140625,
-    "lng": 42353.25,
-    "alt": 3825.5361328125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick422",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -14859.8369140625,
-    "lng": 42153.25,
-    "alt": 3825.5361328125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick423",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -14859.8369140625,
-    "lng": 41953.25,
-    "alt": 3825.5361328125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick424",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 9292.7021484375,
-    "lng": 15022.3095703125,
-    "alt": 3790.53173828125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick425",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 9151.2802734375,
-    "lng": 15163.7314453125,
-    "alt": 3790.53173828125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick426",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 9009.8583984375,
-    "lng": 15305.1533203125,
-    "alt": 3790.53173828125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick427",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 8868.4365234375,
-    "lng": 15446.5751953125,
-    "alt": 3790.53173828125,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick428",
@@ -9426,53 +7122,8 @@
     "lat": -17530.5078125,
     "lng": 30422.34375,
     "alt": -2080.0,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick43",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -23333.58984375,
-    "lng": 20617.29296875,
-    "alt": 1435.1329345703125,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick430",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -19500.0,
-    "lng": 41156.796875,
-    "alt": -330.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick431",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -19500.0,
-    "lng": 41156.796875,
-    "alt": -130.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick432_5",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -21635.087890625,
-    "lng": 40600.28125,
-    "alt": 7151.5390625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick433",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -19846.40625,
-    "lng": 41356.796875,
-    "alt": -330.0,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick434_21",
@@ -9481,314 +7132,8 @@
     "lat": -14332.83984375,
     "lng": 61619.40234375,
     "alt": 11480.0244140625,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick435",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -28173.287109375,
-    "lng": 16389.86328125,
-    "alt": -70.25227355957031,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick436_2",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -42432.33984375,
-    "lng": 34473.66796875,
-    "alt": 1180.6717529296875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick437_11",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 14615.763671875,
-    "lng": 21691.06640625,
-    "alt": 3514.11474609375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick438_22",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 14650.1142578125,
-    "lng": 23233.705078125,
-    "alt": 3520.5712890625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick439",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 9357.5107421875,
-    "lng": 8302.99609375,
-    "alt": 3655.5380859375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick44",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 9009.8583984375,
-    "lng": 15305.1533203125,
-    "alt": 3390.53173828125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick440",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -24100.0,
-    "lng": 14940.0,
-    "alt": -110.0,
-    "variant": "metal"
-  },
-  {
-    "name": "MinecraftBrick441",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -23900.0,
-    "lng": 14740.0,
-    "alt": -110.0,
-    "variant": "metal"
-  },
-  {
-    "name": "MinecraftBrick442_5",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -16970.0,
-    "lng": 44820.0,
-    "alt": 590.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick444",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -17170.0,
-    "lng": 44820.0,
-    "alt": 590.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick445",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -17170.0,
-    "lng": 44820.0,
-    "alt": 790.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick446",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -16970.0,
-    "lng": 45020.0,
-    "alt": 590.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick447",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -16970.0,
-    "lng": 44620.0,
-    "alt": 590.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick448",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -17655.076171875,
-    "lng": 45727.6015625,
-    "alt": 1498.21044921875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick45",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 9292.7021484375,
-    "lng": 15022.3095703125,
-    "alt": 3590.53173828125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick46",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 9151.2802734375,
-    "lng": 15163.7314453125,
-    "alt": 3590.53173828125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick47",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 9009.8583984375,
-    "lng": 15305.1533203125,
-    "alt": 3590.53173828125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick48",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 8868.4365234375,
-    "lng": 15446.5751953125,
-    "alt": 3190.53173828125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick49",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 8868.4365234375,
-    "lng": 15446.5751953125,
-    "alt": 3390.53173828125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick50",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 8868.4365234375,
-    "lng": 15446.5751953125,
-    "alt": 3590.53173828125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick51",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 11283.7919921875,
-    "lng": 10816.6328125,
-    "alt": 3300.483154296875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick52_11",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -19400.0,
-    "lng": 41330.0,
-    "alt": -330.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick53",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -19573.203125,
-    "lng": 41430.0,
-    "alt": -330.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick54",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -19673.203125,
-    "lng": 41256.796875,
-    "alt": -130.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick55",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 6645.21826171875,
-    "lng": 10781.3955078125,
-    "alt": 3575.5380859375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick56",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 6605.39013671875,
-    "lng": 10585.400390625,
-    "alt": 3775.5380859375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick57",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 6645.21826171875,
-    "lng": 10781.3955078125,
-    "alt": 3775.5380859375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick5_4",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -41877.2890625,
-    "lng": -1685.583740234375,
-    "alt": 2490.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick60",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -37066.921875,
-    "lng": -655.8556518554688,
-    "alt": 2493.4169921875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick61",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -23724.841796875,
-    "lng": 21581.80859375,
-    "alt": -67.82894897460938,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick64",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -19400.0,
-    "lng": 41330.0,
-    "alt": -130.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick66",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -19952.533203125,
-    "lng": 44595.0859375,
-    "alt": 580.1383056640625,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick67",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 15595.07421875,
-    "lng": 20143.962890625,
-    "alt": 3067.815673828125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick68",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 15586.3583984375,
-    "lng": 20134.134765625,
-    "alt": 3267.82958984375,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick69",
@@ -9797,8 +7142,8 @@
     "lat": -17415.439453125,
     "lng": 25058.64453125,
     "alt": -1540.1341552734375,
-    "variant": "gold",
-    "coins": 3
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick70",
@@ -9807,26 +7152,8 @@
     "lat": -17415.439453125,
     "lng": 24858.64453125,
     "alt": -1540.1341552734375,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick71",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -17415.439453125,
-    "lng": 24658.64453125,
-    "alt": -1540.1341552734375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick72",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -17215.439453125,
-    "lng": 24658.64453125,
-    "alt": -1540.1341552734375,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick73",
@@ -9839,113 +7166,14 @@
     "variant": "gold"
   },
   {
-    "name": "MinecraftBrick74",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -17215.439453125,
-    "lng": 25058.64453125,
-    "alt": -1540.1341552734375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick75",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -17415.439453125,
-    "lng": 25258.64453125,
-    "alt": -1340.1341552734375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick76",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -17415.439453125,
-    "lng": 25058.64453125,
-    "alt": -1340.1341552734375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick77",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -17415.439453125,
-    "lng": 24858.64453125,
-    "alt": -1340.1341552734375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick78",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -17415.439453125,
-    "lng": 24658.64453125,
-    "alt": -1340.1341552734375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick79",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -17215.439453125,
-    "lng": 24658.64453125,
-    "alt": -1340.1341552734375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick80",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -17215.439453125,
-    "lng": 24858.64453125,
-    "alt": -1340.1341552734375,
-    "variant": "stone"
-  },
-  {
     "name": "MinecraftBrick81",
     "type": "Coin:MinecraftBrick_C",
     "area": "DLC2_Complete",
     "lat": -17215.439453125,
     "lng": 25058.64453125,
     "alt": -1340.1341552734375,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick82",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -17615.439453125,
-    "lng": 25258.64453125,
-    "alt": -1540.1341552734375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick83",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -17615.439453125,
-    "lng": 25058.64453125,
-    "alt": -1540.1341552734375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick84",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -17615.439453125,
-    "lng": 24858.64453125,
-    "alt": -1540.1341552734375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick85",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -17615.439453125,
-    "lng": 25058.64453125,
-    "alt": -1340.1341552734375,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick86_22",
@@ -9954,35 +7182,8 @@
     "lat": -8326.4296875,
     "lng": 16655.904296875,
     "alt": 3350.0,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick87",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -8420.7109375,
-    "lng": 16832.287109375,
-    "alt": 3350.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick88",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -8420.7109375,
-    "lng": 16832.287109375,
-    "alt": 3550.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick89",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -8326.4296875,
-    "lng": 16655.904296875,
-    "alt": 3550.0,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick90_28",
@@ -9991,44 +7192,8 @@
     "lat": -23566.10546875,
     "lng": 52188.34375,
     "alt": 517.449462890625,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick91",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -23558.27734375,
-    "lng": 51988.5,
-    "alt": 517.449462890625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick92",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -23550.44921875,
-    "lng": 51788.65234375,
-    "alt": 517.449462890625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick93",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -23765.951171875,
-    "lng": 52180.515625,
-    "alt": 517.449462890625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick94",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -23566.107421875,
-    "lng": 52188.34375,
-    "alt": 717.449462890625,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick95_93",
@@ -10051,232 +7216,14 @@
     "variant": "gold"
   },
   {
-    "name": "MinecraftBrick97",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -27179.29296875,
-    "lng": 16200.330078125,
-    "alt": 404.228515625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick98_40",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -5500.0,
-    "lng": 63750.0,
-    "alt": 4436.24755859375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick99",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -5301.6162109375,
-    "lng": 63750.0,
-    "alt": 4436.24755859375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick9_2",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": 6462.796875,
-    "lng": 23853.693359375,
-    "alt": 4015.83544921875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrickRespawnable10",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -54857.13671875,
-    "lng": 56567.7109375,
-    "alt": 535.5946044921875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrickRespawnable13_119",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -4148.99560546875,
-    "lng": -47194.5078125,
-    "alt": 7669.580078125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrickRespawnable19",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -16599.025390625,
-    "lng": 37461.8671875,
-    "alt": 4022.694091796875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrickRespawnable2",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -27156.03125,
-    "lng": 19768.6796875,
-    "alt": -2848.47998046875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrickRespawnable25",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -4370.3134765625,
-    "lng": -46411.7890625,
-    "alt": 7141.0322265625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrickRespawnable26",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -3976.594970703125,
-    "lng": -46411.7890625,
-    "alt": 7141.0322265625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrickRespawnable27",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -3580.634033203125,
-    "lng": -46411.7890625,
-    "alt": 7141.0322265625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrickRespawnable35",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -54851.72265625,
-    "lng": 56568.15625,
-    "alt": 811.0558471679688,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrickRespawnable40",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -51272.09765625,
-    "lng": 39784.24609375,
-    "alt": -220.25392150878906,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrickRespawnable41",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -51272.09765625,
-    "lng": 39784.24609375,
-    "alt": -498.30584716796875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrickRespawnable42",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -26896.75,
-    "lng": 19768.6796875,
-    "alt": -2848.47998046875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrickRespawnable45",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -51058.41796875,
-    "lng": 39959.2265625,
-    "alt": -379.67138671875,
-    "variant": "stone"
-  },
-  {
     "name": "MinecraftBrickRespawnable46",
     "type": "Coin:MinecraftBrick_C",
     "area": "DLC2_Complete",
     "lat": -16575.458984375,
     "lng": 37262.37890625,
     "alt": 4022.694091796875,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrickRespawnable47",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -16775.482421875,
-    "lng": 37239.3359375,
-    "alt": 4022.694091796875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrickRespawnable_2",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_Complete",
-    "lat": -4148.99462890625,
-    "lng": -46795.9921875,
-    "alt": 7669.580078125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrickRespawnable11",
-    "type": "MinecraftBrickRespawnable_C",
-    "area": "DLC2_Complete",
-    "lat": -46687.125,
-    "lng": 38970.84765625,
-    "alt": 845.4063720703125
-  },
-  {
-    "name": "MinecraftBrickRespawnable12",
-    "type": "MinecraftBrickRespawnable_C",
-    "area": "DLC2_Complete",
-    "lat": -46687.125,
-    "lng": 38764.08203125,
-    "alt": 845.4063720703125
-  },
-  {
-    "name": "MinecraftBrickRespawnable21",
-    "type": "MinecraftBrickRespawnable_C",
-    "area": "DLC2_Complete",
-    "lat": -27230.173828125,
-    "lng": 15973.8408203125,
-    "alt": -42.494197845458984
-  },
-  {
-    "name": "MinecraftBrickRespawnable22",
-    "type": "MinecraftBrickRespawnable_C",
-    "area": "DLC2_Complete",
-    "lat": -27268.337890625,
-    "lng": 15708.0263671875,
-    "alt": -42.49417495727539
-  },
-  {
-    "name": "MinecraftBrickRespawnable23",
-    "type": "MinecraftBrickRespawnable_C",
-    "area": "DLC2_Complete",
-    "lat": -27248.427734375,
-    "lng": 15846.7158203125,
-    "alt": -42.49419403076172
-  },
-  {
-    "name": "MinecraftBrickRespawnable3_2",
-    "type": "MinecraftBrickRespawnable_C",
-    "area": "DLC2_Complete",
-    "lat": -26465.626953125,
-    "lng": 18486.37109375,
-    "alt": -17.814804077148438
-  },
-  {
-    "name": "MinecraftBrickRespawnable43",
-    "type": "MinecraftBrickRespawnable_C",
-    "area": "DLC2_Complete",
-    "lat": -27285.353515625,
-    "lng": 15589.5166015625,
-    "alt": -42.49445343017578
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "PipesystemNew10",
@@ -11188,7 +8135,8 @@
     "area": "DLC2_Complete",
     "lat": -63365.9765625,
     "lng": 41623.96875,
-    "alt": 3229.5244140625
+    "alt": 3229.5244140625,
+    "scrapamount": 1
   },
   {
     "name": "Scrap178",
@@ -11196,7 +8144,8 @@
     "area": "DLC2_Complete",
     "lat": -63535.1953125,
     "lng": 41579.359375,
-    "alt": 3235.7880859375
+    "alt": 3235.7880859375,
+    "scrapamount": 1
   },
   {
     "name": "Scrap179",
@@ -11204,7 +8153,8 @@
     "area": "DLC2_Complete",
     "lat": -63404.3984375,
     "lng": 41517.671875,
-    "alt": 3229.3212890625
+    "alt": 3229.3212890625,
+    "scrapamount": 1
   },
   {
     "name": "Scrap180",
@@ -11212,7 +8162,8 @@
     "area": "DLC2_Complete",
     "lat": -63274.9609375,
     "lng": 41456.375,
-    "alt": 3214.8974609375
+    "alt": 3214.8974609375,
+    "scrapamount": 1
   },
   {
     "name": "Scrap181_9",
@@ -11220,7 +8171,8 @@
     "area": "DLC2_Complete",
     "lat": -63333.0078125,
     "lng": 41509.296875,
-    "alt": 3229.3212890625
+    "alt": 3229.3212890625,
+    "scrapamount": 1
   },
   {
     "name": "Scrap182_11",
@@ -11228,7 +8180,8 @@
     "area": "DLC2_Complete",
     "lat": -63193.3984375,
     "lng": 41429.015625,
-    "alt": 3250.84130859375
+    "alt": 3250.84130859375,
+    "scrapamount": 1
   },
   {
     "name": "Scrap183",
@@ -11236,7 +8189,8 @@
     "area": "DLC2_Complete",
     "lat": -63209.3984375,
     "lng": 41554.734375,
-    "alt": 3245.59521484375
+    "alt": 3245.59521484375,
+    "scrapamount": 1
   },
   {
     "name": "Scrap184",
@@ -11244,7 +8198,8 @@
     "area": "DLC2_Complete",
     "lat": -63285.7265625,
     "lng": 41590.0390625,
-    "alt": 3229.3212890625
+    "alt": 3229.3212890625,
+    "scrapamount": 1
   },
   {
     "name": "Scrap185",
@@ -11252,7 +8207,8 @@
     "area": "DLC2_Complete",
     "lat": -63103.2109375,
     "lng": 41371.7890625,
-    "alt": 3255.01708984375
+    "alt": 3255.01708984375,
+    "scrapamount": 1
   },
   {
     "name": "Scrap186",
@@ -11260,7 +8216,8 @@
     "area": "DLC2_Complete",
     "lat": -63108.6953125,
     "lng": 41487.875,
-    "alt": 3268.69287109375
+    "alt": 3268.69287109375,
+    "scrapamount": 1
   },
   {
     "name": "Scrap187",
@@ -11268,7 +8225,8 @@
     "area": "DLC2_Complete",
     "lat": -62930.6484375,
     "lng": 41192.03515625,
-    "alt": 3285.66748046875
+    "alt": 3285.66748046875,
+    "scrapamount": 1
   },
   {
     "name": "Scrap188",
@@ -11276,7 +8234,8 @@
     "area": "DLC2_Complete",
     "lat": -63014.7109375,
     "lng": 41316.88671875,
-    "alt": 3290.53271484375
+    "alt": 3290.53271484375,
+    "scrapamount": 1
   },
   {
     "name": "Scrap189",
@@ -11284,7 +8243,8 @@
     "area": "DLC2_Complete",
     "lat": -63029.7578125,
     "lng": 41430.6328125,
-    "alt": 3254.69091796875
+    "alt": 3254.69091796875,
+    "scrapamount": 1
   },
   {
     "name": "Scrap190",
@@ -11292,7 +8252,8 @@
     "area": "DLC2_Complete",
     "lat": -63441.5546875,
     "lng": 41629.234375,
-    "alt": 3235.7880859375
+    "alt": 3235.7880859375,
+    "scrapamount": 1
   },
   {
     "name": "Scrap_2",
@@ -11300,7 +8261,8 @@
     "area": "DLC2_Complete",
     "lat": -63052.5078125,
     "lng": 41790.4921875,
-    "alt": 3271.39208984375
+    "alt": 3271.39208984375,
+    "scrapamount": 1
   },
   {
     "name": "SecretFound10",
@@ -11847,87 +8809,6 @@
     "alt": 1026.4268798828125
   },
   {
-    "name": "MinecraftBrick_GEN_VARIABLE_ValveCarriable_C_CAT_424",
-    "type": "ValveCarriable_C",
-    "area": "DLC2_Complete",
-    "lat": -16200.4560546875,
-    "lng": 59717.27734375,
-    "alt": 3980.403564453125,
-    "variant": "red"
-  },
-  {
-    "name": "MinecraftBrick_GEN_VARIABLE_ValveCarriable_C_CAT_426",
-    "type": "ValveCarriable_C",
-    "area": "DLC2_Complete",
-    "lat": -12756.4208984375,
-    "lng": 65203.9609375,
-    "alt": 3278.85791015625,
-    "variant": "red"
-  },
-  {
-    "name": "MinecraftBrick_GEN_VARIABLE_ValveCarriable_C_CAT_428",
-    "type": "ValveCarriable_C",
-    "area": "DLC2_Complete",
-    "lat": -13849.5703125,
-    "lng": 61215.49609375,
-    "alt": 10265.8046875,
-    "variant": "red"
-  },
-  {
-    "name": "MinecraftBrick_GEN_VARIABLE_ValveCarriable_C_CAT_430",
-    "type": "ValveCarriable_C",
-    "area": "DLC2_Complete",
-    "lat": -10295.1064453125,
-    "lng": 57407.109375,
-    "alt": 726.0514526367188,
-    "variant": "red"
-  },
-  {
-    "name": "MinecraftBrick_GEN_VARIABLE_ValveCarriable_C_CAT_432",
-    "type": "ValveCarriable_C",
-    "area": "DLC2_Complete",
-    "lat": -11392.287109375,
-    "lng": 56651.16015625,
-    "alt": 1848.478271484375,
-    "variant": "red"
-  },
-  {
-    "name": "MinecraftBrick_GEN_VARIABLE_ValveCarriable_C_CAT_471",
-    "type": "ValveCarriable_C",
-    "area": "DLC2_Complete",
-    "lat": -7479.71240234375,
-    "lng": 61179.453125,
-    "alt": 3815.596923828125,
-    "variant": "red"
-  },
-  {
-    "name": "MinecraftBrick_GEN_VARIABLE_ValveCarriable_C_CAT_560",
-    "type": "ValveCarriable_C",
-    "area": "DLC2_Complete",
-    "lat": -6826.0,
-    "lng": 59955.0,
-    "alt": 4196.00048828125,
-    "variant": "red"
-  },
-  {
-    "name": "ValveCarriable4",
-    "type": "ValveCarriable_C",
-    "area": "DLC2_Complete",
-    "lat": -10631.638671875,
-    "lng": 62274.234375,
-    "alt": 443.014404296875,
-    "variant": "red"
-  },
-  {
-    "name": "ValveCarriable_1976",
-    "type": "ValveCarriable_C",
-    "area": "DLC2_Complete",
-    "lat": -15603.2978515625,
-    "lng": 61870.984375,
-    "alt": 430.830322265625,
-    "variant": "red"
-  },
-  {
     "name": "Chest2_2",
     "type": "Chest_C",
     "area": "DLC2_FinalBoss",
@@ -12040,60 +8921,6 @@
     "alt": 7185.64599609375
   },
   {
-    "name": "MinecraftBrick164",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_FinalBoss",
-    "lat": -13663.880859375,
-    "lng": 4344.3271484375,
-    "alt": 1780.5892333984375,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick166",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_FinalBoss",
-    "lat": -13662.6552734375,
-    "lng": 4343.66064453125,
-    "alt": 2080.590087890625,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick185",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_FinalBoss",
-    "lat": -13662.57421875,
-    "lng": 4343.3779296875,
-    "alt": 2380.589599609375,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick187",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_FinalBoss",
-    "lat": -13772.7099609375,
-    "lng": 4141.01953125,
-    "alt": 1829.6612548828125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick189",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_FinalBoss",
-    "lat": -13759.673828125,
-    "lng": 4127.5078125,
-    "alt": 2129.65869140625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick230",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_FinalBoss",
-    "lat": -13730.0546875,
-    "lng": 4096.76611328125,
-    "alt": 2429.64697265625,
-    "variant": "stone"
-  },
-  {
     "name": "BossArea_BaronPipe1",
     "type": "PipesystemNew_C",
     "area": "DLC2_FinalBoss",
@@ -12189,7 +9016,8 @@
     "area": "DLC2_Area0",
     "lat": -283768.65625,
     "lng": 263.05218505859375,
-    "alt": 9785.265625
+    "alt": 9785.265625,
+    "cost": 1200
   },
   {
     "name": "Chest2_2",
@@ -12278,51 +9106,6 @@
       "z": 20986.0
     },
     "notsaved": true
-  },
-  {
-    "name": "ValveCarriable_288",
-    "type": "ValveCarriable_C",
-    "area": "DLC2_Area0",
-    "lat": -290017.5,
-    "lng": -2067.0,
-    "alt": 10764.1484375,
-    "variant": "red"
-  },
-  {
-    "name": "ValveCarriable_Orange",
-    "type": "ValveCarriable_C",
-    "area": "DLC2_Area0",
-    "lat": -286630.25,
-    "lng": 1408.9046630859375,
-    "alt": 9887.1015625,
-    "variant": "red"
-  },
-  {
-    "name": "ValveCarriable_Purple",
-    "type": "ValveCarriable_C",
-    "area": "DLC2_Area0",
-    "lat": -284053.03125,
-    "lng": 15.205077171325684,
-    "alt": 9785.2578125,
-    "variant": "blue"
-  },
-  {
-    "name": "ValveSlot2_2",
-    "type": "ValveSlot_C",
-    "area": "DLC2_Area0",
-    "lat": -290014.9375,
-    "lng": -2064.678955078125,
-    "alt": 10688.0,
-    "variant": "orange"
-  },
-  {
-    "name": "ValveSlot_2",
-    "type": "ValveSlot_C",
-    "area": "DLC2_Area0",
-    "lat": -284052.21875,
-    "lng": 14.705077171325684,
-    "alt": 9785.34375,
-    "variant": "red"
   },
   {
     "name": "Bones_2",
@@ -13598,32 +10381,14 @@
     "alt": 672.199951171875
   },
   {
-    "name": "MinecraftBrick100",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 808.479248046875,
-    "lng": 8394.4326171875,
-    "alt": 600.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick101_2",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": -32.317893981933594,
-    "lng": -851.3427734375,
-    "alt": 768.17529296875,
-    "variant": "stone"
-  },
-  {
     "name": "MinecraftBrick102",
     "type": "Coin:MinecraftBrick_C",
     "area": "DLC2_SecretLavaArea",
     "lat": 1006.221435546875,
     "lng": 8394.4326171875,
     "alt": 400.0,
-    "variant": "gold",
-    "coins": 3
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick103",
@@ -13632,8 +10397,8 @@
     "lat": 1006.7858276367188,
     "lng": 8194.4326171875,
     "alt": 400.0,
-    "variant": "gold",
-    "coins": 3
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick104",
@@ -13642,8 +10407,8 @@
     "lat": 6360.9921875,
     "lng": -35.20418167114258,
     "alt": 32.784423828125,
-    "variant": "gold",
-    "coins": 3
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick105",
@@ -13652,8 +10417,8 @@
     "lat": 6112.279296875,
     "lng": -35.20167922973633,
     "alt": -20.786865234375,
-    "variant": "gold",
-    "coins": 3
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick106",
@@ -13662,8 +10427,8 @@
     "lat": 6360.9921875,
     "lng": 214.7623748779297,
     "alt": -56.501220703125,
-    "variant": "gold",
-    "coins": 3
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick107",
@@ -13672,8 +10437,8 @@
     "lat": 6112.279296875,
     "lng": 214.64524841308594,
     "alt": -38.64404296875,
-    "variant": "gold",
-    "coins": 3
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick108_7",
@@ -13682,8 +10447,8 @@
     "lat": -32.317893981933594,
     "lng": -851.3427734375,
     "alt": 968.17529296875,
-    "variant": "gold",
-    "coins": 3
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick109",
@@ -13696,23 +10461,14 @@
     "variant": "gold"
   },
   {
-    "name": "MinecraftBrick10_15",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 808.479248046875,
-    "lng": 8394.4326171875,
-    "alt": 200.0,
-    "variant": "stone"
-  },
-  {
     "name": "MinecraftBrick11",
     "type": "Coin:MinecraftBrick_C",
     "area": "DLC2_SecretLavaArea",
     "lat": 808.479248046875,
     "lng": 8394.4326171875,
     "alt": 400.0,
-    "variant": "gold",
-    "coins": 3
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick110",
@@ -13735,23 +10491,14 @@
     "variant": "gold"
   },
   {
-    "name": "MinecraftBrick112",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 9350.00390625,
-    "lng": 715.4989624023438,
-    "alt": 1160.0,
-    "variant": "stone"
-  },
-  {
     "name": "MinecraftBrick113",
     "type": "Coin:MinecraftBrick_C",
     "area": "DLC2_SecretLavaArea",
     "lat": 6612.89404296875,
     "lng": -35.20887756347656,
     "alt": -128.727783203125,
-    "variant": "gold",
-    "coins": 3
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick114",
@@ -13760,35 +10507,8 @@
     "lat": 6612.93896484375,
     "lng": -287.6285705566406,
     "alt": -199.719482421875,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick115",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 9089.2060546875,
-    "lng": 785.38330078125,
-    "alt": 1576.8359375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick116",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 9036.5078125,
-    "lng": -183.44456481933594,
-    "alt": 1390.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick117",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 8086.900390625,
-    "lng": 6228.39453125,
-    "alt": -2448.0,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick12",
@@ -13797,593 +10517,8 @@
     "lat": 809.0436401367188,
     "lng": 8194.4326171875,
     "alt": 400.0,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick13",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 809.0436401367188,
-    "lng": 8194.4326171875,
-    "alt": 200.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick14",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6590.96826171875,
-    "lng": -1036.774169921875,
-    "alt": 422.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick15",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6840.99365234375,
-    "lng": -1031.9373779296875,
-    "alt": 440.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick16",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6590.89013671875,
-    "lng": -1284.3804931640625,
-    "alt": 440.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick17",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6840.91943359375,
-    "lng": -1281.599853515625,
-    "alt": 422.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick18",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6590.88818359375,
-    "lng": -1533.368408203125,
-    "alt": 422.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick19",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6840.89599609375,
-    "lng": -1531.4810791015625,
-    "alt": 458.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick20",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6590.5576171875,
-    "lng": -1781.9954833984375,
-    "alt": 404.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick21",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6840.5888671875,
-    "lng": -1781.0157470703125,
-    "alt": 440.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick22",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6590.5654296875,
-    "lng": -2031.0078125,
-    "alt": 440.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick23_36",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6340.880859375,
-    "lng": -1286.5533447265625,
-    "alt": 458.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick24",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6340.900390625,
-    "lng": -1536.30859375,
-    "alt": 404.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick25",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6340.57373046875,
-    "lng": -1787.1046142578125,
-    "alt": 422.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick26",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6340.57373046875,
-    "lng": -2035.93603515625,
-    "alt": 422.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick27",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6092.17578125,
-    "lng": -1286.46435546875,
-    "alt": 440.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick28",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6092.158203125,
-    "lng": -1536.2264404296875,
-    "alt": 440.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick29",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6091.83935546875,
-    "lng": -1786.079345703125,
-    "alt": 422.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick291_2",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": -7396.10546875,
-    "lng": -2591.569091796875,
-    "alt": 3720.53759765625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick2_5",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6590.57763671875,
-    "lng": -787.8240966796875,
-    "alt": 440.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick3",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6840.57373046875,
-    "lng": -782.8720092773438,
-    "alt": 422.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick31",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6340.986328125,
-    "lng": -1036.888427734375,
-    "alt": 440.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick313",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": -7396.10546875,
-    "lng": -2991.569091796875,
-    "alt": 3720.53759765625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick32_8",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6864.51708984375,
-    "lng": -534.3471069335938,
-    "alt": 453.287841796875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick33",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6612.96435546875,
-    "lng": -535.4285888671875,
-    "alt": 436.35595703125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick34_38",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6612.97998046875,
-    "lng": -536.1961669921875,
-    "alt": 184.35595703125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick35_41",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6864.49560546875,
-    "lng": -536.0531616210938,
-    "alt": 201.287841796875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick36_45",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6612.99560546875,
-    "lng": -285.4269104003906,
-    "alt": 305.213134765625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick37_47",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6864.50341796875,
-    "lng": -285.5136413574219,
-    "alt": 250.71630859375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick38_51",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6612.98779296875,
-    "lng": -35.23988342285156,
-    "alt": 122.0703125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick39_53",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6864.50537109375,
-    "lng": -35.47187805175781,
-    "alt": 67.573486328125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick40",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 7115.36865234375,
-    "lng": -533.629150390625,
-    "alt": 435.520263671875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick41_57",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 7115.36474609375,
-    "lng": -535.33740234375,
-    "alt": 183.520263671875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick428",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 9456.103515625,
-    "lng": 8020.4892578125,
-    "alt": 3687.0341796875,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick429",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 9166.32421875,
-    "lng": 7942.8408203125,
-    "alt": 3987.0341796875,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick42_83",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6590.96826171875,
-    "lng": -1036.774169921875,
-    "alt": 169.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick430",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 9456.103515625,
-    "lng": 8020.4892578125,
-    "alt": 3987.0341796875,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick43_52",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 7115.37646484375,
-    "lng": -33.84962463378906,
-    "alt": 34.31787109375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick44_69",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6612.99560546875,
-    "lng": -285.2042541503906,
-    "alt": 52.213134765625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick45_70",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 7115.37451171875,
-    "lng": -283.847412109375,
-    "alt": 105.889404296875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick46_71",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6864.50341796875,
-    "lng": -285.2140808105469,
-    "alt": -2.28369140625,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick47_84",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6840.99365234375,
-    "lng": -1031.9373779296875,
-    "alt": 187.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick48_85",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6590.89013671875,
-    "lng": -1284.3804931640625,
-    "alt": 187.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick49_86",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6840.91943359375,
-    "lng": -1281.599853515625,
-    "alt": 169.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick4_10",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": -2194.51220703125,
-    "lng": 7659.328125,
-    "alt": 988.81201171875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick50_87",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6590.88818359375,
-    "lng": -1533.368408203125,
-    "alt": 169.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick51",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 2931.949951171875,
-    "lng": -3762.46826171875,
-    "alt": 458.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick55",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 2931.957763671875,
-    "lng": -4012.690673828125,
-    "alt": 404.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick56",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 2931.949951171875,
-    "lng": -4263.923828125,
-    "alt": 422.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick57",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 2931.96923828125,
-    "lng": -4512.61669921875,
-    "alt": 422.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick58",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 2681.946044921875,
-    "lng": -3762.80908203125,
-    "alt": 440.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick59",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 2681.949951171875,
-    "lng": -4012.782958984375,
-    "alt": 440.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick5_5",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": -2479.64990234375,
-    "lng": 7764.189453125,
-    "alt": 712.50732421875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick6",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6590.57763671875,
-    "lng": -787.8240966796875,
-    "alt": 187.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick60",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 2681.949951171875,
-    "lng": -4262.93017578125,
-    "alt": 422.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick61",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 2681.94580078125,
-    "lng": -4512.5888671875,
-    "alt": 404.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick62_8",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 2931.9423828125,
-    "lng": -2760.75048828125,
-    "alt": 422.28564453125,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick63",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 2931.9345703125,
-    "lng": -3010.67919921875,
-    "alt": 404.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick64",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 2932.1064453125,
-    "lng": -3260.9013671875,
-    "alt": 422.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick65",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 2931.789794921875,
-    "lng": -3509.964111328125,
-    "alt": 404.142822265625,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick66",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 2681.9267578125,
-    "lng": -2760.77587890625,
-    "alt": 440.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick67",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 2681.9111328125,
-    "lng": -3010.60888671875,
-    "alt": 422.142822265625,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick68",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 2682.0908203125,
-    "lng": -3259.9375,
-    "alt": 439.857177734375,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick69",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 2681.750732421875,
-    "lng": -3510.041259765625,
-    "alt": 421.857177734375,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick7",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6840.57373046875,
-    "lng": -782.8720092773438,
-    "alt": 169.0,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick70",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 2881.949951171875,
-    "lng": -3762.46826171875,
-    "alt": 205.99951171875,
-    "variant": "obsidian"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick74",
@@ -14392,53 +10527,8 @@
     "lat": 2631.942138671875,
     "lng": -3762.59033203125,
     "alt": 187.99951171875,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick75",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 2631.934326171875,
-    "lng": -4012.573974609375,
-    "alt": 187.99951171875,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick78",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 2881.9267578125,
-    "lng": -2760.54736328125,
-    "alt": 170.28515625,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick79",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 2881.9580078125,
-    "lng": -3010.39453125,
-    "alt": 151.99951171875,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick8",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": -2194.51220703125,
-    "lng": 7659.328125,
-    "alt": 1188.81201171875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick80",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 2882.1142578125,
-    "lng": -3260.7080078125,
-    "alt": 169.99951171875,
-    "variant": "obsidian"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick81",
@@ -14447,8 +10537,8 @@
     "lat": 2881.781982421875,
     "lng": -3509.760986328125,
     "alt": 152.142333984375,
-    "variant": "gold",
-    "coins": 3
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick84",
@@ -14457,35 +10547,8 @@
     "lat": 2632.0908203125,
     "lng": -3259.7578125,
     "alt": 187.856689453125,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick85",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 2631.766357421875,
-    "lng": -3509.851806640625,
-    "alt": 169.856689453125,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick87",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 8106.900390625,
-    "lng": 5695.583984375,
-    "alt": -2715.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick88",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 8089.900390625,
-    "lng": 5962.083984375,
-    "alt": -2715.0,
-    "variant": "stone"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "MinecraftBrick89",
@@ -14494,168 +10557,8 @@
     "lat": 8107.900390625,
     "lng": 6228.39453125,
     "alt": -2715.0,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick9",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": -2194.51220703125,
-    "lng": 7659.328125,
-    "alt": 1388.81201171875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick90",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 8123.900390625,
-    "lng": 5695.583984375,
-    "alt": -2448.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick91",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 8105.900390625,
-    "lng": 5962.083984375,
-    "alt": -2448.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick92",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": -2479.64990234375,
-    "lng": 7764.189453125,
-    "alt": 912.50732421875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick93",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 9166.32421875,
-    "lng": 7942.8408203125,
-    "alt": 3687.0341796875,
-    "variant": "obsidian"
-  },
-  {
-    "name": "MinecraftBrick94",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": -2479.64990234375,
-    "lng": 7764.189453125,
-    "alt": 1112.50732421875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick95_2",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 8963.63671875,
-    "lng": 819.0269165039062,
-    "alt": 1160.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick96",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 809.0445556640625,
-    "lng": 7994.4326171875,
-    "alt": 200.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick97",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 809.0445556640625,
-    "lng": 7994.4326171875,
-    "alt": 400.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick98",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 809.0445556640625,
-    "lng": 7994.4326171875,
-    "alt": 600.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick99",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 809.0436401367188,
-    "lng": 8194.4326171875,
-    "alt": 600.0,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick_5",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": -2194.51220703125,
-    "lng": 7659.328125,
-    "alt": 788.81201171875,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick_AttachedToStalagmite1",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 5429.19140625,
-    "lng": -10158.8837890625,
-    "alt": 1717.318359375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick_AttachedToStalagmite2",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 5429.19140625,
-    "lng": -10299.986328125,
-    "alt": 1997.17236328125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick_AttachedToStalagmite3",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 5283.599609375,
-    "lng": -9589.7861328125,
-    "alt": 1717.318359375,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrick_AttachedToStalagmite4",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 5406.64697265625,
-    "lng": -9518.91796875,
-    "alt": 1997.17236328125,
-    "variant": "stone"
-  },
-  {
-    "name": "MinecraftBrickRespawnable10",
-    "type": "MinecraftBrickRespawnable_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6033.103515625,
-    "lng": -750.179931640625,
-    "alt": -65.0
-  },
-  {
-    "name": "MinecraftBrickRespawnable2_5",
-    "type": "MinecraftBrickRespawnable_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 6033.103515625,
-    "lng": -750.179931640625,
-    "alt": 265.0
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "PipesystemNew39",
@@ -14924,24 +10827,6 @@
     "lat": -6221.77294921875,
     "lng": -1381.02294921875,
     "alt": 2478.5673828125
-  },
-  {
-    "name": "ValveCarriable_2",
-    "type": "ValveCarriable_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 4967.49951171875,
-    "lng": 8333.4755859375,
-    "alt": -7631.91162109375,
-    "variant": "green"
-  },
-  {
-    "name": "ValveSlot_2",
-    "type": "ValveSlot_C",
-    "area": "DLC2_SecretLavaArea",
-    "lat": 4922.91259765625,
-    "lng": 8243.8955078125,
-    "alt": -7577.89404296875,
-    "variant": "green"
   },
   {
     "name": "BP_EngagementCup_Base12_37",
@@ -15948,9 +11833,9 @@
     "lng": -51595.203125,
     "alt": 5279.142578125,
     "target": {
-      "x": -50989.20418214798,
-      "y": -42940.384558200836,
-      "z": 5273.056883209229
+      "x": -47879.17187166214,
+      "y": -47452.04917764664,
+      "z": 5405.215137603787
     },
     "linetype": "jumppad",
     "variant": "blue"
@@ -15963,9 +11848,9 @@
     "lng": -47201.06640625,
     "alt": 11117.380859375,
     "target": {
-      "x": -47419.038460731506,
-      "y": -39061.84918618202,
-      "z": 11348.466173575593
+      "x": -48591.90553295612,
+      "y": -42002.640394479036,
+      "z": 12438.627381672422
     },
     "linetype": "jumppad",
     "variant": "blue",
@@ -15980,41 +11865,14 @@
     "alt": 5663.71484375
   },
   {
-    "name": "MinecraftBrick3",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_PostRainbow",
-    "lat": -39991.55078125,
-    "lng": -61156.7265625,
-    "alt": 11472.673828125,
-    "variant": "diamond"
-  },
-  {
-    "name": "MinecraftBrick4",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_PostRainbow",
-    "lat": -39717.59375,
-    "lng": -61077.0703125,
-    "alt": 11472.673828125,
-    "variant": "metal"
-  },
-  {
     "name": "MinecraftBrick5",
     "type": "Coin:MinecraftBrick_C",
     "area": "DLC2_PostRainbow",
     "lat": -39443.5390625,
     "lng": -60997.38671875,
     "alt": 11472.673828125,
-    "variant": "gold",
-    "coins": 3
-  },
-  {
-    "name": "MinecraftBrick_2",
-    "type": "MinecraftBrick_C",
-    "area": "DLC2_PostRainbow",
-    "lat": -40265.375,
-    "lng": -61236.3515625,
-    "alt": 11472.673828125,
-    "variant": "metal"
+    "coins": 3,
+    "variant": "gold"
   },
   {
     "name": "PipesystemNew2",
@@ -16117,104 +11975,6 @@
     "alt": 9932.017578125
   },
   {
-    "name": "RingColorerFlower10",
-    "type": "RingColorerFlower_C",
-    "area": "DLC2_PostRainbow",
-    "lat": -43547.96875,
-    "lng": -58621.5,
-    "alt": 9740.7421875,
-    "variant": "red"
-  },
-  {
-    "name": "RingColorerFlower11",
-    "type": "RingColorerFlower_C",
-    "area": "DLC2_PostRainbow",
-    "lat": -43518.26953125,
-    "lng": -58419.17578125,
-    "alt": 9730.0888671875,
-    "variant": "red"
-  },
-  {
-    "name": "RingColorerFlower2",
-    "type": "RingColorerFlower_C",
-    "area": "DLC2_PostRainbow",
-    "lat": -38903.859375,
-    "lng": -56690.625,
-    "alt": 9887.2294921875,
-    "variant": "purple"
-  },
-  {
-    "name": "RingColorerFlower3",
-    "type": "RingColorerFlower_C",
-    "area": "DLC2_PostRainbow",
-    "lat": -38794.46875,
-    "lng": -57775.35546875,
-    "alt": 9862.705078125,
-    "variant": "orange"
-  },
-  {
-    "name": "RingColorerFlower4",
-    "type": "RingColorerFlower_C",
-    "area": "DLC2_PostRainbow",
-    "lat": -37569.55859375,
-    "lng": -57933.0859375,
-    "alt": 9860.5810546875,
-    "variant": "yellow"
-  },
-  {
-    "name": "RingColorerFlower5",
-    "type": "RingColorerFlower_C",
-    "area": "DLC2_PostRainbow",
-    "lat": -37543.046875,
-    "lng": -55380.59765625,
-    "alt": 9856.4697265625,
-    "variant": "blue"
-  },
-  {
-    "name": "RingColorerFlower6",
-    "type": "RingColorerFlower_C",
-    "area": "DLC2_PostRainbow",
-    "lat": -37553.1640625,
-    "lng": -53904.25,
-    "alt": 9857.501953125,
-    "variant": "yellow"
-  },
-  {
-    "name": "RingColorerFlower7",
-    "type": "RingColorerFlower_C",
-    "area": "DLC2_PostRainbow",
-    "lat": -40202.74609375,
-    "lng": -54598.94140625,
-    "alt": 9777.240234375,
-    "variant": "purple"
-  },
-  {
-    "name": "RingColorerFlower8",
-    "type": "RingColorerFlower_C",
-    "area": "DLC2_PostRainbow",
-    "lat": -40587.45703125,
-    "lng": -57391.234375,
-    "alt": 9798.3232421875
-  },
-  {
-    "name": "RingColorerFlower9_12",
-    "type": "RingColorerFlower_C",
-    "area": "DLC2_PostRainbow",
-    "lat": -43668.85546875,
-    "lng": -58441.9296875,
-    "alt": 9727.353515625,
-    "variant": "red"
-  },
-  {
-    "name": "RingColorerFlower_2",
-    "type": "RingColorerFlower_C",
-    "area": "DLC2_PostRainbow",
-    "lat": -39627.125,
-    "lng": -56385.61328125,
-    "alt": 9849.212890625,
-    "variant": "yellow"
-  },
-  {
     "name": "SecretFound2_4",
     "type": "SecretFound_C",
     "area": "DLC2_PostRainbow",
@@ -16276,7 +12036,8 @@
     "area": "DLC2_Area0_Below",
     "lat": 23538.671875,
     "lng": 10969.87890625,
-    "alt": 21214.2578125
+    "alt": 21214.2578125,
+    "cost": 0
   },
   {
     "name": "Coin703_2",
@@ -16347,15 +12108,6 @@
       "z": 20986.0
     },
     "notsaved": true
-  },
-  {
-    "name": "MinecraftBrick_GEN_VARIABLE_ValveCarriable_C_CAT_0",
-    "type": "ValveCarriable_C",
-    "area": "DLC2_Area0_Below",
-    "lat": 25024.05078125,
-    "lng": 15319.908203125,
-    "alt": 19551.0,
-    "variant": "red"
   },
   {
     "name": "SecretFound_2",

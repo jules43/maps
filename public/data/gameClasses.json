@@ -1341,7 +1341,7 @@
   "Jumppad_C": {
     "friendly": "Jumppad",
     "icon": "jumppad:v",
-    "layer": "dev",
+    "layer": "keep",
     "nospoiler": null,
     "lines": "dev",
     "friendly_key": "",
@@ -1736,7 +1736,7 @@
   "Pipesystem_C": {
     "friendly": "Pipe",
     "icon": "pipe",
-    "layer": "dev",
+    "layer": "keep",
     "nospoiler": null,
     "lines": "dev",
     "friendly_key": "",
@@ -1758,7 +1758,7 @@
   "PipesystemNew_C": {
     "friendly": "Pipe",
     "icon": "pipe",
-    "layer": "dev",
+    "layer": "keep",
     "nospoiler": null,
     "lines": "dev"
   },
@@ -1776,7 +1776,7 @@
   "PipesystemNewDLC_C": {
     "friendly": "Pipe",
     "icon": "pipe",
-    "layer": "dev",
+    "layer": "keep",
     "nospoiler": null,
     "lines": "dev"
   },

@@ -61,7 +61,8 @@
     "area": "Map",
     "lat": 54037.265625,
     "lng": -56863.4921875,
-    "alt": 1341.44189453125
+    "alt": 1341.44189453125,
+    "variant": "red"
   },
   {
     "name": "BarrelClosed17",
@@ -69,7 +70,8 @@
     "area": "Map",
     "lat": -11201.685546875,
     "lng": -23097.666015625,
-    "alt": -1746.656005859375
+    "alt": -1746.656005859375,
+    "variant": "red"
   },
   {
     "name": "BarrelRed2",
@@ -77,7 +79,8 @@
     "area": "Map",
     "lat": -33470.30078125,
     "lng": -37215.734375,
-    "alt": 335.3062438964844
+    "alt": 335.3062438964844,
+    "variant": "red"
   },
   {
     "name": "BarrelRed3",
@@ -85,7 +88,8 @@
     "area": "Map",
     "lat": -20916.890625,
     "lng": -16451.123046875,
-    "alt": 517.5936889648438
+    "alt": 517.5936889648438,
+    "variant": "red"
   },
   {
     "name": "BarrelRed4",
@@ -101,7 +105,8 @@
     "area": "Map",
     "lat": -14664.24609375,
     "lng": -29208.169921875,
-    "alt": -2286.183349609375
+    "alt": -2286.183349609375,
+    "variant": "red"
   },
   {
     "name": "BarrelRed6",
@@ -109,7 +114,8 @@
     "area": "Map",
     "lat": -15172.64453125,
     "lng": -22681.8984375,
-    "alt": -649.5325317382812
+    "alt": -649.5325317382812,
+    "variant": "red"
   },
   {
     "name": "BarrelRed_2",
@@ -117,7 +123,8 @@
     "area": "Map",
     "lat": -13723.423828125,
     "lng": -31457.9765625,
-    "alt": -39.38901901245117
+    "alt": -39.38901901245117,
+    "variant": "red"
   },
   {
     "name": "Battery2",
@@ -166,6 +173,7 @@
     "lat": -45276.13671875,
     "lng": -49419.4765625,
     "alt": 4421.8828125,
+    "price_type": 0,
     "cost": 20
   },
   {
@@ -210,7 +218,8 @@
     "area": "Map",
     "lat": -33901.05859375,
     "lng": -14.856106758117676,
-    "alt": -208.23614501953125
+    "alt": -208.23614501953125,
+    "cost": 36
   },
   {
     "name": "BuyForceBeamGold",
@@ -11786,7 +11795,9 @@
     "area": "Map",
     "lat": 3312.6201171875,
     "lng": -5619.06591796875,
-    "alt": -1384.2301025390625
+    "alt": -1384.2301025390625,
+    "spawns": "BP_DoubleHealthLoot_C",
+    "variant": "red"
   },
   {
     "name": "Juicer3",
@@ -11794,7 +11805,9 @@
     "area": "Map",
     "lat": -36991.19921875,
     "lng": -4023.167236328125,
-    "alt": 127.11111450195312
+    "alt": 127.11111450195312,
+    "spawns": "_BuyHealth+10_C",
+    "variant": "green"
   },
   {
     "name": "Juicer_286",
@@ -11802,7 +11815,9 @@
     "area": "Map",
     "lat": 55691.06640625,
     "lng": -63200.2578125,
-    "alt": 455.5135803222656
+    "alt": 455.5135803222656,
+    "spawns": "BP_A3_StrengthQuest_C",
+    "variant": "yellow"
   },
   {
     "name": "Jumppad10",
@@ -11812,9 +11827,9 @@
     "lng": -40441.78125,
     "alt": -1887.727294921875,
     "target": {
-      "x": -39338.69236564636,
+      "x": -37083.01701879501,
       "y": 43153.69140625,
-      "z": -1924.7456597305281
+      "z": -218.2767198200134
     },
     "linetype": "jumppad",
     "variant": "red",
@@ -11894,9 +11909,9 @@
     "lng": -24982.04296875,
     "alt": -1269.9053955078125,
     "target": {
-      "x": -24982.0393722828,
-      "y": -12672.365737199783,
-      "z": -1272.979344670105
+      "x": -24982.021696963006,
+      "y": -16395.712315678596,
+      "z": -1175.2029301872205
     },
     "linetype": "jumppad",
     "variant": "red",
@@ -11971,9 +11986,9 @@
     "lng": 67418.7734375,
     "alt": 5481.66943359375,
     "target": {
-      "x": 68294.24131011963,
-      "y": -8349.079652130604,
-      "z": 5444.113209551239
+      "x": 72898.20888137817,
+      "y": -4934.528046995401,
+      "z": 5263.0422380794735
     },
     "linetype": "jumppad",
     "variant": "red",
@@ -11988,8 +12003,8 @@
     "alt": 1237.910888671875,
     "target": {
       "x": -47824.046875,
-      "y": 16833.087373057668,
-      "z": 1207.6530797208163
+      "y": 16833.08737305765,
+      "z": 1232.7900797208165
     },
     "linetype": "jumppad",
     "variant": "red",
@@ -12101,9 +12116,9 @@
     "lng": -39562.5390625,
     "alt": 1590.470458984375,
     "target": {
-      "x": -39562.53825262371,
+      "x": -39562.53825262378,
       "y": -28976.1171875,
-      "z": 1560.212948056528
+      "z": 1585.3499480565279
     },
     "linetype": "jumppad",
     "variant": "red",
@@ -12180,9 +12195,9 @@
     "lng": -52705.58203125,
     "alt": -1452.3626708984375,
     "target": {
-      "x": -52282.36872339249,
-      "y": -42244.36073490977,
-      "z": -1345.605628297329
+      "x": -47199.49052596092,
+      "y": -40915.84207089245,
+      "z": -1618.4345095064546
     },
     "linetype": "jumppad",
     "variant": "red"
@@ -12453,7 +12468,7 @@
     "target": {
       "x": 3068.1103515625,
       "y": -27533.306640625,
-      "z": 564.6428630859444
+      "z": 567.6260630860025
     },
     "linetype": "jumppad",
     "variant": "red",
@@ -12499,9 +12514,9 @@
     "lng": 5950.91748046875,
     "alt": -1057.48046875,
     "target": {
-      "x": 4975.917015552521,
+      "x": 1550.915382385254,
       "y": 27081.2734375,
-      "z": -1147.872194138523
+      "z": 779.4250987274436
     },
     "linetype": "jumppad",
     "variant": "red"
@@ -12562,9 +12577,9 @@
     "lng": -12513.8740234375,
     "alt": -2019.517822265625,
     "target": {
-      "x": -13271.587266206741,
+      "x": -15594.475843787193,
       "y": 41574.59765625,
-      "z": -2024.3995039421034
+      "z": 576.2328865749596
     },
     "linetype": "jumppad",
     "variant": "red"
@@ -12724,7 +12739,7 @@
     "target": {
       "x": 13047.362910628319,
       "y": 17961.317520737648,
-      "z": 39.74255587271047
+      "z": 64.87955587271048
     },
     "linetype": "jumppad",
     "variant": "red",
@@ -12740,7 +12755,7 @@
     "target": {
       "x": 11500.403351664543,
       "y": 14599.356981873512,
-      "z": 39.7434857495482
+      "z": 64.88048574954817
     },
     "linetype": "jumppad",
     "variant": "red",
@@ -13215,7 +13230,7 @@
     "target": {
       "x": -47961.94921875,
       "y": 13527.2421875,
-      "z": 1207.6529605115268
+      "z": 1232.789960511527
     },
     "linetype": "jumppad",
     "variant": "red",
@@ -13486,7 +13501,7 @@
   },
   {
     "name": "Brick1682",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": -44952.29296875,
     "lng": -43906.19921875,
@@ -13494,7 +13509,7 @@
   },
   {
     "name": "Brick2137",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": -46285.02734375,
     "lng": -53149.21875,
@@ -13502,7 +13517,7 @@
   },
   {
     "name": "MinecraftBrick10",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 58365.5078125,
     "lng": -52712.234375,
@@ -13510,7 +13525,7 @@
   },
   {
     "name": "MinecraftBrick11",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 57983.01953125,
     "lng": -52713.4453125,
@@ -13518,7 +13533,7 @@
   },
   {
     "name": "MinecraftBrick12",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 57252.2109375,
     "lng": -52713.4453125,
@@ -13526,7 +13541,7 @@
   },
   {
     "name": "MinecraftBrick13",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 57983.01953125,
     "lng": -52713.4453125,
@@ -13534,7 +13549,7 @@
   },
   {
     "name": "MinecraftBrick14_13312",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 37024.75390625,
     "lng": -52831.62109375,
@@ -13542,7 +13557,7 @@
   },
   {
     "name": "MinecraftBrick15",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 37024.75390625,
     "lng": -52831.62109375,
@@ -13550,7 +13565,7 @@
   },
   {
     "name": "MinecraftBrick16_2",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": -24617.330078125,
     "lng": 15601.111328125,
@@ -13558,7 +13573,7 @@
   },
   {
     "name": "MinecraftBrick17",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 62476.5234375,
     "lng": -64273.625,
@@ -13566,7 +13581,7 @@
   },
   {
     "name": "MinecraftBrick19",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": -41000.3984375,
     "lng": 9122.23046875,
@@ -13574,7 +13589,7 @@
   },
   {
     "name": "MinecraftBrick2",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 58830.97265625,
     "lng": -64971.296875,
@@ -13582,7 +13597,7 @@
   },
   {
     "name": "MinecraftBrick20",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 31891.908203125,
     "lng": 26055.576171875,
@@ -13590,7 +13605,7 @@
   },
   {
     "name": "MinecraftBrick21",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 30700.03125,
     "lng": 30261.8359375,
@@ -13598,7 +13613,7 @@
   },
   {
     "name": "MinecraftBrick22",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 33301.90625,
     "lng": 27666.576171875,
@@ -13606,7 +13621,7 @@
   },
   {
     "name": "MinecraftBrick23",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 19755.357421875,
     "lng": 20021.546875,
@@ -13614,7 +13629,7 @@
   },
   {
     "name": "MinecraftBrick24",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 20415.84765625,
     "lng": 21983.9609375,
@@ -13622,7 +13637,7 @@
   },
   {
     "name": "MinecraftBrick25",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 18781.533203125,
     "lng": 22031.58984375,
@@ -13630,7 +13645,7 @@
   },
   {
     "name": "MinecraftBrick26",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": -17912.61328125,
     "lng": 44672.83984375,
@@ -13638,7 +13653,7 @@
   },
   {
     "name": "MinecraftBrick27",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": -17912.61328125,
     "lng": 44806.640625,
@@ -13646,7 +13661,7 @@
   },
   {
     "name": "MinecraftBrick28_6",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 38115.26171875,
     "lng": 64615.73046875,
@@ -13654,7 +13669,7 @@
   },
   {
     "name": "MinecraftBrick29",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 37677.12109375,
     "lng": 64615.68359375,
@@ -13662,7 +13677,7 @@
   },
   {
     "name": "MinecraftBrick3",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 58350.3359375,
     "lng": -64971.296875,
@@ -13670,7 +13685,7 @@
   },
   {
     "name": "MinecraftBrick30",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 28271.23828125,
     "lng": 65994.3984375,
@@ -13678,7 +13693,7 @@
   },
   {
     "name": "MinecraftBrick31",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 32839.94921875,
     "lng": 66529.71875,
@@ -13686,7 +13701,7 @@
   },
   {
     "name": "MinecraftBrick32",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 12948.943359375,
     "lng": 49942.25390625,
@@ -13694,7 +13709,7 @@
   },
   {
     "name": "MinecraftBrick33_13",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 32383.4375,
     "lng": 72933.0390625,
@@ -13702,7 +13717,7 @@
   },
   {
     "name": "MinecraftBrick34",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 21790.904296875,
     "lng": 22172.79296875,
@@ -13710,7 +13725,7 @@
   },
   {
     "name": "MinecraftBrick35",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 28508.9296875,
     "lng": 65645.875,
@@ -13718,7 +13733,7 @@
   },
   {
     "name": "MinecraftBrick36_2",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 11981.8173828125,
     "lng": 22541.595703125,
@@ -13726,7 +13741,7 @@
   },
   {
     "name": "MinecraftBrick37",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 55039.2578125,
     "lng": -34180.29296875,
@@ -13734,7 +13749,7 @@
   },
   {
     "name": "MinecraftBrick38",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 54122.73046875,
     "lng": -34180.29296875,
@@ -13742,7 +13757,7 @@
   },
   {
     "name": "MinecraftBrick39",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 53223.16015625,
     "lng": -34180.29296875,
@@ -13750,7 +13765,7 @@
   },
   {
     "name": "MinecraftBrick40",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 55039.2578125,
     "lng": -34180.29296875,
@@ -13758,7 +13773,7 @@
   },
   {
     "name": "MinecraftBrick41",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 54122.73046875,
     "lng": -34180.29296875,
@@ -13766,7 +13781,7 @@
   },
   {
     "name": "MinecraftBrick42",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 53223.16015625,
     "lng": -34180.29296875,
@@ -13774,7 +13789,7 @@
   },
   {
     "name": "MinecraftBrick43",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 54240.07421875,
     "lng": -35791.578125,
@@ -13782,7 +13797,7 @@
   },
   {
     "name": "MinecraftBrick44",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 54240.07421875,
     "lng": -35791.578125,
@@ -13790,7 +13805,7 @@
   },
   {
     "name": "MinecraftBrick45",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 54240.07421875,
     "lng": -35791.578125,
@@ -13798,7 +13813,7 @@
   },
   {
     "name": "MinecraftBrick46",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 28740.08984375,
     "lng": 65300.25390625,
@@ -13806,7 +13821,7 @@
   },
   {
     "name": "MinecraftBrick47",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 45071.93359375,
     "lng": -63015.2421875,
@@ -13814,7 +13829,7 @@
   },
   {
     "name": "MinecraftBrick49",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 45071.93359375,
     "lng": -63008.4140625,
@@ -13822,7 +13837,7 @@
   },
   {
     "name": "MinecraftBrick4_6204",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 54900.328125,
     "lng": -69397.65625,
@@ -13830,7 +13845,7 @@
   },
   {
     "name": "MinecraftBrick5",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 59745.921875,
     "lng": -64970.0859375,
@@ -13838,7 +13853,7 @@
   },
   {
     "name": "MinecraftBrick50",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 46100.2109375,
     "lng": -62365.6875,
@@ -13846,7 +13861,7 @@
   },
   {
     "name": "MinecraftBrick51",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 46260.90625,
     "lng": -62867.4921875,
@@ -13854,7 +13869,7 @@
   },
   {
     "name": "MinecraftBrick52",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 46819.08203125,
     "lng": -62915.04296875,
@@ -13862,7 +13877,7 @@
   },
   {
     "name": "MinecraftBrick6_6497",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 56923.44140625,
     "lng": -52713.4453125,
@@ -13870,7 +13885,7 @@
   },
   {
     "name": "MinecraftBrick7_6500",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 57635.6328125,
     "lng": -52713.4453125,
@@ -13878,7 +13893,7 @@
   },
   {
     "name": "MinecraftBrick8",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 59266.4453125,
     "lng": -64971.296875,
@@ -13886,7 +13901,7 @@
   },
   {
     "name": "MinecraftBrick9",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 57252.2109375,
     "lng": -52713.4453125,
@@ -13894,7 +13909,7 @@
   },
   {
     "name": "MinecraftBrick_59",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 57938.19921875,
     "lng": -64971.296875,
@@ -13902,7 +13917,7 @@
   },
   {
     "name": "Red_brick_10028",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 40221.515625,
     "lng": -17957.935546875,
@@ -13910,7 +13925,7 @@
   },
   {
     "name": "Red_brick_10097",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 40346.77734375,
     "lng": -18245.96875,
@@ -13918,7 +13933,7 @@
   },
   {
     "name": "Red_brick_10100",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 40478.4765625,
     "lng": -18549.05859375,
@@ -13926,7 +13941,7 @@
   },
   {
     "name": "Red_brick_10167",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 39383.51171875,
     "lng": -17355.40234375,
@@ -13934,7 +13949,7 @@
   },
   {
     "name": "Red_brick_10170",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 39501.3515625,
     "lng": -17626.44921875,
@@ -13942,7 +13957,7 @@
   },
   {
     "name": "Red_brick_10179",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 39993.921875,
     "lng": -18759.6328125,
@@ -13950,7 +13965,7 @@
   },
   {
     "name": "Red_brick_11375",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 39625.76171875,
     "lng": -18910.95703125,
@@ -13958,7 +13973,7 @@
   },
   {
     "name": "Red_brick_11558",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 40469.1015625,
     "lng": -17530.2109375,
@@ -13966,7 +13981,7 @@
   },
   {
     "name": "Red_brick_11563",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 40708.1953125,
     "lng": -18079.8984375,
@@ -13974,7 +13989,7 @@
   },
   {
     "name": "Red_brick_14112",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 36968.46875,
     "lng": -22212.76953125,
@@ -13982,7 +13997,7 @@
   },
   {
     "name": "Red_brick_1427",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": -1025.0,
     "lng": 10330.0,
@@ -13990,7 +14005,7 @@
   },
   {
     "name": "Red_brick_1576",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": -39355.00390625,
     "lng": 1120.00244140625,
@@ -13998,7 +14013,7 @@
   },
   {
     "name": "Red_brick_1697",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": -1024.999267578125,
     "lng": 9202.7353515625,
@@ -14006,7 +14021,7 @@
   },
   {
     "name": "Red_brick_178",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": -29181.140625,
     "lng": 21989.75,
@@ -14014,7 +14029,7 @@
   },
   {
     "name": "Red_brick_1802",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": -38755.00390625,
     "lng": 872.5352172851562,
@@ -14022,7 +14037,7 @@
   },
   {
     "name": "Red_brick_2502",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 39750.296875,
     "lng": -16873.92578125,
@@ -14030,7 +14045,7 @@
   },
   {
     "name": "Red_brick_3711",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 39868.0625,
     "lng": -17144.837890625,
@@ -14038,7 +14053,7 @@
   },
   {
     "name": "Red_brick_3712",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 39985.90234375,
     "lng": -17415.884765625,
@@ -14046,7 +14061,7 @@
   },
   {
     "name": "Red_brick_3713",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 40103.67578125,
     "lng": -17686.888671875,
@@ -14054,7 +14069,7 @@
   },
   {
     "name": "Red_brick_3719",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 39619.125,
     "lng": -17897.453125,
@@ -14062,7 +14077,7 @@
   },
   {
     "name": "Red_brick_3720",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 39736.96484375,
     "lng": -18168.5,
@@ -14070,7 +14085,7 @@
   },
   {
     "name": "Red_brick_3721",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 39862.2265625,
     "lng": -18456.533203125,
@@ -14078,7 +14093,7 @@
   },
   {
     "name": "Red_brick_3723",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 39018.39453125,
     "lng": -17514.150390625,
@@ -14086,7 +14101,7 @@
   },
   {
     "name": "Red_brick_3724",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 39254.8046875,
     "lng": -18058.166015625,
@@ -14094,7 +14109,7 @@
   },
   {
     "name": "Red_brick_3725",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 39369.859375,
     "lng": -18322.666015625,
@@ -14102,7 +14117,7 @@
   },
   {
     "name": "Red_brick_3726",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 39493.8984375,
     "lng": -18607.853515625,
@@ -14110,7 +14125,7 @@
   },
   {
     "name": "Red_brick_3728",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 40232.69140625,
     "lng": -16986.1953125,
@@ -14118,7 +14133,7 @@
   },
   {
     "name": "Red_brick_3730",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 40584.15625,
     "lng": -17794.7109375,
@@ -14126,7 +14141,7 @@
   },
   {
     "name": "Red_brick_3733",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 40349.1953125,
     "lng": -17254.45703125,
@@ -14134,7 +14149,7 @@
   },
   {
     "name": "Red_brick_3779",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 555.5653076171875,
     "lng": 9566.3232421875,
@@ -14142,7 +14157,7 @@
   },
   {
     "name": "Red_brick_6",
-    "type": "MinecraftBrick_C",
+    "type": "SL:MinecraftBrick_C",
     "area": "Map",
     "lat": 1775.76806640625,
     "lng": 9566.3232421875,
@@ -15413,981 +15428,6 @@
     "alt": -1122.5120849609375
   },
   {
-    "name": "RingColorerFlower10",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -15007.3349609375,
-    "lng": -14885.26171875,
-    "alt": -899.1470947265625
-  },
-  {
-    "name": "RingColorerFlower100",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -36599.0,
-    "lng": -2408.0,
-    "alt": -15.0
-  },
-  {
-    "name": "RingColorerFlower101",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -36523.0,
-    "lng": -1021.0,
-    "alt": -55.0
-  },
-  {
-    "name": "RingColorerFlower102",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -36777.0,
-    "lng": -1063.0,
-    "alt": -36.0
-  },
-  {
-    "name": "RingColorerFlower103",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -36909.0,
-    "lng": -1373.0,
-    "alt": -33.0
-  },
-  {
-    "name": "RingColorerFlower104",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -36936.0,
-    "lng": 136.0,
-    "alt": -65.0
-  },
-  {
-    "name": "RingColorerFlower105",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -36699.0,
-    "lng": 16.0,
-    "alt": -71.0
-  },
-  {
-    "name": "RingColorerFlower106",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -36578.0,
-    "lng": 433.0,
-    "alt": -115.0
-  },
-  {
-    "name": "RingColorerFlower107",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -35697.0,
-    "lng": 1052.0,
-    "alt": -317.0
-  },
-  {
-    "name": "RingColorerFlower108",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -35860.0,
-    "lng": 1228.0,
-    "alt": -347.0
-  },
-  {
-    "name": "RingColorerFlower109",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -35076.0,
-    "lng": 1073.0,
-    "alt": -417.0
-  },
-  {
-    "name": "RingColorerFlower11",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -14314.44140625,
-    "lng": -13542.947265625,
-    "alt": -819.2584228515625
-  },
-  {
-    "name": "RingColorerFlower110",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -34989.0,
-    "lng": 1220.0,
-    "alt": -432.0
-  },
-  {
-    "name": "RingColorerFlower111",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -34843.0,
-    "lng": 1084.0,
-    "alt": -442.0
-  },
-  {
-    "name": "RingColorerFlower112",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": 38065.7265625,
-    "lng": 63205.74609375,
-    "alt": 1597.6544189453125
-  },
-  {
-    "name": "RingColorerFlower113",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": 37901.7734375,
-    "lng": 63806.01171875,
-    "alt": 1597.6544189453125
-  },
-  {
-    "name": "RingColorerFlower114",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": 38219.19921875,
-    "lng": 63413.78125,
-    "alt": 1597.6544189453125
-  },
-  {
-    "name": "RingColorerFlower115",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": 38352.94140625,
-    "lng": 63783.328125,
-    "alt": 1597.6544189453125
-  },
-  {
-    "name": "RingColorerFlower116",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": 38414.25390625,
-    "lng": 63426.93359375,
-    "alt": 1597.6544189453125
-  },
-  {
-    "name": "RingColorerFlower12",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -14461.7744140625,
-    "lng": -13722.4765625,
-    "alt": -809.292724609375
-  },
-  {
-    "name": "RingColorerFlower13",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -14483.9248046875,
-    "lng": -13378.96484375,
-    "alt": -768.346923828125
-  },
-  {
-    "name": "RingColorerFlower14",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -14755.9287109375,
-    "lng": -13362.392578125,
-    "alt": -712.9818115234375
-  },
-  {
-    "name": "RingColorerFlower15",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -14132.4130859375,
-    "lng": -13771.154296875,
-    "alt": -874.0369873046875
-  },
-  {
-    "name": "RingColorerFlower16",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -14198.765625,
-    "lng": -13117.84765625,
-    "alt": -800.8618774414062
-  },
-  {
-    "name": "RingColorerFlower17",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -14360.70703125,
-    "lng": -13297.376953125,
-    "alt": -784.0752563476562
-  },
-  {
-    "name": "RingColorerFlower18",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -14368.2490234375,
-    "lng": -12953.865234375,
-    "alt": -742.2555541992188
-  },
-  {
-    "name": "RingColorerFlower19",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -14640.2529296875,
-    "lng": -13135.2568359375,
-    "alt": -703.7146606445312,
-    "variant": "red"
-  },
-  {
-    "name": "RingColorerFlower20",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -14016.7373046875,
-    "lng": -13346.0546875,
-    "alt": -861.1109008789062
-  },
-  {
-    "name": "RingColorerFlower21",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -13691.0703125,
-    "lng": -13542.947265625,
-    "alt": -940.96875
-  },
-  {
-    "name": "RingColorerFlower22",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -13838.4033203125,
-    "lng": -13722.4765625,
-    "alt": -923.2089233398438
-  },
-  {
-    "name": "RingColorerFlower23",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -13860.5537109375,
-    "lng": -13378.96484375,
-    "alt": -896.6227416992188
-  },
-  {
-    "name": "RingColorerFlower24",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -13509.0419921875,
-    "lng": -13771.154296875,
-    "alt": -987.245849609375
-  },
-  {
-    "name": "RingColorerFlower25",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -13737.3359375,
-    "lng": -13297.376953125,
-    "alt": -918.630126953125
-  },
-  {
-    "name": "RingColorerFlower26_2200",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -9280.0078125,
-    "lng": -13770.599609375,
-    "alt": -2256.083740234375,
-    "variant": "red"
-  },
-  {
-    "name": "RingColorerFlower27",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -8833.1513671875,
-    "lng": -13635.3134765625,
-    "alt": -2337.718017578125,
-    "variant": "red"
-  },
-  {
-    "name": "RingColorerFlower28",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -9125.15625,
-    "lng": -13659.0126953125,
-    "alt": -2304.402099609375,
-    "variant": "red"
-  },
-  {
-    "name": "RingColorerFlower29",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -9183.0478515625,
-    "lng": -14183.34765625,
-    "alt": -2256.084228515625,
-    "variant": "red"
-  },
-  {
-    "name": "RingColorerFlower2_928",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -13616.626953125,
-    "lng": -15420.337890625,
-    "alt": -1224.764404296875
-  },
-  {
-    "name": "RingColorerFlower30",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -8758.15625,
-    "lng": -14016.443359375,
-    "alt": -2336.8828125,
-    "variant": "red"
-  },
-  {
-    "name": "RingColorerFlower31",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -9194.9736328125,
-    "lng": -14106.9521484375,
-    "alt": -2256.084228515625,
-    "variant": "red"
-  },
-  {
-    "name": "RingColorerFlower32",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -8688.2685546875,
-    "lng": -14365.3388671875,
-    "alt": -2333.2509765625,
-    "variant": "red"
-  },
-  {
-    "name": "RingColorerFlower33",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -8848.6533203125,
-    "lng": -14540.6162109375,
-    "alt": -2279.57177734375,
-    "variant": "red"
-  },
-  {
-    "name": "RingColorerFlower34",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -9174.365234375,
-    "lng": -14526.71875,
-    "alt": -2175.088623046875,
-    "variant": "red"
-  },
-  {
-    "name": "RingColorerFlower35",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -9497.0029296875,
-    "lng": -14020.14453125,
-    "alt": -2140.169921875,
-    "variant": "red"
-  },
-  {
-    "name": "RingColorerFlower36",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -8598.27734375,
-    "lng": -13632.990234375,
-    "alt": -2344.777099609375,
-    "variant": "red"
-  },
-  {
-    "name": "RingColorerFlower37_554",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -16117.2470703125,
-    "lng": -12270.154296875,
-    "alt": -776.1884155273438
-  },
-  {
-    "name": "RingColorerFlower38",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -16247.4990234375,
-    "lng": -12863.6259765625,
-    "alt": -826.520263671875
-  },
-  {
-    "name": "RingColorerFlower39",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -15960.1123046875,
-    "lng": -12748.060546875,
-    "alt": -804.7775268554688
-  },
-  {
-    "name": "RingColorerFlower3_1032",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -13624.1689453125,
-    "lng": -15076.826171875,
-    "alt": -1127.7568359375
-  },
-  {
-    "name": "RingColorerFlower40",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -16063.8759765625,
-    "lng": -13053.0791015625,
-    "alt": -833.96240234375
-  },
-  {
-    "name": "RingColorerFlower41",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -15836.0849609375,
-    "lng": -12445.751953125,
-    "alt": -789.7247314453125
-  },
-  {
-    "name": "RingColorerFlower42",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -16200.3642578125,
-    "lng": -12445.751953125,
-    "alt": -779.8368530273438
-  },
-  {
-    "name": "RingColorerFlower43",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -15780.3388671875,
-    "lng": -12083.765625,
-    "alt": -779.7308349609375
-  },
-  {
-    "name": "RingColorerFlower44",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -14867.279296875,
-    "lng": -13098.701171875,
-    "alt": -671.1866455078125,
-    "variant": "red"
-  },
-  {
-    "name": "RingColorerFlower45",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -14874.8212890625,
-    "lng": -12755.189453125,
-    "alt": -668.5929565429688,
-    "variant": "red"
-  },
-  {
-    "name": "RingColorerFlower46",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -15146.8251953125,
-    "lng": -12936.5810546875,
-    "alt": -698.4793701171875,
-    "variant": "red"
-  },
-  {
-    "name": "RingColorerFlower47",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -15294.1787109375,
-    "lng": -12850.646484375,
-    "alt": -721.9474487304688,
-    "variant": "red"
-  },
-  {
-    "name": "RingColorerFlower48",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -15117.056640625,
-    "lng": -12714.0673828125,
-    "alt": -712.529296875,
-    "variant": "red"
-  },
-  {
-    "name": "RingColorerFlower49",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -15443.8974609375,
-    "lng": -12564.2646484375,
-    "alt": -756.6966552734375
-  },
-  {
-    "name": "RingColorerFlower4_1151",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -13896.1728515625,
-    "lng": -15258.2177734375,
-    "alt": -1145.99462890625
-  },
-  {
-    "name": "RingColorerFlower50",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -8594.220703125,
-    "lng": -14223.4365234375,
-    "alt": -2345.875244140625,
-    "variant": "red"
-  },
-  {
-    "name": "RingColorerFlower51",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -8300.841796875,
-    "lng": -14697.4189453125,
-    "alt": -2352.694580078125,
-    "variant": "red"
-  },
-  {
-    "name": "RingColorerFlower52",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -8300.841796875,
-    "lng": -14439.41015625,
-    "alt": -2351.545654296875,
-    "variant": "red"
-  },
-  {
-    "name": "RingColorerFlower53_560",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -49866.5,
-    "lng": -49280.19921875,
-    "alt": -1779.3851318359375
-  },
-  {
-    "name": "RingColorerFlower54",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -50642.82421875,
-    "lng": -50695.91015625,
-    "alt": -1779.3817138671875,
-    "variant": "yellow"
-  },
-  {
-    "name": "RingColorerFlower55",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -50524.81640625,
-    "lng": -50484.14453125,
-    "alt": -1779.3817138671875,
-    "variant": "yellow"
-  },
-  {
-    "name": "RingColorerFlower56",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -49898.71484375,
-    "lng": -49547.3984375,
-    "alt": -1739.81591796875,
-    "variant": "yellow"
-  },
-  {
-    "name": "RingColorerFlower57",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -49730.28515625,
-    "lng": -49286.76953125,
-    "alt": -1779.3304443359375,
-    "variant": "yellow"
-  },
-  {
-    "name": "RingColorerFlower58",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -50372.58203125,
-    "lng": -50501.4609375,
-    "alt": -1779.3817138671875
-  },
-  {
-    "name": "RingColorerFlower59",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -50033.47265625,
-    "lng": -49466.78125,
-    "alt": -1776.2567138671875
-  },
-  {
-    "name": "RingColorerFlower5_1318",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -13272.6572265625,
-    "lng": -15469.015625,
-    "alt": -1191.4471435546875
-  },
-  {
-    "name": "RingColorerFlower60",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -50492.671875,
-    "lng": -50681.2578125,
-    "alt": -1779.3817138671875
-  },
-  {
-    "name": "RingColorerFlower61",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -50713.4453125,
-    "lng": -50557.97265625,
-    "alt": -1779.3817138671875
-  },
-  {
-    "name": "RingColorerFlower62",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -9249.7744140625,
-    "lng": -16878.533203125,
-    "alt": -1898.0433349609375,
-    "variant": "red"
-  },
-  {
-    "name": "RingColorerFlower63",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -9201.9306640625,
-    "lng": -17063.615234375,
-    "alt": -1872.796875,
-    "variant": "red"
-  },
-  {
-    "name": "RingColorerFlower64",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -9352.5478515625,
-    "lng": -16944.078125,
-    "alt": -1884.6705322265625,
-    "variant": "red"
-  },
-  {
-    "name": "RingColorerFlower65",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -9249.7744140625,
-    "lng": -17105.27734375,
-    "alt": -1863.6409912109375,
-    "variant": "red"
-  },
-  {
-    "name": "RingColorerFlower66",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": 6639.19677734375,
-    "lng": 16586.591796875,
-    "alt": -80.4788818359375,
-    "variant": "yellow"
-  },
-  {
-    "name": "RingColorerFlower67",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": 6333.09423828125,
-    "lng": 16602.279296875,
-    "alt": -80.4788818359375,
-    "variant": "yellow"
-  },
-  {
-    "name": "RingColorerFlower68",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": 6465.54833984375,
-    "lng": 16751.541015625,
-    "alt": -80.4788818359375,
-    "variant": "yellow"
-  },
-  {
-    "name": "RingColorerFlower69",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": 6967.22802734375,
-    "lng": 16669.009765625,
-    "alt": -80.4788818359375,
-    "variant": "yellow"
-  },
-  {
-    "name": "RingColorerFlower6_1479",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -14382.5810546875,
-    "lng": -15212.23046875,
-    "alt": -1109.5274658203125
-  },
-  {
-    "name": "RingColorerFlower7",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -14288.025390625,
-    "lng": -14983.732421875,
-    "alt": -1069.5263671875
-  },
-  {
-    "name": "RingColorerFlower70",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": 7079.9208984375,
-    "lng": 16247.935546875,
-    "alt": -80.4788818359375,
-    "variant": "yellow"
-  },
-  {
-    "name": "RingColorerFlower71",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": 7454.92578125,
-    "lng": 16188.33984375,
-    "alt": -80.4788818359375,
-    "variant": "yellow"
-  },
-  {
-    "name": "RingColorerFlower72",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": 7743.62548828125,
-    "lng": 16014.6767578125,
-    "alt": -80.4788818359375,
-    "variant": "yellow"
-  },
-  {
-    "name": "RingColorerFlower73",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": 8141.49462890625,
-    "lng": 16237.2177734375,
-    "alt": -80.4788818359375,
-    "variant": "yellow"
-  },
-  {
-    "name": "RingColorerFlower74",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": 6889.8310546875,
-    "lng": 18684.36328125,
-    "alt": -94.4307861328125,
-    "variant": "yellow"
-  },
-  {
-    "name": "RingColorerFlower75",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": 6863.728515625,
-    "lng": 18497.16796875,
-    "alt": -94.4307861328125,
-    "variant": "yellow"
-  },
-  {
-    "name": "RingColorerFlower76",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": 7307.04443359375,
-    "lng": 18347.384765625,
-    "alt": -94.4307861328125,
-    "variant": "yellow"
-  },
-  {
-    "name": "RingColorerFlower77",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": 7233.982421875,
-    "lng": 18661.884765625,
-    "alt": -94.4307861328125,
-    "variant": "yellow"
-  },
-  {
-    "name": "RingColorerFlower78",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": 7379.00732421875,
-    "lng": 18915.119140625,
-    "alt": -94.4307861328125,
-    "variant": "yellow"
-  },
-  {
-    "name": "RingColorerFlower79",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": 7656.26220703125,
-    "lng": 19068.884765625,
-    "alt": -94.4307861328125,
-    "variant": "yellow"
-  },
-  {
-    "name": "RingColorerFlower8",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -14517.75,
-    "lng": -14983.732421875,
-    "alt": -1021.4902954101562
-  },
-  {
-    "name": "RingColorerFlower80",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": 7753.248046875,
-    "lng": 19542.853515625,
-    "alt": -44.624794006347656,
-    "variant": "yellow"
-  },
-  {
-    "name": "RingColorerFlower81",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": 8939.275390625,
-    "lng": 17850.689453125,
-    "alt": 101.962646484375,
-    "variant": "yellow"
-  },
-  {
-    "name": "RingColorerFlower82",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": 8939.275390625,
-    "lng": 17430.3359375,
-    "alt": 101.962646484375,
-    "variant": "yellow"
-  },
-  {
-    "name": "RingColorerFlower83",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": 8939.275390625,
-    "lng": 17600.865234375,
-    "alt": 101.962646484375,
-    "variant": "yellow"
-  },
-  {
-    "name": "RingColorerFlower84",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": 8803.5634765625,
-    "lng": 17476.177734375,
-    "alt": 60.09191131591797,
-    "variant": "yellow"
-  },
-  {
-    "name": "RingColorerFlower85_2",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": 38585.9453125,
-    "lng": 63097.40625,
-    "alt": 1597.6544189453125
-  },
-  {
-    "name": "RingColorerFlower86",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": 38586.16796875,
-    "lng": 63566.89453125,
-    "alt": 1597.6544189453125
-  },
-  {
-    "name": "RingColorerFlower87",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": 38355.4921875,
-    "lng": 63240.6953125,
-    "alt": 1597.6544189453125
-  },
-  {
-    "name": "RingColorerFlower88",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": 38143.67578125,
-    "lng": 63562.37890625,
-    "alt": 1597.6544189453125
-  },
-  {
-    "name": "RingColorerFlower89",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -33092.0,
-    "lng": -359.0,
-    "alt": -183.0
-  },
-  {
-    "name": "RingColorerFlower9",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -14630.048828125,
-    "lng": -15200.4052734375,
-    "alt": -1060.782470703125
-  },
-  {
-    "name": "RingColorerFlower90",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -33210.0,
-    "lng": -597.0,
-    "alt": -171.0
-  },
-  {
-    "name": "RingColorerFlower91",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -33442.0,
-    "lng": -710.0,
-    "alt": -170.0
-  },
-  {
-    "name": "RingColorerFlower92",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -32638.0,
-    "lng": -1465.0,
-    "alt": 44.0
-  },
-  {
-    "name": "RingColorerFlower93",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -32318.0,
-    "lng": -1418.0,
-    "alt": -32.0
-  },
-  {
-    "name": "RingColorerFlower94",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -35191.0,
-    "lng": -2683.0,
-    "alt": -107.0
-  },
-  {
-    "name": "RingColorerFlower95",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -35461.0,
-    "lng": -2513.0,
-    "alt": -127.0
-  },
-  {
-    "name": "RingColorerFlower96",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -35390.0,
-    "lng": -2686.0,
-    "alt": -115.0
-  },
-  {
-    "name": "RingColorerFlower97",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -34955.0,
-    "lng": -2526.0,
-    "alt": -106.0
-  },
-  {
-    "name": "RingColorerFlower98",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -36444.0,
-    "lng": -2604.0,
-    "alt": -32.0
-  },
-  {
-    "name": "RingColorerFlower99",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -36738.0,
-    "lng": -2502.0,
-    "alt": 7.0
-  },
-  {
-    "name": "RingColorerFlower_191",
-    "type": "RingColorerFlower_C",
-    "area": "Map",
-    "lat": -13454.685546875,
-    "lng": -15240.80859375,
-    "alt": -1175.3546142578125
-  },
-  {
     "name": "RingRusty10",
     "type": "_Pickaxe_C",
     "area": "Map",
@@ -17372,382 +16412,6 @@
     "alt": -2146.86474609375
   },
   {
-    "name": "Seed10",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": -30797.71875,
-    "lng": -9434.484375,
-    "alt": -823.4221801757812,
-    "variant": "red"
-  },
-  {
-    "name": "Seed11",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": -30662.267578125,
-    "lng": -9287.1298828125,
-    "alt": -823.4222412109375
-  },
-  {
-    "name": "Seed12",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": -30680.634765625,
-    "lng": -9317.8857421875,
-    "alt": -823.4228515625
-  },
-  {
-    "name": "Seed13",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": -30626.234375,
-    "lng": -9319.4755859375,
-    "alt": -823.4229125976562
-  },
-  {
-    "name": "Seed14",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": -30662.896484375,
-    "lng": -9350.6025390625,
-    "alt": -823.4227905273438
-  },
-  {
-    "name": "Seed15",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": -30475.9921875,
-    "lng": -9447.4658203125,
-    "alt": -823.4234008789062,
-    "variant": "yellow"
-  },
-  {
-    "name": "Seed16",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": -30494.359375,
-    "lng": -9478.2216796875,
-    "alt": -823.4234008789062,
-    "variant": "yellow"
-  },
-  {
-    "name": "Seed17",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": -30439.958984375,
-    "lng": -9479.8115234375,
-    "alt": -823.4234619140625,
-    "variant": "yellow"
-  },
-  {
-    "name": "Seed18",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": -30476.62109375,
-    "lng": -9510.9384765625,
-    "alt": -823.42333984375,
-    "variant": "yellow"
-  },
-  {
-    "name": "Seed19",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": -30361.48828125,
-    "lng": -9561.9755859375,
-    "alt": -823.4237670898438,
-    "variant": "purple"
-  },
-  {
-    "name": "Seed2",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": 2490.014404296875,
-    "lng": -1088.34765625,
-    "alt": 38.31877136230469,
-    "variant": "yellow"
-  },
-  {
-    "name": "Seed20",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": -30379.85546875,
-    "lng": -9592.7314453125,
-    "alt": -823.4237670898438,
-    "variant": "purple"
-  },
-  {
-    "name": "Seed21",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": -30325.455078125,
-    "lng": -9594.3212890625,
-    "alt": -823.423828125,
-    "variant": "purple"
-  },
-  {
-    "name": "Seed22",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": -30362.1171875,
-    "lng": -9625.4482421875,
-    "alt": -823.4237060546875,
-    "variant": "purple"
-  },
-  {
-    "name": "Seed23",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": 57201.515625,
-    "lng": -62833.9140625,
-    "alt": 497.53033447265625,
-    "variant": "red"
-  },
-  {
-    "name": "Seed24",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": 57220.45703125,
-    "lng": -62773.35546875,
-    "alt": 495.6648864746094,
-    "variant": "red"
-  },
-  {
-    "name": "Seed25",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": 57194.08203125,
-    "lng": -62797.45703125,
-    "alt": 498.2627258300781,
-    "variant": "red"
-  },
-  {
-    "name": "Seed26",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": 57245.4296875,
-    "lng": -62814.765625,
-    "alt": 493.2052001953125,
-    "variant": "red"
-  },
-  {
-    "name": "Seed27",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": 57198.625,
-    "lng": -63133.86328125,
-    "alt": 497.5303039550781,
-    "variant": "yellow"
-  },
-  {
-    "name": "Seed28",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": 57229.015625,
-    "lng": -63078.1640625,
-    "alt": 495.66485595703125,
-    "variant": "yellow"
-  },
-  {
-    "name": "Seed29",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": 57198.4453125,
-    "lng": -63096.66015625,
-    "alt": 498.2626953125,
-    "variant": "yellow"
-  },
-  {
-    "name": "Seed3",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": 2513.818603515625,
-    "lng": -1085.757568359375,
-    "alt": 66.6956787109375,
-    "variant": "red"
-  },
-  {
-    "name": "Seed30",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": 57245.4296875,
-    "lng": -63123.65234375,
-    "alt": 493.2051696777344,
-    "variant": "yellow"
-  },
-  {
-    "name": "Seed31",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": 61143.59765625,
-    "lng": -61824.69140625,
-    "alt": 492.2315673828125
-  },
-  {
-    "name": "Seed32",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": 61162.62890625,
-    "lng": -61764.42578125,
-    "alt": 498.1674499511719
-  },
-  {
-    "name": "Seed33",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": 61136.125,
-    "lng": -61788.41015625,
-    "alt": 495.8052062988281
-  },
-  {
-    "name": "Seed34",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": 61187.72265625,
-    "lng": -61805.63671875,
-    "alt": 494.10845947265625
-  },
-  {
-    "name": "Seed35",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": 61346.09765625,
-    "lng": -61824.48828125,
-    "alt": 492.2315673828125,
-    "variant": "red"
-  },
-  {
-    "name": "Seed36",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": 61365.12890625,
-    "lng": -61764.22265625,
-    "alt": 498.1674499511719,
-    "variant": "red"
-  },
-  {
-    "name": "Seed37",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": 61338.625,
-    "lng": -61788.20703125,
-    "alt": 495.8052062988281,
-    "variant": "red"
-  },
-  {
-    "name": "Seed38",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": 61390.22265625,
-    "lng": -61805.43359375,
-    "alt": 494.10845947265625,
-    "variant": "red"
-  },
-  {
-    "name": "Seed39",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": 2337.5146484375,
-    "lng": -1108.1231689453125,
-    "alt": 39.32359313964844,
-    "variant": "yellow"
-  },
-  {
-    "name": "Seed40",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": 2339.61865234375,
-    "lng": -1084.2711181640625,
-    "alt": 67.70050048828125,
-    "variant": "red"
-  },
-  {
-    "name": "Seed41",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": 2355.36962890625,
-    "lng": -1057.6082763671875,
-    "alt": 81.00811004638672,
-    "variant": "yellow"
-  },
-  {
-    "name": "Seed42",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": 2363.7724609375,
-    "lng": -1103.86669921875,
-    "alt": 85.3998031616211,
-    "variant": "red"
-  },
-  {
-    "name": "Seed43",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": 2375.239990234375,
-    "lng": -1078.712158203125,
-    "alt": 84.086181640625
-  },
-  {
-    "name": "Seed4_77",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": -30797.08984375,
-    "lng": -9371.01171875,
-    "alt": -823.4222412109375,
-    "variant": "red"
-  },
-  {
-    "name": "Seed5",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": -30815.45703125,
-    "lng": -9401.767578125,
-    "alt": -823.4222412109375,
-    "variant": "red"
-  },
-  {
-    "name": "Seed6",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": -30761.056640625,
-    "lng": -9403.357421875,
-    "alt": -823.4223022460938,
-    "variant": "red"
-  },
-  {
-    "name": "Seed7",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": 2524.097900390625,
-    "lng": -1110.1695556640625,
-    "alt": 48.717315673828125
-  },
-  {
-    "name": "Seed8",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": 2543.04150390625,
-    "lng": -1096.00439453125,
-    "alt": 80.00328826904297,
-    "variant": "yellow"
-  },
-  {
-    "name": "Seed9",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": 2499.3115234375,
-    "lng": -1113.270263671875,
-    "alt": 84.39498138427734,
-    "variant": "red"
-  },
-  {
-    "name": "Seed_22",
-    "type": "Seed_C",
-    "area": "Map",
-    "lat": 2526.219970703125,
-    "lng": -1119.6102294921875,
-    "alt": 83.08135986328125
-  },
-  {
     "name": "Shell13_3781",
     "type": "Shell_C",
     "area": "Map",
@@ -17900,38 +16564,6 @@
     "alt": 524.4808959960938
   },
   {
-    "name": "Supraball2",
-    "type": "Supraball_C",
-    "area": "Map",
-    "lat": -38989.42578125,
-    "lng": -17215.197265625,
-    "alt": -1302.1866455078125
-  },
-  {
-    "name": "Supraball3",
-    "type": "Supraball_C",
-    "area": "Map",
-    "lat": -35198.08203125,
-    "lng": -12764.6943359375,
-    "alt": -1302.1866455078125
-  },
-  {
-    "name": "Supraball4_2",
-    "type": "Supraball_C",
-    "area": "Map",
-    "lat": -42557.62109375,
-    "lng": -28211.728515625,
-    "alt": -1163.6710205078125
-  },
-  {
-    "name": "Supraball_155",
-    "type": "Supraball_C",
-    "area": "Map",
-    "lat": -39925.67578125,
-    "lng": -16159.7578125,
-    "alt": -1302.1866455078125
-  },
-  {
     "name": "TaskHintGuy_2",
     "type": "TaskHintGuy_C",
     "area": "Map",
@@ -17947,37 +16579,5 @@
     "lng": 65.12112426757812,
     "alt": -208.89263916015625,
     "cost": 1337
-  },
-  {
-    "name": "Valve2_108",
-    "type": "Valve_C",
-    "area": "Map",
-    "lat": 2150.98193359375,
-    "lng": -1598.2049560546875,
-    "alt": 146.0513153076172
-  },
-  {
-    "name": "Valve3",
-    "type": "Valve_C",
-    "area": "Map",
-    "lat": -29865.048828125,
-    "lng": -10481.69140625,
-    "alt": -726.70068359375
-  },
-  {
-    "name": "Valve4",
-    "type": "Valve_C",
-    "area": "Map",
-    "lat": 60796.4140625,
-    "lng": -61781.43359375,
-    "alt": 732.60693359375
-  },
-  {
-    "name": "Valve_246",
-    "type": "Valve_C",
-    "area": "Map",
-    "lat": -22787.43359375,
-    "lng": -3119.06884765625,
-    "alt": -2014.2481689453125
   }
 ]
