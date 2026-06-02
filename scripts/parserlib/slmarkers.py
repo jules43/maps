@@ -511,6 +511,12 @@ def cleanup_objects(  # noqa: C901 - disable complexity warning
                 if o.get('spawns') is not None:
                     del o['spawns']
 
+        # If it's got a price (in gold, bones or scrap) then it's assumed
+        # to be in a shop, so convert it into a shop item spawner
+        if o.get('cost') and o.get('price_type') != '7':
+            o['spawns'] = o['type']
+            o['type'] = '_ShopItem_C'
+
         # Create line data
 
         if o.get('other_pipe'):
