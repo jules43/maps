@@ -111,31 +111,34 @@
   },
   {
     "name": "BP_BoneDetector_2",
-    "type": "BP_BoneDetector_C",
+    "type": "_ShopItem_C",
     "area": "DLC2_Complete",
     "lat": -21770.58984375,
     "lng": -58072.6640625,
     "alt": 7850.2783203125,
-    "cost": 50
+    "cost": 50,
+    "spawns": "BP_BoneDetector_C"
   },
   {
     "name": "BP_BuyBeamElasticity_2",
-    "type": "BP_BuyBeamElasticity_C",
+    "type": "_ShopItem_C",
     "area": "DLC2_Complete",
     "lat": -23188.537109375,
     "lng": 21730.326171875,
     "alt": 3066.00439453125,
     "price_type": 5,
-    "cost": 15
+    "cost": 15,
+    "spawns": "BP_BuyBeamElasticity_C"
   },
   {
     "name": "BP_BuyGunDamage+100pct_2",
-    "type": "BP_BuyGunDamage+100pct_C",
+    "type": "_ShopItem_C",
     "area": "DLC2_Complete",
     "lat": -31459.77734375,
     "lng": 15039.345703125,
     "alt": 1457.178955078125,
-    "cost": 50
+    "cost": 50,
+    "spawns": "BP_BuyGunDamage+100pct_C"
   },
   {
     "name": "BP_CookableMeat10",
@@ -231,76 +234,83 @@
   },
   {
     "name": "BP_Purchase_Crouch_2",
-    "type": "BP_Purchase_Crouch_C",
+    "type": "_ShopItem_C",
     "area": "DLC2_Complete",
     "lat": 15517.7568359375,
     "lng": 22243.890625,
     "alt": 3172.55419921875,
-    "cost": 10
+    "cost": 10,
+    "spawns": "BP_Purchase_Crouch_C"
   },
   {
     "name": "BP_Purchase_FasterPickaxe_2",
-    "type": "BP_Purchase_FasterPickaxe_C",
+    "type": "_ShopItem_C",
     "area": "DLC2_Complete",
     "lat": -31145.3984375,
     "lng": 14975.8818359375,
     "alt": 1455.8984375,
-    "cost": 50
+    "cost": 50,
+    "spawns": "BP_Purchase_FasterPickaxe_C"
   },
   {
     "name": "BP_PickaxeDamage+1_2",
-    "type": "BP_Purchase_Pickaxe_Range+_C",
+    "type": "_ShopItem_C",
     "area": "DLC2_Complete",
     "lat": -27273.255859375,
     "lng": 15850.8603515625,
     "alt": -97.390380859375,
-    "cost": 30
+    "cost": 30,
+    "spawns": "BP_Purchase_Pickaxe_Range+_C"
   },
   {
     "name": "Shop_Health_5",
-    "type": "BP_PurchaseHealth+1_C",
+    "type": "_ShopItem_C",
     "area": "DLC2_Complete",
     "lat": -27252.009765625,
     "lng": 15985.712890625,
     "alt": -78.06648254394531,
-    "cost": 30
+    "cost": 30,
+    "spawns": "BP_PurchaseHealth+1_C"
   },
   {
     "name": "BP_PurchaseJumpHeightPlus_2",
-    "type": "BP_PurchaseJumpHeightPlus_C",
+    "type": "_ShopItem_C",
     "area": "DLC2_Complete",
     "lat": 15441.4248046875,
     "lng": 22141.173828125,
     "alt": 3200.79296875,
-    "cost": 10
+    "cost": 10,
+    "spawns": "BP_PurchaseJumpHeightPlus_C"
   },
   {
     "name": "BP_RebuildSlum_2",
-    "type": "BP_RebuildSlum_C",
+    "type": "_ShopItem_C",
     "area": "DLC2_Complete",
     "lat": -28511.005859375,
     "lng": 11402.515625,
     "alt": -70.26774597167969,
-    "spawns": "BP_Purchase_FasterPickaxe_C",
+    "spawns": "BP_RebuildSlum_C",
     "cost": 50
   },
   {
     "name": "BP_TrophyDetector_2",
-    "type": "BP_TrophyDetector_C",
+    "type": "_ShopItem_C",
     "area": "DLC2_Complete",
     "lat": -49300.0,
     "lng": -61380.0,
     "alt": 10070.0,
-    "cost": 500
+    "cost": 500,
+    "spawns": "BP_TrophyDetector_C"
   },
   {
     "name": "BP_UnlockMap_2",
-    "type": "BP_UnlockMap_C",
+    "type": "_ShopItem_C",
     "area": "DLC2_Complete",
     "lat": -27308.482421875,
     "lng": 15581.537109375,
     "alt": -92.87537384033203,
-    "cost": 60
+    "cost": 60,
+    "spawns": "BP_UnlockMap_C"
   },
   {
     "name": "BuyBrokenPipeDetector_2",
@@ -313,76 +323,84 @@
   },
   {
     "name": "BuyChestDetectorRadius_2",
-    "type": "BuyChestDetectorRadius_C",
+    "type": "_ShopItem_C",
     "area": "DLC2_Complete",
     "lat": -22132.296875,
     "lng": -58074.578125,
     "alt": 7836.95361328125,
-    "cost": 50
+    "cost": 50,
+    "spawns": "BuyChestDetectorRadius_C"
   },
   {
     "name": "BuyCritChance+5_2",
-    "type": "BuyCritChance+5_C",
+    "type": "_ShopItem_C",
     "area": "DLC2_Complete",
     "lat": -31863.376953125,
     "lng": 15044.419921875,
     "alt": 1447.7059326171875,
-    "cost": 30
+    "cost": 30,
+    "spawns": "BuyCritChance+5_C"
   },
   {
     "name": "BuyCritChance+6",
-    "type": "BuyCritChance+5_C",
+    "type": "_ShopItem_C",
     "area": "DLC2_Complete",
     "lat": -31716.455078125,
     "lng": 15044.419921875,
     "alt": 1466.5433349609375,
-    "cost": 30
+    "cost": 30,
+    "spawns": "BuyCritChance+5_C"
   },
   {
     "name": "BP_BuyHealthRegenMax1",
-    "type": "BuyHealthRegenMax+1_C",
+    "type": "_ShopItem_C",
     "area": "DLC2_Complete",
     "lat": -32166.708984375,
     "lng": 14879.6865234375,
     "alt": 1476.6343994140625,
-    "cost": 40
+    "cost": 40,
+    "spawns": "BuyHealthRegenMax+1_C"
   },
   {
     "name": "Shop_Health_regen",
-    "type": "BuyHealthRegenMax+1_C",
+    "type": "_ShopItem_C",
     "area": "DLC2_Complete",
     "lat": -27285.935546875,
     "lng": 15713.7216796875,
     "alt": -79.1365966796875,
-    "cost": 30
+    "cost": 30,
+    "spawns": "BuyHealthRegenMax+1_C"
   },
   {
     "name": "BuyStats_2",
-    "type": "BuyStats_C",
+    "type": "_ShopItem_C",
     "area": "DLC2_Complete",
     "lat": -21885.55859375,
     "lng": -58066.796875,
     "alt": 7846.9169921875,
-    "cost": 10
+    "cost": 10,
+    "spawns": "BuyStats_C"
   },
   {
     "name": "BP_Purchase_MagnetRepelPlus_2",
-    "type": "BuyTranslocatorShotForce_C",
+    "type": "_ShopItem_C",
     "area": "DLC2_Complete",
     "lat": -22837.6796875,
     "lng": 21392.783203125,
     "alt": 3065.90185546875,
     "price_type": 6,
-    "cost": 6
+    "cost": 6,
+    "spawns": "BuyTranslocatorShotForce_C"
   },
   {
     "name": "BuyUpgradeChestNum_2",
-    "type": "BuyUpgradeChestNum_C",
+    "type": "_ShopItem_C",
     "area": "DLC2_Complete",
     "lat": -22020.41796875,
     "lng": -58030.921875,
     "alt": 7861.43701171875,
-    "cost": 50
+    "cost": 50,
+    "spawns": "BuyUpgradeChestNum_C"
   },
   {
     "name": "CarrotPhysical10",
@@ -7976,41 +7994,45 @@
   },
   {
     "name": "Purchase_DiamondPickaxe_2",
-    "type": "Purchase_DiamondPickaxe_C",
+    "type": "_ShopItem_C",
     "area": "DLC2_Complete",
     "lat": -28558.439453125,
     "lng": 16464.306640625,
     "alt": -72.95669555664062,
     "price_type": 0,
-    "cost": 200
+    "cost": 200,
+    "spawns": "Purchase_DiamondPickaxe_C"
   },
   {
     "name": "Purchase_IronPickaxe_2",
-    "type": "Purchase_IronPickaxe_C",
+    "type": "_ShopItem_C",
     "area": "DLC2_Complete",
     "lat": -28352.66015625,
     "lng": 16443.494140625,
     "alt": -57.282127380371094,
     "price_type": 0,
-    "cost": 100
+    "cost": 100,
+    "spawns": "Purchase_IronPickaxe_C"
   },
   {
     "name": "Purchase_StonePickaxe_8",
-    "type": "Purchase_StonePickaxe_C",
+    "type": "_ShopItem_C",
     "area": "DLC2_Complete",
     "lat": -28170.8125,
     "lng": 16432.439453125,
     "alt": -77.56555938720703,
-    "cost": 20
+    "cost": 20,
+    "spawns": "Purchase_StonePickaxe_C"
   },
   {
     "name": "Purchase_WoodPickaxe_2",
-    "type": "Purchase_WoodPickaxe_C",
+    "type": "_ShopItem_C",
     "area": "DLC2_Complete",
     "lat": 15551.4541015625,
     "lng": 22349.587890625,
     "alt": 3223.587646484375,
-    "cost": 42
+    "cost": 42,
+    "spawns": "Purchase_WoodPickaxe_C"
   },
   {
     "name": "RespawnActor11_2",
@@ -9003,21 +9025,23 @@
   },
   {
     "name": "BuyQuintupleJump",
-    "type": "BuyQuintupleJump_C",
+    "type": "_ShopItem_C",
     "area": "DLC2_Area0",
     "lat": -283615.96875,
     "lng": 364.2357482910156,
     "alt": 9786.875,
-    "cost": 3600
+    "cost": 3600,
+    "spawns": "BuyQuintupleJump_C"
   },
   {
     "name": "BuySpeedx2_2",
-    "type": "BuySpeedx2_C",
+    "type": "_ShopItem_C",
     "area": "DLC2_Area0",
     "lat": -283768.65625,
     "lng": 263.05218505859375,
     "alt": 9785.265625,
-    "cost": 1200
+    "cost": 1200,
+    "spawns": "BuySpeedx2_C"
   },
   {
     "name": "Chest2_2",

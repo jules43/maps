@@ -168,94 +168,104 @@
   },
   {
     "name": "BP_UnlockMap_2",
-    "type": "BP_UnlockMap_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": -45276.13671875,
     "lng": -49419.4765625,
     "alt": 4421.8828125,
     "price_type": 0,
-    "cost": 20
+    "cost": 20,
+    "spawns": "BP_UnlockMap_C"
   },
   {
     "name": "BuyBelt2_2",
-    "type": "BuyBelt_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": 16689.0234375,
     "lng": 20230.7265625,
     "alt": 803.8145141601562,
-    "cost": 120
+    "cost": 120,
+    "spawns": "BuyBelt_C"
   },
   {
     "name": "BuyChestDetector_30",
-    "type": "BuyChestDetector_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": 27170.046875,
     "lng": 44738.703125,
     "alt": 1335.6939697265625,
-    "cost": 400
+    "cost": 400,
+    "spawns": "BuyChestDetector_C"
   },
   {
     "name": "BuyChestDetectorRadius",
-    "type": "BuyChestDetectorRadius_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": -33748.2265625,
     "lng": 175.25746154785156,
     "alt": -208.8917236328125,
-    "cost": 474
+    "cost": 474,
+    "spawns": "BuyChestDetectorRadius_C"
   },
   {
     "name": "BuyDoubleJump2",
-    "type": "BuyDoubleJump_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": 17104.06640625,
     "lng": 20346.30078125,
     "alt": 804.4705200195312,
-    "cost": 15
+    "cost": 15,
+    "spawns": "BuyDoubleJump_C"
   },
   {
     "name": "BuyDoubleJump_786",
-    "type": "BuyDoubleJump_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": -33901.05859375,
     "lng": -14.856106758117676,
     "alt": -208.23614501953125,
-    "cost": 36
+    "cost": 36,
+    "spawns": "BuyDoubleJump_C"
   },
   {
     "name": "BuyForceBeamGold",
-    "type": "BuyForceBeamGold_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": 17283.3203125,
     "lng": 20384.515625,
     "alt": 802.7789306640625,
-    "cost": 5
+    "cost": 5,
+    "spawns": "BuyForceBeamGold_C"
   },
   {
     "name": "BuyForceBlock3",
-    "type": "BuyForceBlock_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": 16903.8125,
     "lng": 20281.40625,
     "alt": 803.8145141601562,
-    "cost": 40
+    "cost": 40,
+    "spawns": "BuyForceBlock_C"
   },
   {
     "name": "BuyForceBlock_695",
-    "type": "BuyForceBlock_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": -33724.125,
     "lng": 135.09010314941406,
     "alt": -208.89215087890625,
-    "cost": 20
+    "cost": 20,
+    "spawns": "BuyForceBlock_C"
   },
   {
     "name": "BuyGun2_2",
-    "type": "BuyGun1_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": 16804.07421875,
     "lng": 20279.546875,
     "alt": 803.8143310546875,
-    "cost": 60
+    "cost": 60,
+    "spawns": "BuyGun1_C"
   },
   {
     "name": "BuyGunAlt_478",
@@ -267,237 +277,263 @@
   },
   {
     "name": "BuyGunCriticalDamage_1496",
-    "type": "BuyGunCriticalDamage_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": 2690.83251953125,
     "lng": -736.9744873046875,
     "alt": 128.9107666015625,
-    "cost": 25
+    "cost": 25,
+    "spawns": "BuyGunCriticalDamage_C"
   },
   {
     "name": "BuyGunCriticalDamageChance2_1856",
-    "type": "BuyGunCriticalDamageChance_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": -37136.22265625,
     "lng": -18338.43359375,
     "alt": -1138.0845947265625,
-    "cost": 10
+    "cost": 10,
+    "spawns": "BuyGunCriticalDamageChance_C"
   },
   {
     "name": "BuyGunCriticalDamageChance3_3189",
-    "type": "BuyGunCriticalDamageChance_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": 22096.912109375,
     "lng": 10155.486328125,
     "alt": -18.22405242919922,
-    "cost": 20
+    "cost": 20,
+    "spawns": "BuyGunCriticalDamageChance_C"
   },
   {
     "name": "BuyGunCriticalDamageChance4_198",
-    "type": "BuyGunCriticalDamageChance_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": 52516.84375,
     "lng": -67209.0859375,
     "alt": 1099.707763671875,
-    "cost": 20
+    "cost": 20,
+    "spawns": "BuyGunCriticalDamageChance_C"
   },
   {
     "name": "BuyGunCriticalDamageChance_1426",
-    "type": "BuyGunCriticalDamageChance_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": -11419.5537109375,
     "lng": -12802.7421875,
     "alt": -1690.3917236328125,
-    "cost": 10
+    "cost": 10,
+    "spawns": "BuyGunCriticalDamageChance_C"
   },
   {
     "name": "BuyGunDamage+15_1234",
-    "type": "BuyGunDamage+15_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": -11550.875,
     "lng": -23101.931640625,
     "alt": -1660.382080078125,
-    "cost": 120
+    "cost": 120,
+    "spawns": "BuyGunDamage+15_C"
   },
   {
     "name": "BuyGunDamage+5_235",
-    "type": "BuyGunDamage+5_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": 21814.56640625,
     "lng": 9879.4658203125,
     "alt": -20.0,
-    "cost": 120
+    "cost": 120,
+    "spawns": "BuyGunDamage+5_C"
   },
   {
     "name": "BuyGunRefillSpeed+66_478",
-    "type": "BuyGunRefillSpeed+66_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": -36879.9140625,
     "lng": -18389.73828125,
     "alt": -1075.4705810546875,
-    "cost": 30
+    "cost": 30,
+    "spawns": "BuyGunRefillSpeed+66_C"
   },
   {
     "name": "BuyGunRefillSpeed+67_198",
-    "type": "BuyGunRefillSpeed+66_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": 52239.375,
     "lng": -67205.3515625,
     "alt": 1105.3001708984375,
-    "cost": 250
+    "cost": 250,
+    "spawns": "BuyGunRefillSpeed+66_C"
   },
   {
     "name": "BuyGunRefillSpeedx2_374",
-    "type": "BuyGunRefillSpeed+66_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": 21487.068359375,
     "lng": 9621.9853515625,
     "alt": -20.0,
-    "cost": 190
+    "cost": 190,
+    "spawns": "BuyGunRefillSpeed+66_C"
   },
   {
     "name": "BuySilentFeet2",
-    "type": "BuyGunRefillSpeed+66_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": -12392.7412109375,
     "lng": -23095.521484375,
     "alt": -1668.999755859375,
-    "cost": 40
+    "cost": 40,
+    "spawns": "BuyGunRefillSpeed+66_C"
   },
   {
     "name": "BuyGunRefireRate50_506",
-    "type": "BuyGunRefireRate50_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": -11320.359375,
     "lng": -23100.384765625,
     "alt": -1663.2586669921875,
-    "cost": 140
+    "cost": 140,
+    "spawns": "BuyGunRefireRate50_C"
   },
   {
     "name": "BuySilentFeet_902",
-    "type": "BuyGunRefireRate50_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": -12244.0947265625,
     "lng": -23095.03515625,
     "alt": -1722.1226806640625,
-    "cost": 40
+    "cost": 40,
+    "spawns": "BuyGunRefireRate50_C"
   },
   {
     "name": "BuyGunSpeedx2_436",
-    "type": "BuyGunSpeedx2_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": -11697.0458984375,
     "lng": -23131.419921875,
     "alt": -1740.8134765625,
-    "cost": 5
+    "cost": 5,
+    "spawns": "BuyGunSpeedx2_C"
   },
   {
     "name": "BuyHealth+15_765",
-    "type": "BuyHealth+15_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": -33490.23046875,
     "lng": 275.44390869140625,
     "alt": -208.89215087890625,
-    "cost": 10
+    "cost": 10,
+    "spawns": "BuyHealth+15_C"
   },
   {
     "name": "BuyHealth+16_457",
-    "type": "BuyHealth+15_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": -11908.509765625,
     "lng": -23116.8515625,
     "alt": -1713.5672607421875,
-    "cost": 70
+    "cost": 70,
+    "spawns": "BuyHealth+15_C"
   },
   {
     "name": "BuyHealth+17",
-    "type": "BuyHealth+15_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": 21667.548828125,
     "lng": 9757.6328125,
     "alt": -20.0,
-    "cost": 150
+    "cost": 150,
+    "spawns": "BuyHealth+15_C"
   },
   {
     "name": "BuyHealth+5",
-    "type": "BuyHealth+5_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": 2127.868896484375,
     "lng": -583.0960083007812,
     "alt": 323.40106201171875,
-    "cost": 35
+    "cost": 35,
+    "spawns": "BuyHealth+5_C"
   },
   {
     "name": "BuyHealthRegen2_695",
-    "type": "BuyHealthRegen_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": -34003.71875,
     "lng": -67.00196838378906,
     "alt": -208.8922119140625,
-    "cost": 5
+    "cost": 5,
+    "spawns": "BuyHealthRegen_C"
   },
   {
     "name": "BuyHealthRegenMax10_330",
-    "type": "BuyHealthRegenMax10_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": 21912.978515625,
     "lng": 9971.3427734375,
     "alt": -20.0,
-    "cost": 180
+    "cost": 180,
+    "spawns": "BuyHealthRegenMax10_C"
   },
   {
     "name": "BuyHealthRegenMax5_1162",
-    "type": "BuyHealthRegenMax5_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": 52018.39453125,
     "lng": -67206.46875,
     "alt": 1099.7083740234375,
-    "cost": 40
+    "cost": 40,
+    "spawns": "BuyHealthRegenMax5_C"
   },
   {
     "name": "BuyShieldBreaker_1026",
-    "type": "BuyShieldBreaker_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": -36682.95703125,
     "lng": -18442.462890625,
     "alt": -1137.511962890625,
-    "cost": 35
+    "cost": 35,
+    "spawns": "BuyShieldBreaker_C"
   },
   {
     "name": "BuyShowProgress2_2",
-    "type": "BuyShowProgress_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": 2154.03564453125,
     "lng": -584.609619140625,
     "alt": 194.14773559570312,
-    "cost": 1
+    "cost": 1,
+    "spawns": "BuyShowProgress_C"
   },
   {
     "name": "BuySmashdownDamage+33",
-    "type": "BuySmashdownDamage+33_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": 51529.32421875,
     "lng": -67252.4453125,
     "alt": 1072.819091796875,
-    "cost": 50
+    "cost": 50,
+    "spawns": "BuySmashdownDamage+33_C"
   },
   {
     "name": "BuySpeedx15_2",
-    "type": "BuySpeedx15_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": -33893.21875,
     "lng": 18.940216064453125,
     "alt": -208.89239501953125,
-    "cost": 223
+    "cost": 223,
+    "spawns": "BuySpeedx15_C"
   },
   {
     "name": "BuySpeedx2_206",
-    "type": "BuySpeedx2_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": -33804.83203125,
     "lng": 80.78148651123047,
     "alt": -210.2398681640625,
-    "cost": 12
+    "cost": 12,
+    "spawns": "BuySpeedx2_C"
   },
   {
     "name": "BuyStats",
@@ -525,57 +561,63 @@
   },
   {
     "name": "BuySwordCriticalDamageChance2_2395",
-    "type": "BuySwordCriticalDamageChance_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": -36483.71875,
     "lng": -18478.12109375,
     "alt": -1062.850830078125,
-    "cost": 10
+    "cost": 10,
+    "spawns": "BuySwordCriticalDamageChance_C"
   },
   {
     "name": "BuySwordCriticalDamageChance3_296",
-    "type": "BuySwordCriticalDamageChance_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": 51767.75,
     "lng": -67199.3984375,
     "alt": 1104.100830078125,
-    "cost": 10
+    "cost": 10,
+    "spawns": "BuySwordCriticalDamageChance_C"
   },
   {
     "name": "BuySwordCriticalDamageChance_1657",
-    "type": "BuySwordCriticalDamageChance_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": 2393.044189453125,
     "lng": -733.5379638671875,
     "alt": 128.91061401367188,
-    "cost": 10
+    "cost": 10,
+    "spawns": "BuySwordCriticalDamageChance_C"
   },
   {
     "name": "BuySwordDamage+11",
-    "type": "BuySwordDamage+1_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": -33958.2890625,
     "lng": 16.502090454101562,
     "alt": -208.89187622070312,
-    "cost": 5
+    "cost": 5,
+    "spawns": "BuySwordDamage+1_C"
   },
   {
     "name": "BuySwordDamage+10_2",
-    "type": "BuySwordDamage+3_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": -33530.83984375,
     "lng": 333.5240173339844,
     "alt": -208.89187622070312,
-    "cost": 65
+    "cost": 65,
+    "spawns": "BuySwordDamage+3_C"
   },
   {
     "name": "UpgradeSwordDamageX2_716",
-    "type": "BuySwordDamage+3_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": -12066.693359375,
     "lng": -23106.603515625,
     "alt": -1670.8896484375,
-    "cost": 40
+    "cost": 40,
+    "spawns": "BuySwordDamage+3_C"
   },
   {
     "name": "BuyTranslocator_7",
@@ -587,75 +629,83 @@
   },
   {
     "name": "BuyTripleJump2",
-    "type": "BuyTripleJump_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": 17041.91015625,
     "lng": 20299.1328125,
     "alt": 802.3577270507812,
-    "cost": 15
+    "cost": 15,
+    "spawns": "BuyTripleJump_C"
   },
   {
     "name": "BuyTripleJump_877",
-    "type": "BuyTripleJump_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": -33882.11328125,
     "lng": 55.43764877319336,
     "alt": -208.89208984375,
-    "cost": 30
+    "cost": 30,
+    "spawns": "BuyTripleJump_C"
   },
   {
     "name": "BuyUpgradeChestNum",
-    "type": "BuyUpgradeChestNum_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": -34014.0,
     "lng": -37.0,
     "alt": -209.0,
-    "cost": 337
+    "cost": 337,
+    "spawns": "BuyUpgradeChestNum_C"
   },
   {
     "name": "BuyWalletx15",
-    "type": "BuyWalletx15_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": -11426.935546875,
     "lng": -23135.169921875,
     "alt": -1728.2237548828125,
-    "cost": 15
+    "cost": 15,
+    "spawns": "BuyWalletx15_C"
   },
   {
     "name": "BuyWalletx16",
-    "type": "BuyWalletx15_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": 2225.852294921875,
     "lng": -322.3926696777344,
     "alt": 181.45103454589844,
-    "cost": 15
+    "cost": 15,
+    "spawns": "BuyWalletx15_C"
   },
   {
     "name": "BuyWalletx17_426",
-    "type": "BuyWalletx15_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": 52723.30078125,
     "lng": -67194.859375,
     "alt": 1071.166259765625,
-    "cost": 55
+    "cost": 55,
+    "spawns": "BuyWalletx15_C"
   },
   {
     "name": "BuyWallet+50_737",
-    "type": "BuyWalletx2_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": -33628.9296875,
     "lng": 201.7998504638672,
     "alt": -208.89208984375,
-    "cost": 24
+    "cost": 24,
+    "spawns": "BuyWalletx2_C"
   },
   {
     "name": "BuyWallet+51",
-    "type": "BuyWalletx2_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": -33561.3203125,
     "lng": 274.32745361328125,
     "alt": -203.6505126953125,
-    "cost": 10
+    "cost": 10,
+    "spawns": "BuyWalletx2_C"
   },
   {
     "name": "BuyWalletx2_986",
@@ -16573,11 +16623,12 @@
   },
   {
     "name": "UpgradeHappiness2_2",
-    "type": "UpgradeHappiness_C",
+    "type": "_ShopItem_C",
     "area": "Map",
     "lat": -33803.76171875,
     "lng": 65.12112426757812,
     "alt": -208.89263916015625,
-    "cost": 1337
+    "cost": 1337,
+    "spawns": "UpgradeHappiness_C"
   }
 ]

@@ -809,12 +809,13 @@
   },
   {
     "name": "BuyBelt_2",
-    "type": "BuyBelt_C",
+    "type": "_ShopItem_C",
     "area": "Crash",
     "lat": -225.03927612304688,
     "lng": 43248.484375,
     "alt": 107.03009033203125,
-    "cost": 555
+    "cost": 555,
+    "spawns": "BuyBelt_C"
   },
   {
     "name": "BuyChestDetector2",
@@ -826,30 +827,33 @@
   },
   {
     "name": "BuyChestDetectorRadius_2",
-    "type": "BuyChestDetectorRadius_C",
+    "type": "_ShopItem_C",
     "area": "Crash",
     "lat": -2538.0517578125,
     "lng": 254.60604858398438,
     "alt": 129.81759643554688,
-    "cost": 32
+    "cost": 32,
+    "spawns": "BuyChestDetectorRadius_C"
   },
   {
     "name": "BuyForceBeam2_2",
-    "type": "BuyForceBeam_C",
+    "type": "_ShopItem_C",
     "area": "Crash",
     "lat": 2804.151123046875,
     "lng": 38120.84765625,
     "alt": -122.85015869140625,
-    "cost": 2499
+    "cost": 2499,
+    "spawns": "BuyForceBeam_C"
   },
   {
     "name": "BuyForceBeam3_2",
-    "type": "BuyForceBeam_C",
+    "type": "_ShopItem_C",
     "area": "Crash",
     "lat": 825.46630859375,
     "lng": 41974.7890625,
     "alt": 122.74449920654297,
-    "cost": 555
+    "cost": 555,
+    "spawns": "BuyForceBeam_C"
   },
   {
     "name": "BuyForceBeam_2",
@@ -869,12 +873,13 @@
   },
   {
     "name": "BuyForceBlock_2",
-    "type": "BuyForceBlock_C",
+    "type": "_ShopItem_C",
     "area": "Crash",
     "lat": -2524.9609375,
     "lng": 263.939453125,
     "alt": 129.1154022216797,
-    "cost": 61
+    "cost": 61,
+    "spawns": "BuyForceBlock_C"
   },
   {
     "name": "BuyForceCubeStompJump_2",
@@ -886,21 +891,23 @@
   },
   {
     "name": "BuyGunAlt3_2",
-    "type": "BuyGunAlt_C",
+    "type": "_ShopItem_C",
     "area": "Crash",
     "lat": -479.3745422363281,
     "lng": 44144.2578125,
     "alt": 177.77708435058594,
-    "cost": 555
+    "cost": 555,
+    "spawns": "BuyGunAlt_C"
   },
   {
     "name": "BuyGunAlt_2",
-    "type": "BuyGunAlt_C",
+    "type": "_ShopItem_C",
     "area": "Crash",
     "lat": 2830.557373046875,
     "lng": 38227.96484375,
     "alt": -82.00233459472656,
-    "cost": 1999
+    "cost": 1999,
+    "spawns": "BuyGunAlt_C"
   },
   {
     "name": "BuyHealthRegen_2",
@@ -912,21 +919,23 @@
   },
   {
     "name": "BuyJumpHeightPlus_2",
-    "type": "BuyJumpHeightPlus_C",
+    "type": "_ShopItem_C",
     "area": "Crash",
     "lat": 2807.3642578125,
     "lng": 38291.27734375,
     "alt": -111.86073303222656,
-    "cost": 17
+    "cost": 17,
+    "spawns": "BuyJumpHeightPlus_C"
   },
   {
     "name": "BuySmashdown2_2",
-    "type": "BuySmashdown_C",
+    "type": "_ShopItem_C",
     "area": "Crash",
     "lat": 861.5728149414062,
     "lng": 33841.76953125,
     "alt": 126.90751647949219,
-    "cost": 2000000
+    "cost": 2000000,
+    "spawns": "BuySmashdown_C"
   },
   {
     "name": "BuySmashdown_2",
@@ -938,21 +947,23 @@
   },
   {
     "name": "BuySpeedx2_2",
-    "type": "BuySpeedx2_C",
+    "type": "_ShopItem_C",
     "area": "Crash",
     "lat": 2814.99609375,
     "lng": 38441.92578125,
     "alt": -111.09630584716797,
-    "cost": 17
+    "cost": 17,
+    "spawns": "BuySpeedx2_C"
   },
   {
     "name": "BuySword2_2",
-    "type": "BuySword2_C",
+    "type": "_ShopItem_C",
     "area": "Crash",
     "lat": 50.918731689453125,
     "lng": 44884.0625,
     "alt": 18.51580047607422,
-    "cost": 555
+    "cost": 555,
+    "spawns": "BuySword2_C"
   },
   {
     "name": "BuySword_2",
@@ -964,12 +975,13 @@
   },
   {
     "name": "BuySwordDoorKnocker_2",
-    "type": "BuySwordDoorKnocker_C",
+    "type": "_ShopItem_C",
     "area": "Crash",
     "lat": 2805.856689453125,
     "lng": 38489.24609375,
     "alt": -122.82959747314453,
-    "cost": 999
+    "cost": 999,
+    "spawns": "BuySwordDoorKnocker_C"
   },
   {
     "name": "BuyTranslocator2_2",
@@ -981,21 +993,23 @@
   },
   {
     "name": "BuyTranslocator_2",
-    "type": "BuyTranslocator_C",
+    "type": "_ShopItem_C",
     "area": "Crash",
     "lat": 2838.224853515625,
     "lng": 38368.72265625,
     "alt": -122.61809539794922,
-    "cost": 2999
+    "cost": 2999,
+    "spawns": "BuyTranslocator_C"
   },
   {
     "name": "BuyTranslocatorCoolDownHalf_2",
-    "type": "BuyTranslocatorCoolDownHalf_C",
+    "type": "_ShopItem_C",
     "area": "Crash",
     "lat": -2365.2314453125,
     "lng": 365.24664306640625,
     "alt": 133.19784545898438,
-    "cost": 20
+    "cost": 20,
+    "spawns": "BuyTranslocatorCoolDownHalf_C"
   },
   {
     "name": "BuyTranslocatorModule3",
@@ -1007,12 +1021,13 @@
   },
   {
     "name": "BuyTranslocatorWeight_2",
-    "type": "BuyTranslocatorWeight_C",
+    "type": "_ShopItem_C",
     "area": "Crash",
     "lat": 2812.9853515625,
     "lng": 38116.25390625,
     "alt": -107.90607452392578,
-    "cost": 40
+    "cost": 40,
+    "spawns": "BuyTranslocatorWeight_C"
   },
   {
     "name": "CarrotPhysical2",
