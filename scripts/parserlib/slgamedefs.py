@@ -126,6 +126,7 @@ properties = [
     'bDoesntRotate',  # Coin_C, CoinBig_C
     'Scrapamount',  # Scrap_C
     'Loot',
+    'Loop',
 ]
 
 sl_custom_data = {
