@@ -5,6 +5,8 @@
 //               being passed on to other controls or the underlying map. Required to prevent
 //               oncontextmenu behaving inconsistently with different controls.
 // JD 24/05/2026 Added fixes up to v4.0.0 from original repository
+// JD 03/06/2026 On submission use best match rather than no match and show the tooltip
+//               on expansion if the search string is not empty
 
 /* eslint-disable no-unused-vars */
 /* eslint-disable preserve-caught-error */
@@ -128,6 +130,7 @@ export const Search = Control.extend({
 		this._autoTypeTmp = this.options.autoType;	//useful for disable autoType temporarily in delete/backspace keydown
 		this._countertips = 0;		//number of tips items
 		this._recordsCache = {};	//key,value table! to store locations! format: key,latlng
+		this._firstMatch = null; // JD 03/06/2026
 		this._curReq = null;
 	},
 
@@ -244,6 +247,7 @@ export const Search = Control.extend({
 		if ( toggle !== false ) {
 			this._input.focus();
 			this._map.on('dragstart click', this.collapse, this);
+			this._delayedFillRecordsCache();	// JD 03/06/2026
 		}
 		this.fire('search:expanded');
 		return this;
@@ -685,9 +689,24 @@ export const Search = Control.extend({
 		}
 	},
 
-	_handleKeypress: function (e) {	//run _input keyup event
+	// JD 03/06/2026
+	_delayedFillRecordsCache() {
 		var self = this;
 
+		if(this._input.value.length >= this.options.minLength)
+		{
+			clearTimeout(this.timerKeypress);	//cancel last search request while type in
+			this.timerKeypress = setTimeout(function() {	//delay before request, for limit jsonp/ajax request
+
+				self._fillRecordsCache();
+
+			}, this.options.delayType);
+		}
+		else
+			this._hideTooltip();
+	},
+
+	_handleKeypress: function (e) {	//run _input keyup event
 		switch(e.keyCode)
 		{
 			case 27://Esc
@@ -695,9 +714,9 @@ export const Search = Control.extend({
 			break;
 			case 13://Enter
 				if(this._countertips == 1 || (this.options.firstTipSubmit && this._countertips > 0)) {
-          			if(this._tooltip.currentSelection == -1) {
+					if(this._tooltip.currentSelection == -1) {
 						this._handleArrowSelect(1);
-          			}
+					}
 				}
 				this._handleSubmit();	//do search
 			break;
@@ -725,17 +744,8 @@ export const Search = Control.extend({
 				else
 					this._cancel.style.display = 'none';
 
-				if(this._input.value.length >= this.options.minLength)
-				{
-					clearTimeout(this.timerKeypress);	//cancel last search request while type in
-					this.timerKeypress = setTimeout(function() {	//delay before request, for limit jsonp/ajax request
-
-						self._fillRecordsCache();
-
-					}, this.options.delayType);
-				}
-				else
-					this._hideTooltip();
+				// JD 03/06/2026 - moved code into sub-function
+				this._delayedFillRecordsCache();
 		}
 
 		this._handleAutoresize();
@@ -771,6 +781,7 @@ export const Search = Control.extend({
 			this._recordsCache = this._recordsFromLayer();
 
 			records = this._filterData( this._input.value, this._recordsCache );
+			this._firstMatch = Object.keys(records)[0];  // JD 03/06/2026
 
 			this.showTooltip( records );
 
@@ -793,6 +804,7 @@ export const Search = Control.extend({
 					records = self._filterData( self._input.value, self._recordsCache );
 				else
 					records = self._recordsCache;
+				this._firstMatch = Object.keys(records)[0];	  // JD 03/06/2026
 
 				self.showTooltip( records );
 
@@ -888,6 +900,8 @@ export const Search = Control.extend({
 
 		if( this._recordsCache.hasOwnProperty(key) )
 			return this._recordsCache[key];//then after use .loc attribute
+		else if(this._firstMatch)	 // JD 03/06/2026
+			return this._recordsCache[this._firstMatch];
 		else
 			return false;
 	},
