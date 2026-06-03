@@ -2627,7 +2627,7 @@
     "setfound": false
   },
   "StandardShop_C": {
-    "friendly": "Item Shop",
+    "friendly": "Upgrade Shop",
     "icon": "gift_box.gold",
     "layer": "poi",
     "nospoiler": null,
@@ -2637,14 +2637,13 @@
     "setfound": false
   },
   "JustAddShopItem_C": {
-    "friendly": "Item Shop",
+    "friendly": "Shop Item",
     "icon": "gift_box.gold",
     "layer": "poi",
     "nospoiler": "swnospoiler",
     "games": [
       "sw"
-    ],
-    "setfound": false
+    ]
   },
   "SupraworldPlayerStart_C": {
     "friendly": "Player Start",
@@ -2860,7 +2859,7 @@
   },
   "Inventory_BuyEggOpener_C": {
     "friendly": "Egg Opener",
-    "icon": null,
+    "icon": "eggopener",
     "layer": "swupgrade",
     "nospoiler": null,
     "games": [
@@ -3070,7 +3069,7 @@
   },
   "ItemSpawner_C": {
     "friendly": "Item Spawner",
-    "icon": "gift_box_green",
+    "icon": "gift_box.green",
     "layer": "swcollectable",
     "nospoiler": "swnospoiler",
     "games": [
@@ -3079,7 +3078,7 @@
   },
   "PickupSpawner_C": {
     "friendly": "Item Spawner",
-    "icon": "gift_box_green",
+    "icon": "gift_box.green",
     "layer": "swcollectable",
     "nospoiler": "swnospoiler",
     "games": [
@@ -3088,7 +3087,7 @@
   },
   "RespawnablePickupSpawner_C": {
     "friendly": "Item Spawner",
-    "icon": "gift_box_green",
+    "icon": "gift_box.green",
     "layer": "poi",
     "nospoiler": "swnospoiler",
     "games": [
@@ -3097,7 +3096,7 @@
   },
   "ShopItemSpawner_C": {
     "friendly": "Shop Item",
-    "icon": "gift_box_gold",
+    "icon": "gift_box.gold",
     "layer": "swcollectable",
     "nospoiler": "swnospoiler",
     "games": [
@@ -3106,7 +3105,7 @@
   },
   "ShopSlot_C": {
     "friendly": "Shop Item Spawner",
-    "icon": "gift_box_gold",
+    "icon": "gift_box.gold",
     "layer": "swcollectable",
     "nospoiler": "swnospoiler",
     "games": [

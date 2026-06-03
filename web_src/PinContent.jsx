@@ -139,6 +139,9 @@ export const PinContent = ({ o, mapId, closePopup, hasFoundState, isFound, found
     }
   }
 
+  const descClass = (o.spawns && GameClasses.get(o.spawns)?.description) ? o.spawns : o.type;
+  const hasDescription = o.description || GameClasses.get(descClass)?.description;
+
   return (
     <>
       <div className="marker-popup-heading">
@@ -149,14 +152,14 @@ export const PinContent = ({ o, mapId, closePopup, hasFoundState, isFound, found
         {o.spawns && <StaticRow title="Contains" value={locStr.friendly(null, o.spawns, mapId)} />}
         {o.coins && <StaticRow title="Coins" value={`${o.coins} coin${o.coins > 1 ? 's' : ''}`} />}
         {o.scrapamount && <StaticRow title="Amount" value={`${o.scrapamount} coin${o.scrapamount > 1 ? 's' : ''}`} />}
-        {o.cost && <StaticRow title="Price" value={locStr.cost(o.price_type, o.cost)} />}
+        {o.cost !== undefined && <StaticRow title="Price" value={locStr.cost(o.price_type, o.cost)} />}
         {o.area_tag && <StaticRow title="Area" value={o.area_tag} />}
         {o.prog_tag && <StaticRow title="Act" value={o.prog_tag} />}
         {o.abilities && <StaticRow title="Requires" value={o.abilities} />}
         {o.loop && <StaticRow title="Loop" value={o.loop} />}
         {o.variant && <StaticRow title="Variant" value={o.variant} />}
-        {(o.description || GameClasses.get(o.type).description) && (
-          <StaticRow title="Description" value={locStr.description(o, o.type, mapId)} />
+        {hasDescription && (
+          <StaticRow title="Description" value={locStr.description(o, descClass, mapId)} />
         )}
         {o.comment && <StaticRow title="Comment" value={o.comment} />}
         {o.spoiler_help && (

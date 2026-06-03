@@ -3317,6 +3317,7 @@
     "lat": 14037.806640625,
     "lng": 14375.41796875,
     "alt": 6514.146484375,
+    "cost": 49,
     "spawns": "Inventory_CoinMagnetEnemies_C"
   },
   {
@@ -3326,6 +3327,7 @@
     "lat": 14037.806640625,
     "lng": 14304.18359375,
     "alt": 6223.57470703125,
+    "cost": 49,
     "spawns": "Inventory_SeeEnemyHealth_C"
   },
   {
@@ -3335,6 +3337,7 @@
     "lat": 14037.806640625,
     "lng": 14304.18359375,
     "alt": 6514.146484375,
+    "cost": 49,
     "spawns": "Inventory_CoinMagnet_C"
   },
   {

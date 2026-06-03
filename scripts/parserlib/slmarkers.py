@@ -559,10 +559,7 @@ def cleanup_objects(  # noqa: C901 - disable complexity warning
         return (
             (gc := game_classes.get(item['type']))
             and game in gc.get('games', ['sl', 'slc', 'siu'])
-            and (
-                gc.get('layer') and gc['layer'] != 'dev'
-                or gc.get('nospoiler') and gc['nospoiler'] != 'dev'
-            )
+            and (gc.get('layer') and gc['layer'] != 'dev' or gc.get('nospoiler') and gc['nospoiler'] != 'dev')
         )
 
     for item in data[:]:

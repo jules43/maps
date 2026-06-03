@@ -328,9 +328,11 @@ def export_sw_markers(game: str, datadir: Path, sourcedir: Path):  # noqa: C901 
             spawns = ''
             if v := spawn_props.get('Pickup Class'):
                 spawns = v['ObjectName'].split("'")[-2]
-            elif ((v := spawn_props.get('InventoryItem'))
+            elif (
+                (v := spawn_props.get('InventoryItem'))
                 or (v := spawn_props.get('CustomShopItem'))
-                or (v := spawn_props.get('ItemToAdd'))):
+                or (v := spawn_props.get('ItemToAdd'))
+            ):
                 spawns = v['AssetPathName'].split(".")[-1]
             if spawn_props.get('bFromLootPool'):
                 spawns = '_LootPool_C'
@@ -338,7 +340,7 @@ def export_sw_markers(game: str, datadir: Path, sourcedir: Path):  # noqa: C901 
             # If this is a shop with initial inventory, then create instances of the
             # JustAddShopItem_C class. They will need to be repositioned in custom data
             # so they don't overlay the shop
-            if (v := spawn_props.get('Initial Shop Inventory')):
+            if v := spawn_props.get('Initial Shop Inventory'):
                 for idx, inv in enumerate(v):
                     if isinstance((inv := list(inv.values())[0]), dict):
                         data.append(data[-1].copy())
@@ -352,6 +354,7 @@ def export_sw_markers(game: str, datadir: Path, sourcedir: Path):  # noqa: C901 
                 'ShopEgg_C',
                 'ChocolateEgg_C',
                 'ShopSlot_C',
+                'JustAddShopItem_C',
             ]:
                 data[-1]['cost'] = v
 

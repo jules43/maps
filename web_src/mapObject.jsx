@@ -240,6 +240,9 @@ export class MapObject {
       this._defaultSaveData = false;
     }
 
+    // Allow instance to override save id
+    this._saveFileId = this.o.saveid || this._saveFileId;
+
     if (
       (!MapLayer.isEnabledFromId(c.layer, map.mapId) && !MapLayer.isEnabledFromId(c.nospoiler, map.mapId)) ||
       !latLngBounds(MapLayer.get(map.mapId).viewLatLngBounds).contains([this.o.lat, this.o.lng])

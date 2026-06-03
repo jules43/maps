@@ -1,5 +1,53 @@
 [
   {
+    "name": "ShopItemSpawner_C_UAID_ACB480ECFC843FDC02_1403497448",
+    "area": "Supraworld",
+    "saveid": "ChocolateEgg_C_UAID_7085C2B20F0E9C5B01_1163745921"
+  },
+  {
+    "name": "Shop_C_UAID_7085C2B20F0E7ED300_1296547414",
+    "area": "Supraworld",
+    "lat": -3039.952392578125,
+    "lng": 2321.389892578125,
+    "alt": 322.61077880859375
+  },
+  {
+    "name": "Shop_C_UAID_7085C2B20F0E7ED300_1296547414_0",
+    "area": "Supraworld",
+    "lat": -3539.952392578125,
+    "lng": 2321.389892578125,
+    "alt": 322.61077880859375,
+    "saveid": "Supraworld:FirstEggOpening_C_UAID_FC3497C34610126802_1898191859"
+  },
+  {
+    "name": "StandardShop_C_UAID_7085C2B20F0EE1CF01_1129516690",
+    "area": "Supraworld",
+    "lat": 13489.673828125,
+    "lng": 15791.0556640625,
+    "alt": 5780.14013671875
+  },
+  {
+    "name": "JustAddShopItem_C_UAID_18C04D98034C27CA02_1414510968",
+    "area": "Supraworld",
+    "lat": 13839.673828125,
+    "lng": 15491.0556640625,
+    "alt": 6514.146484375
+  },
+  {
+    "name": "JustAddShopItem_C_UAID_FC3497C346102A9802_1317477838",
+    "area": "Supraworld",
+    "lat": 13839.673828125,
+    "lng": 15791.0556640625,
+    "alt": 6223.57470703125
+  },
+  {
+    "name": "JustAddShopItem_C_UAID_FC3497C346103C9602_1606472892",
+    "area": "Supraworld",
+    "lat": 13839.673828125,
+    "lng": 16091.0556640625,
+    "alt": 6514.146484375
+  },
+  {
     "name": "SecretVolume_C_UAID_ACB480ECFC84B69F02_1198388909",
     "area": "Supraworld",
 	  "spoiler_help": "Under the magnet suspended on the 2 rails, there is a green book. To reach the secret, walk carefully anti-clockwise around the book's lower cover from the south edge until you reach the book's north side."
