@@ -139,7 +139,7 @@ export const PinContent = ({ o, mapId, closePopup, hasFoundState, isFound, found
     }
   }
 
-  const descClass = (o.spawns && GameClasses.get(o.spawns)?.description) ? o.spawns : o.type;
+  const descClass = o.spawns && GameClasses.get(o.spawns)?.description ? o.spawns : o.type;
   const hasDescription = o.description || GameClasses.get(descClass)?.description;
 
   return (
@@ -158,9 +158,7 @@ export const PinContent = ({ o, mapId, closePopup, hasFoundState, isFound, found
         {o.abilities && <StaticRow title="Requires" value={o.abilities} />}
         {o.loop && <StaticRow title="Loop" value={o.loop} />}
         {o.variant && <StaticRow title="Variant" value={o.variant} />}
-        {hasDescription && (
-          <StaticRow title="Description" value={locStr.description(o, descClass, mapId)} />
-        )}
+        {hasDescription && <StaticRow title="Description" value={locStr.description(o, descClass, mapId)} />}
         {o.comment && <StaticRow title="Comment" value={o.comment} />}
         {o.spoiler_help && (
           <StaticRow
