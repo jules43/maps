@@ -8,11 +8,11 @@ call export sw setup
 call export sw mapimg
 call export sw markers
 
-copy ..\source\sw\mapimg\swmapfog-ea.png ..\source\sw\mapimg\swmapfog.png
+magick ..\source\sw\mapimg\swmapfog-ea.png -resize 8192x8192 ..\source\sw\mapimg\swmapfog.png
 
 call export sw applyfog
 
-move ..\source\sw\mapimg\swmap-fogged.png ..\source\sw\mapimg\swmap-final.png
+xcopy /Q /Y ..\source\sw\mapimg\swmap-fogged.png ..\source\swmap-final.png
 
 export sw gentiles
 
