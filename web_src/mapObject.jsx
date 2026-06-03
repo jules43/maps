@@ -454,7 +454,7 @@ export class MapObject {
 
   getPlayerDeltaZ(mapId) {
     const playerZ = MapObject._mapObjects?.PlayerPosition?.o.alt;
-    let playerDeltaZ = this.o.alt - playerZ; // (mapId == 'sw' && playerZ ? playerZ : 0);
+    let playerDeltaZ = this.o.alt - (playerZ !== undefined ? playerZ : 0); // (mapId == 'sw' && playerZ ? playerZ : 0);
     return playerDeltaZ;
   }
 
