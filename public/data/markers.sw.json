@@ -2556,27 +2556,30 @@
   },
   {
     "name": "ItemSpawner_C_UAID_ACB480ECFC84458002_2116623307",
-    "type": "Inventory_Toothpin_Dart_C",
+    "type": "ItemSpawner_C",
     "area": "Supraworld",
     "lat": -27281.5859375,
     "lng": 4235.1015625,
-    "alt": 871.86865234375
+    "alt": 871.86865234375,
+    "spawns": "Inventory_Toothpin_Dart_C"
   },
   {
     "name": "ShopItemChip_C_UAID_7085C2B20F0E005501_1737459134",
-    "type": "Inventory_Walk_C",
+    "type": "ItemSpawner_C",
     "area": "Supraworld",
     "lat": -7719.94091796875,
     "lng": 2864.730712890625,
-    "alt": 1271.054443359375
+    "alt": 1271.054443359375,
+    "spawns": "Inventory_Walk_C"
   },
   {
     "name": "ShopItemChip_C_UAID_7085C2B20F0E763D01_2061193916",
-    "type": "Inventory_Dash_C",
+    "type": "ItemSpawner_C",
     "area": "Supraworld",
     "lat": 4561.1484375,
     "lng": 18910.513671875,
-    "alt": 457.1416320800781
+    "alt": 457.1416320800781,
+    "spawns": "Inventory_Dash_C"
   },
   {
     "name": "Jimmy_C_UAID_7085C2B20F0E3C7402_2114237862",
@@ -3308,6 +3311,33 @@
     "linetype": "target"
   },
   {
+    "name": "JustAddShopItem_C_UAID_18C04D98034C27CA02_1414510968",
+    "type": "JustAddShopItem_C",
+    "area": "Supraworld",
+    "lat": 14037.806640625,
+    "lng": 14375.41796875,
+    "alt": 6514.146484375,
+    "spawns": "Inventory_CoinMagnetEnemies_C"
+  },
+  {
+    "name": "JustAddShopItem_C_UAID_FC3497C346102A9802_1317477838",
+    "type": "JustAddShopItem_C",
+    "area": "Supraworld",
+    "lat": 14037.806640625,
+    "lng": 14304.18359375,
+    "alt": 6223.57470703125,
+    "spawns": "Inventory_SeeEnemyHealth_C"
+  },
+  {
+    "name": "JustAddShopItem_C_UAID_FC3497C346103C9602_1606472892",
+    "type": "JustAddShopItem_C",
+    "area": "Supraworld",
+    "lat": 14037.806640625,
+    "lng": 14304.18359375,
+    "alt": 6514.146484375,
+    "spawns": "Inventory_CoinMagnet_C"
+  },
+  {
     "name": "Key_C_UAID_7085C2B20F0E215E01_1525563480",
     "type": "Key_C",
     "area": "Supraworld",
@@ -3721,222 +3751,249 @@
   },
   {
     "name": "Pickup_Rune_C_UAID_FC3497C34610B64102_1753837599",
-    "type": "Pickup_Rune_C",
+    "type": "PickupSpawner_C",
     "area": "Supraworld",
     "lat": -20292.814453125,
     "lng": 19516.61328125,
     "alt": 11755.3984375,
-    "variant": "green"
+    "variant": "green",
+    "spawns": "Pickup_Rune_C"
   },
   {
     "name": "Pickup_Rune_C_UAID_FC3497C34610B64102_2074938602",
-    "type": "Pickup_Rune_C",
+    "type": "PickupSpawner_C",
     "area": "Supraworld",
     "lat": 28888.275390625,
     "lng": -18634.9375,
     "alt": 20510.849609375,
-    "variant": "yellow"
+    "variant": "yellow",
+    "spawns": "Pickup_Rune_C"
   },
   {
     "name": "Pickup_Rune_C_UAID_FC3497C34610B64102_2124305603",
-    "type": "Pickup_Rune_C",
+    "type": "PickupSpawner_C",
     "area": "Supraworld",
     "lat": 30383.056640625,
     "lng": 10427.1064453125,
     "alt": 13350.3642578125,
-    "variant": "blue"
+    "variant": "blue",
+    "spawns": "Pickup_Rune_C"
   },
   {
     "name": "Pickup_Thread_C_UAID_ACB480ECFC848F9502_1681156450",
-    "type": "Pickup_Thread_C",
+    "type": "PickupSpawner_C",
     "area": "Supraworld",
     "lat": 25238.41796875,
     "lng": 11053.6953125,
-    "alt": 12272.943359375
+    "alt": 12272.943359375,
+    "spawns": "Pickup_Thread_C"
   },
   {
     "name": "Pickup_Thread_C_UAID_ACB480ECFC848F9502_1713588451",
-    "type": "Pickup_Thread_C",
+    "type": "PickupSpawner_C",
     "area": "Supraworld",
     "lat": -857.0223388671875,
     "lng": 20381.857421875,
-    "alt": 320.137451171875
+    "alt": 320.137451171875,
+    "spawns": "Pickup_Thread_C"
   },
   {
     "name": "Pickup_Thread_C_UAID_ACB480ECFC848F9502_1742112452",
-    "type": "Pickup_Thread_C",
+    "type": "PickupSpawner_C",
     "area": "Supraworld",
     "lat": 20435.865234375,
     "lng": 10291.5439453125,
-    "alt": 7562.7421875
+    "alt": 7562.7421875,
+    "spawns": "Pickup_Thread_C"
   },
   {
     "name": "Pickup_Thread_C_UAID_ACB480ECFC848F9502_1756858453",
-    "type": "Pickup_Thread_C",
+    "type": "PickupSpawner_C",
     "area": "Supraworld",
     "lat": 19893.697265625,
     "lng": 5548.33935546875,
-    "alt": 3729.2265625
+    "alt": 3729.2265625,
+    "spawns": "Pickup_Thread_C"
   },
   {
     "name": "Pickup_Thread_C_UAID_ACB480ECFC84C8CA02_1137744483",
-    "type": "Pickup_Thread_C",
+    "type": "PickupSpawner_C",
     "area": "Supraworld",
     "lat": -26707.953125,
     "lng": 14524.12890625,
-    "alt": 14067.5341796875
+    "alt": 14067.5341796875,
+    "spawns": "Pickup_Thread_C"
   },
   {
     "name": "Pickup_SolversGuidePage_C_UAID_7085C2B20F0EA54202_1576199776",
-    "type": "Pickup_SolversGuidePage_C",
+    "type": "PickupSpawner_C",
     "area": "Supraworld",
     "lat": -12268.4755859375,
     "lng": 2028.1278076171875,
-    "alt": 383.712158203125
+    "alt": 383.712158203125,
+    "spawns": "Pickup_SolversGuidePage_C"
   },
   {
     "name": "Pickup_SolversGuidePage_C_UAID_7085C2B20F0EA54202_1748199777",
-    "type": "Pickup_SolversGuidePage_C",
+    "type": "PickupSpawner_C",
     "area": "Supraworld",
     "lat": -7369.87451171875,
     "lng": -1691.2630615234375,
-    "alt": -38.875831604003906
+    "alt": -38.875831604003906,
+    "spawns": "Pickup_SolversGuidePage_C"
   },
   {
     "name": "Pickup_SolversGuidePage_C_UAID_7085C2B20F0EA54202_1799935778",
-    "type": "Pickup_SolversGuidePage_C",
+    "type": "PickupSpawner_C",
     "area": "Supraworld",
     "lat": -8439.642578125,
     "lng": 1969.769775390625,
-    "alt": 656.2150268554688
+    "alt": 656.2150268554688,
+    "spawns": "Pickup_SolversGuidePage_C"
   },
   {
     "name": "PickupSpawner_C_UAID_7085C2B20F0E096E02_1949514611",
-    "type": "Pickup_SolversGuidePage_C",
+    "type": "PickupSpawner_C",
     "area": "Supraworld",
     "lat": -11345.451171875,
     "lng": 2026.295166015625,
-    "alt": 1605.697021484375
+    "alt": 1605.697021484375,
+    "spawns": "Pickup_SolversGuidePage_C"
   },
   {
     "name": "PickupSpawner_C_UAID_7085C2B20F0E0E6E02_1209561620",
-    "type": "Pickup_SolversGuidePage_C",
+    "type": "PickupSpawner_C",
     "area": "Supraworld",
     "lat": -3655.5810546875,
     "lng": -4302.5625,
-    "alt": 343.7275085449219
+    "alt": 343.7275085449219,
+    "spawns": "Pickup_SolversGuidePage_C"
   },
   {
     "name": "PickupSpawner_C_UAID_7085C2B20F0E297502_1691381058",
-    "type": "Pickup_SolversGuidePage_C",
+    "type": "PickupSpawner_C",
     "area": "Supraworld",
     "lat": -7140.5947265625,
     "lng": 8719.5830078125,
-    "alt": 372.95758056640625
+    "alt": 372.95758056640625,
+    "spawns": "Pickup_SolversGuidePage_C"
   },
   {
     "name": "PickupSpawner_C_UAID_7085C2B20F0E297502_1832117060",
-    "type": "Pickup_SolversGuidePage_C",
+    "type": "PickupSpawner_C",
     "area": "Supraworld",
     "lat": -6233.80517578125,
     "lng": 1970.1326904296875,
-    "alt": 353.50103759765625
+    "alt": 353.50103759765625,
+    "spawns": "Pickup_SolversGuidePage_C"
   },
   {
     "name": "PickupSpawner_C_UAID_7085C2B20F0EB25D02_1617097391",
-    "type": "Pickup_SolversGuidePage_C",
+    "type": "PickupSpawner_C",
     "area": "Supraworld",
     "lat": -12467.8095703125,
     "lng": 5283.80322265625,
-    "alt": 584.9772338867188
+    "alt": 584.9772338867188,
+    "spawns": "Pickup_SolversGuidePage_C"
   },
   {
     "name": "PickupSpawner_C_UAID_7085C2B20F0EB25D02_1678090392",
-    "type": "Pickup_SolversGuidePage_C",
+    "type": "PickupSpawner_C",
     "area": "Supraworld",
     "lat": -15042.763671875,
     "lng": 2231.7138671875,
-    "alt": 2572.9189453125
+    "alt": 2572.9189453125,
+    "spawns": "Pickup_SolversGuidePage_C"
   },
   {
     "name": "PickupSpawner_C_UAID_7085C2B20F0EB25D02_1943771394",
-    "type": "Pickup_SolversGuidePage_C",
+    "type": "PickupSpawner_C",
     "area": "Supraworld",
     "lat": -11109.84375,
     "lng": -5104.904296875,
-    "alt": -1792.79150390625
+    "alt": -1792.79150390625,
+    "spawns": "Pickup_SolversGuidePage_C"
   },
   {
     "name": "PickupSpawner_C_UAID_7085C2B20F0EB25D02_2017621395",
-    "type": "Pickup_SolversGuidePage_C",
+    "type": "PickupSpawner_C",
     "area": "Supraworld",
     "lat": -10383.4765625,
     "lng": 416.16827392578125,
-    "alt": -1154.3592529296875
+    "alt": -1154.3592529296875,
+    "spawns": "Pickup_SolversGuidePage_C"
   },
   {
     "name": "PickupSpawner_C_UAID_ACB480ECFC84E39502_1747841254",
-    "type": "Pickup_SolversGuidePage_C",
+    "type": "PickupSpawner_C",
     "area": "Supraworld",
     "lat": 20704.505859375,
     "lng": 14013.0625,
-    "alt": 4374.62109375
+    "alt": 4374.62109375,
+    "spawns": "Pickup_SolversGuidePage_C"
   },
   {
     "name": "PickupSpawner_C_UAID_FC3497C34610064D02_1268637352",
-    "type": "Pickup_Hay_C",
+    "type": "PickupSpawner_C",
     "area": "Supraworld",
     "lat": 603.423583984375,
     "lng": 2448.734375,
-    "alt": 1070.110595703125
+    "alt": 1070.110595703125,
+    "spawns": "Pickup_Hay_C"
   },
   {
     "name": "PickupSpawner_C_UAID_FC3497C346103A4D02_1731303512",
-    "type": "Pickup_Hay_C",
+    "type": "PickupSpawner_C",
     "area": "Supraworld",
     "lat": -2908.0849609375,
     "lng": 9844.81640625,
-    "alt": 963.0333251953125
+    "alt": 963.0333251953125,
+    "spawns": "Pickup_Hay_C"
   },
   {
     "name": "PickupSpawner_C_UAID_FC3497C346103A4D02_2049198513",
-    "type": "Pickup_Hay_C",
+    "type": "PickupSpawner_C",
     "area": "Supraworld",
     "lat": 1153.7225341796875,
     "lng": -2261.0888671875,
-    "alt": -379.33489990234375
+    "alt": -379.33489990234375,
+    "spawns": "Pickup_Hay_C"
   },
   {
     "name": "PickupSpawner_C_UAID_FC3497C346103A4D02_2075438514",
-    "type": "Pickup_Hay_C",
+    "type": "PickupSpawner_C",
     "area": "Supraworld",
     "lat": 6463.31396484375,
     "lng": -1587.881103515625,
-    "alt": 680.9004516601562
+    "alt": 680.9004516601562,
+    "spawns": "Pickup_Hay_C"
   },
   {
     "name": "PickupSpawner_C_UAID_FC3497C346103A4D02_2106465515",
-    "type": "Pickup_Hay_C",
+    "type": "PickupSpawner_C",
     "area": "Supraworld",
     "lat": 11096.1435546875,
     "lng": 4536.32080078125,
-    "alt": 599.6446533203125
+    "alt": 599.6446533203125,
+    "spawns": "Pickup_Hay_C"
   },
   {
     "name": "PickupSpawner_C_UAID_FC3497C346103A4D02_2146229516",
-    "type": "Pickup_Hay_C",
+    "type": "PickupSpawner_C",
     "area": "Supraworld",
     "lat": 2579.66552734375,
     "lng": 7408.34375,
-    "alt": 385.8398132324219
+    "alt": 385.8398132324219,
+    "spawns": "Pickup_Hay_C"
   },
   {
     "name": "PickupSpawner_C_UAID_FC3497C34610579A02_1644249870",
-    "type": "Pickup_Thread_C",
+    "type": "PickupSpawner_C",
     "area": "Supraworld",
     "lat": -4625.1494140625,
     "lng": 6812.9453125,
-    "alt": 2640.278564453125
+    "alt": 2640.278564453125,
+    "spawns": "Pickup_Thread_C"
   },
   {
     "name": "PresentBox_C_UAID_7085C2B20F0EA66702_2133163928",
@@ -12193,35 +12250,39 @@
   },
   {
     "name": "RespawnablePickupSpawner_C_UAID_7085C2B20F0E8D6A02_1774862632",
-    "type": "SmallHeart_Healing_C",
+    "type": "RespawnablePickupSpawner_C",
     "area": "Supraworld",
     "lat": 23070.81640625,
     "lng": 833.0086059570312,
-    "alt": 6617.669921875
+    "alt": 6617.669921875,
+    "spawns": "SmallHeart_Healing_C"
   },
   {
     "name": "RespawnablePickupSpawner_C_UAID_FC3497C34610065102_1562806439",
-    "type": "SmallHeart_Healing_C",
+    "type": "RespawnablePickupSpawner_C",
     "area": "Supraworld",
     "lat": 6430.17724609375,
     "lng": 16458.2109375,
-    "alt": 319.8738098144531
+    "alt": 319.8738098144531,
+    "spawns": "SmallHeart_Healing_C"
   },
   {
     "name": "RespawnablePickupSpawner_C_UAID_FC3497C34610525102_1752642816",
-    "type": "SmallHeart_Healing_C",
+    "type": "RespawnablePickupSpawner_C",
     "area": "Supraworld",
     "lat": 6534.59765625,
     "lng": 20177.6015625,
-    "alt": 319.8738098144531
+    "alt": 319.8738098144531,
+    "spawns": "SmallHeart_Healing_C"
   },
   {
     "name": "RespawnablePickupSpawner_C_UAID_FC3497C34610525102_1767303817",
-    "type": "SmallHeart_Healing_C",
+    "type": "RespawnablePickupSpawner_C",
     "area": "Supraworld",
     "lat": 11893.7529296875,
     "lng": 18059.4921875,
-    "alt": 319.8738098144531
+    "alt": 319.8738098144531,
+    "spawns": "SmallHeart_Healing_C"
   },
   {
     "name": "Respirator_C_UAID_7085C2B20F0E043C02_1836563068",
@@ -15562,38 +15623,40 @@
   },
   {
     "name": "ShopItemSpawner_C_UAID_00155DB4A15AC65A02_1201882739",
-    "type": "Inventory_SpongeSuit_C",
+    "type": "ShopItemSpawner_C",
     "area": "Supraworld",
     "lat": 15052.474609375,
     "lng": 16363.7119140625,
-    "alt": 1311.70947265625
+    "alt": 1311.70947265625,
+    "spawns": "Inventory_SpongeSuit_C"
   },
   {
     "name": "ShopItemSpawner_C_UAID_ACB480ECFC843FDC02_1403497448",
-    "type": "Inventory_Strength_C",
+    "type": "ShopItemSpawner_C",
     "area": "Supraworld",
     "lat": -5338.91357421875,
     "lng": 5851.08837890625,
     "alt": 466.6298522949219,
-    "cost": 20
+    "spawns": "Inventory_Strength_C"
   },
   {
     "name": "ShopItemSpawner_C_UAID_ACB480ECFC84908602_1750378842",
-    "type": "Inventory_Toothpin_C",
+    "type": "ShopItemSpawner_C",
     "area": "Supraworld",
     "lat": 19253.537109375,
     "lng": 1975.2568359375,
     "alt": 360.1759338378906,
-    "cost": 99
+    "spawns": "Inventory_Toothpin_C"
   },
   {
     "name": "ShopSlot_C_UAID_7085C2B20F0EDD7602_1811387926",
-    "type": "Inventory_Toothpin_C",
+    "type": "ShopSlot_C",
     "area": "Supraworld",
     "lat": 19254.88671875,
     "lng": 1973.4832763671875,
     "alt": 436.5850830078125,
-    "cost": 99
+    "cost": 99,
+    "spawns": "Inventory_Toothpin_C"
   },
   {
     "name": "SimCard_C_UAID_7085C2B20F0EAA7D02_1420451959",
@@ -15722,6 +15785,16 @@
     "lat": 19201.6171875,
     "lng": 10709.1201171875,
     "alt": 6229.8037109375
+  },
+  {
+    "name": "Shop_C_UAID_7085C2B20F0E7ED300_1296547414_0",
+    "type": "JustAddShopItem_C",
+    "area": "Supraworld",
+    "lat": -3339.952392578125,
+    "lng": 2321.389892578125,
+    "alt": 322.61077880859375,
+    "spawns": "Inventory_BuyEggOpener_C",
+    "cost": 0
   },
   {
     "name": "Shop_C_UAID_7085C2B20F0E7ED300_1296547414",

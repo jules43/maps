@@ -2636,6 +2636,16 @@
     ],
     "setfound": false
   },
+  "JustAddShopItem_C": {
+    "friendly": "Item Shop",
+    "icon": "gift_box.gold",
+    "layer": "poi",
+    "nospoiler": "swnospoiler",
+    "games": [
+      "sw"
+    ],
+    "setfound": false
+  },
   "SupraworldPlayerStart_C": {
     "friendly": "Player Start",
     "icon": "playerstart",
@@ -2911,6 +2921,36 @@
       "sw"
     ]
   },
+  "Inventory_CoinMagnetEnemies_C": {
+    "friendly": "Mr Moneybags",
+    "icon": "heart",
+    "layer": "swupgrade",
+    "nospoiler": null,
+    "description": "Automatically pick up coins dropped by enemies.",
+    "games": [
+      "sw"
+    ]
+  },
+  "Inventory_SeeEnemyHealth_C": {
+    "friendly": "See Enemy Health",
+    "icon": "heart",
+    "layer": "swupgrade",
+    "nospoiler": null,
+    "description": "Your trained eye can see how much health an enemy has left.",
+    "games": [
+      "sw"
+    ]
+  },
+  "Inventory_CoinMagnet_C": {
+    "friendly": "Coin Magnet",
+    "icon": "heart",
+    "layer": "swupgrade",
+    "nospoiler": null,
+    "description": "You are very attractive!... at least to coins from Gumball machines.",
+    "games": [
+      "sw"
+    ]
+  },
   "ShopItemAbility_MindPossession_C": {
     "friendly": "Mind Posession",
     "icon": "brain",
@@ -3031,8 +3071,8 @@
   "ItemSpawner_C": {
     "friendly": "Item Spawner",
     "icon": "gift_box_green",
-    "layer": null,
-    "nospoiler": null,
+    "layer": "swcollectable",
+    "nospoiler": "swnospoiler",
     "games": [
       "sw"
     ]
@@ -3040,8 +3080,8 @@
   "PickupSpawner_C": {
     "friendly": "Item Spawner",
     "icon": "gift_box_green",
-    "layer": null,
-    "nospoiler": null,
+    "layer": "swcollectable",
+    "nospoiler": "swnospoiler",
     "games": [
       "sw"
     ]
@@ -3049,8 +3089,8 @@
   "RespawnablePickupSpawner_C": {
     "friendly": "Item Spawner",
     "icon": "gift_box_green",
-    "layer": null,
-    "nospoiler": null,
+    "layer": "poi",
+    "nospoiler": "swnospoiler",
     "games": [
       "sw"
     ]
@@ -3058,8 +3098,8 @@
   "ShopItemSpawner_C": {
     "friendly": "Shop Item",
     "icon": "gift_box_gold",
-    "layer": null,
-    "nospoiler": null,
+    "layer": "swcollectable",
+    "nospoiler": "swnospoiler",
     "games": [
       "sw"
     ]
@@ -3067,8 +3107,8 @@
   "ShopSlot_C": {
     "friendly": "Shop Item Spawner",
     "icon": "gift_box_gold",
-    "layer": null,
-    "nospoiler": null,
+    "layer": "swcollectable",
+    "nospoiler": "swnospoiler",
     "games": [
       "sw"
     ]

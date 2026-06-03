@@ -328,30 +328,42 @@ def export_sw_markers(game: str, datadir: Path, sourcedir: Path):  # noqa: C901 
             spawns = ''
             if v := spawn_props.get('Pickup Class'):
                 spawns = v['ObjectName'].split("'")[-2]
-            elif (v := spawn_props.get('InventoryItem')) or (v := spawn_props.get('CustomShopItem')):
+            elif ((v := spawn_props.get('InventoryItem'))
+                or (v := spawn_props.get('CustomShopItem'))
+                or (v := spawn_props.get('ItemToAdd'))):
                 spawns = v['AssetPathName'].split(".")[-1]
             if spawn_props.get('bFromLootPool'):
                 spawns = '_LootPool_C'
 
+            # If this is a shop with initial inventory, then create instances of the
+            # JustAddShopItem_C class. They will need to be repositioned in custom data
+            # so they don't overlay the shop
+            if (v := spawn_props.get('Initial Shop Inventory')):
+                for idx, inv in enumerate(v):
+                    if isinstance((inv := list(inv.values())[0]), dict):
+                        data.append(data[-1].copy())
+                        data[-2]['name'] = f'{data[-1]['name']}_{idx}'
+                        data[-2]['type'] = 'JustAddShopItem_C'
+                        data[-2]['spawns'] = inv['AssetPathName'].split(".")[-1]
+                        data[-2]['cost'] = bp_defaults.get(spawns, {}).get('Cost', 0)
+
             # Cost
             if (v := bp_defaults.get(spawns, {}).get('Cost')) and otype in [
-                'ShopItemSpawner_C',
                 'ShopEgg_C',
                 'ChocolateEgg_C',
                 'ShopSlot_C',
             ]:
                 data[-1]['cost'] = v
 
-            # These classes just spawn stuff so we change the type to what it spawns
+            # For some reason the threads and runes are out in plain whereas the
+            # solver's guide pages and hay pickups are in PickupSpawner_C. To make things
+            # more consistent just convert them
             if otype in [
-                'ItemSpawner_C',
-                'PickupSpawner_C',
-                'ShopItemSpawner_C',
-                'RespawnablePickupSpawner_C',
-                'ShopSlot_C',
+                'Pickup_Thread_C',
+                'Pickup_Rune_C',
             ]:
-                data[-1]['type'] = otype = spawns
-                spawns = ''
+                data[-1]['spawns'] = otype
+                data[-1]['type'] = 'PickupSpawner_C'
 
             # Coins
             # Anything that spawns Inventory_Coin[nn]_C or RealCoinPickup_C/5Cent_C/Gumball_Machine_C
