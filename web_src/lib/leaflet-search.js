@@ -690,7 +690,7 @@ export const Search = Control.extend({
 	},
 
 	// JD 03/06/2026
-	_delayedFillRecordsCache() {
+	_delayedFillRecordsCache: function() {
 		var self = this;
 
 		if(this._input.value.length >= this.options.minLength)
