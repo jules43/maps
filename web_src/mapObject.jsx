@@ -118,7 +118,7 @@ export class MapObject {
       }
     }
 
-    const playerDeltaZ = this.getPlayerDeltaZ(mapId);
+    const playerDeltaZ = this.getPlayerDeltaZ();
     if (!friendly) {
       text += ' of ' + o.type;
     }
@@ -432,7 +432,7 @@ export class MapObject {
     buildMode.marker = this;
     buildMode.object = o;
 
-    const playerDeltaZ = this.getPlayerDeltaZ(mapId);
+    const playerDeltaZ = this.getPlayerDeltaZ();
     const popUpContentDiv = document.createElement('div');
     const sidepanelRoot = createRoot(popUpContentDiv);
     const leafletMap = e.target._map;
@@ -455,9 +455,9 @@ export class MapObject {
     e.popup.setContent(popUpContentDiv);
   }
 
-  getPlayerDeltaZ(mapId) {
+  getPlayerDeltaZ() {
     const playerZ = MapObject._mapObjects?.PlayerPosition?.o.alt;
-    let playerDeltaZ = this.o.alt - (playerZ !== undefined ? playerZ : 0); // (mapId == 'sw' && playerZ ? playerZ : 0);
+    let playerDeltaZ = this.o.alt - (playerZ !== undefined ? playerZ : 0);
     return playerDeltaZ;
   }
 
