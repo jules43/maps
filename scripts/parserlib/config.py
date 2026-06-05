@@ -19,7 +19,10 @@ config = {
         'pathmap': {
             'Game': 'Supraland/Content',
         },
-        'maps': ['Crash'],
+        'maps': [
+            'Crash',
+            'CrashChurchLoop6',
+        ],
     },
     'siu': {
         'appids': ['1522870'],
