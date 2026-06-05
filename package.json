@@ -30,6 +30,7 @@
     "classnames": "^2.5.1",
     "leaflet": "^1.9.4",
     "leaflet.fullscreen": "^5.3.1",
+    "playwright": "^1.60.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "readline-sync": "^1.4.10"
@@ -40,7 +41,7 @@
     "@fortawesome/fontawesome-svg-core": "^7.2.0",
     "@fortawesome/free-regular-svg-icons": "^7.2.0",
     "@fortawesome/free-solid-svg-icons": "^7.2.0",
-    "@playwright/test": "^1.59.1",
+    "@playwright/test": "^1.60.0",
     "@rolldown/plugin-babel": "^0.2.2",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
