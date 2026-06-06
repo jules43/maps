@@ -246,6 +246,9 @@ export class MapObject {
       this._defaultSaveData = false;
     }
 
+    // Allow object or class to override save file id
+    this._saveFileId = this.o.savefileid || c.savefileid || this._saveFileId;
+
     if (
       (!MapLayer.isEnabledFromId(c.layer, map.mapId) && !MapLayer.isEnabledFromId(c.nospoiler, map.mapId)) ||
       !latLngBounds(MapLayer.get(map.mapId).viewLatLngBounds).contains([this.o.lat, this.o.lng])
@@ -281,19 +284,21 @@ export class MapObject {
   // Add a default decode handler
   addSaveDecodeHandler() {
     if (this.saveDecodeHandler) {
-      SaveFileSystem.setDecodeHandler(
-        this._decodeHandlerId || this.o.type,
-        this.saveDecodeHandler,
-        this._saveDecodeHandlerContext,
-        { isOuterHandler: !!this._decodeHandlerIsOuter }
-      );
+      SaveFileSystem.setDecodeHandler(this._decodeHandlerId || this.o.type, {
+        fn: this.saveDecodeHandler,
+        self: this,
+        isOuterHandler: !!this._decodeHandlerIsOuter,
+      });
     }
   }
 
   // Release default save decode handler
   releaseSaveDecodeHandler() {
     if (this.saveDecodeHandler) {
-      SaveFileSystem.clearDecodeHandler(this._decodeHandlerId || this.o.type);
+      SaveFileSystem.clearDecodeHandler(this._decodeHandlerId || this.o.type, {
+        fn: this.saveDecodeHandler,
+        self: this,
+      });
     }
   }
 
@@ -302,14 +307,18 @@ export class MapObject {
   // saveDecodeHandler, _saveFileId and _defaultSaveData may be set by subclasses
   addSaveListeners() {
     if (this._saveFileId !== null && this._foundLockedState === undefined) {
-      SaveFileSystem.setListener(this._saveFileId || this.alt, this.onSaveEvent, this, this._defaultSaveData);
+      SaveFileSystem.setListener(this._saveFileId || this.alt, {
+        fn: this.onSaveEvent,
+        self: this,
+        defaultValue: this._defaultSaveData,
+      });
     }
   }
 
   // Release a listener if we've set one up
   releaseSaveListeners() {
     if (this._saveFileId !== null && this._foundLockedState === undefined) {
-      SaveFileSystem.clearListener(this._saveFileId || this.alt);
+      SaveFileSystem.clearListener(this._saveFileId || this.alt, { fn: this.onSaveEvent, self: this });
     }
   }
 
@@ -523,7 +532,7 @@ export class MapObject {
 
   // Get the instance's type and use that as to find the decoder
   // Handler for: 'PersistentLevel.'
-  static instanceDecoderHandler(saveDecoder) {
+  static instanceDecoderHandler(context, saveDecoder) {
     const listenerId = MapObject.makeAlt(saveDecoder.area, saveDecoder.postmatch);
     if (SaveFileSystem.hasListener(listenerId)) {
       saveDecoder.handlerId = MapObject.get(listenerId)?.o.type;
@@ -544,7 +553,9 @@ export class MapObject {
       mapObject.init(map);
     }
 
-    SaveFileSystem.setDecodeHandler('PersistentLevel.', this.instanceDecoderHandler, MapObject, {
+    SaveFileSystem.setDecodeHandler('PersistentLevel.', {
+      fn: this.instanceDecoderHandler,
+      self: MapObject,
       isOuterHandler: true,
     });
 
@@ -663,7 +674,7 @@ class MapPlayerPosition extends MapObject {
     }
   }
 
-  static lastCheckpointDecodeHandler(saveDecoder) {
+  static lastCheckpointDecodeHandler(context, saveDecoder) {
     saveDecoder.nextInstance({ require: true });
     const instanceName = saveDecoder.postmatch;
     if (instanceName) {
@@ -710,7 +721,7 @@ class MapPlayerPosition extends MapObject {
 //
 // The detective cases need to check if someone has been arrested to be considered found
 class MapDetectiveCase extends MapObject {
-  saveDecodeHandler(saveDecoder) {
+  saveDecodeHandler(context, saveDecoder) {
     if (saveDecoder.nextFString('DetainedCharacter')) {
       SaveFileSystem.defaultDecodeHandler(saveDecoder, true);
     }
@@ -722,7 +733,7 @@ class MapDetectiveCase extends MapObject {
 //
 // Puzzle cloud's must have had their state set to post puzzle to be considered found
 class MapPuzzleCloud extends MapObject {
-  saveDecodeHandler(saveDecoder) {
+  saveDecodeHandler(context, saveDecoder) {
     // Value is from enumeration blueprint EPuzzleCloudState
     const EPuzzleCloudState_PostPuzzle = 2;
     if (saveDecoder.nextByteProperty() && saveDecoder.data == EPuzzleCloudState_PostPuzzle) {
@@ -844,7 +855,7 @@ class MapCoinStack extends MapObject {
   addSaveListeners() {
     for (const coin in this.o.old_coins) {
       const id = MapObject.makeAlt(this.o.area, coin);
-      SaveFileSystem.setListener(id, this.onSaveEvent, this);
+      SaveFileSystem.setListener(id, { fn: this.onSaveEvent, self: this });
     }
   }
 
@@ -852,7 +863,7 @@ class MapCoinStack extends MapObject {
   releaseSaveListeners() {
     for (const coin in this.o.old_coins) {
       const id = MapObject.makeAlt(this.o.area, coin);
-      SaveFileSystem.clearListener(id);
+      SaveFileSystem.clearListener(id, { fn: this.onSaveEvent, self: this });
     }
   }
 
@@ -921,7 +932,7 @@ class MapJuicer extends MapObject {
 //
 // Only mark found if the parent array is ThingsToOpenForever
 class MapGraveVolcano extends MapObject {
-  saveDecodeHandler(saveDecoder) {
+  saveDecodeHandler(context, saveDecoder) {
     if (saveDecoder.parent == 'ThingsToOpenForever') {
       SaveFileSystem.defaultDecodeHandler(saveDecoder, true);
     }
@@ -933,7 +944,7 @@ class MapGraveVolcano extends MapObject {
 //
 // Only mark found if the parent array is ThingsToRemove
 class MapBonesSpawner extends MapObject {
-  saveDecodeHandler(saveDecoder) {
+  saveDecodeHandler(context, saveDecoder) {
     if (saveDecoder.parent == 'ThingsToRemove') {
       SaveFileSystem.defaultDecodeHandler(saveDecoder, true);
     }
@@ -945,7 +956,7 @@ class MapBonesSpawner extends MapObject {
 //
 // Only mark found if the parent array is ThingsToActivate
 class MapDeadHeroIndy extends MapObject {
-  saveDecodeHandler(saveDecoder) {
+  saveDecodeHandler(context, saveDecoder) {
     if (saveDecoder.parent == 'ThingsToActivate') {
       SaveFileSystem.defaultDecodeHandler(saveDecoder, true);
     }
