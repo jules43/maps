@@ -119,7 +119,7 @@ export class MapLayer {
     Settings.map.activeLayers[this.id] = true;
     Settings.commit();
 
-    const event = {...e, type: 'maplayeradd', layer: this.layerObj, name: this.name };
+    const event = { ...e, type: 'maplayeradd', layer: this.layerObj, name: this.name };
     this.constructor._map.fire(event.type, event);
   }
 
@@ -129,7 +129,7 @@ export class MapLayer {
     delete Settings.map.activeLayers[this.id];
     Settings.commit();
 
-    const event = {...e, type: 'maplayerremove', layer: this.layerObj, name: this.name };
+    const event = { ...e, type: 'maplayerremove', layer: this.layerObj, name: this.name };
     this.constructor._map.fire(event.type, event);
   }
 

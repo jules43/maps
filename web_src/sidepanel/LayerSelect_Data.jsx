@@ -87,5 +87,4 @@ export class LayerSelect_Data {
   subscribe(listener) {
     this.map.on('maplayeradd maplayerremove', listener);
   }
-
 }
