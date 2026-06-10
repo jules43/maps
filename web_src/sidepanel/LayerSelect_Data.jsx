@@ -53,7 +53,7 @@ export class LayerSelect_Data {
         return {
           label: uiLayer.mapLayer.name,
           value: uiLayer.layerId,
-          isChecked: uiLayer.mapLayer.active,
+          isChecked: this.map.hasLayer(uiLayer.mapLayer.layerObj),
         };
       });
   }
@@ -63,14 +63,10 @@ export class LayerSelect_Data {
 
     const uiLayer = this.getUiLayerByLayerId(layerId);
     if (isChecked) {
-      uiLayer.mapLayer.onAdd();
       this.map.addLayer(uiLayer.leafletLayer);
     } else {
-      uiLayer.mapLayer.onRemove();
       this.map.removeLayer(uiLayer.leafletLayer);
     }
-
-    this.notifyListeners();
   }
 
   getUiLayerByLayerId(layerId) {
@@ -89,12 +85,7 @@ export class LayerSelect_Data {
 
   // Subscribe to state changes
   subscribe(listener) {
-    this.listeners.add(listener);
-    return () => this.listeners.delete(listener);
+    this.map.on('maplayeradd maplayerremove', listener);
   }
 
-  // Notify all listeners of state change
-  notifyListeners() {
-    this.listeners.forEach((listener) => listener());
-  }
 }
