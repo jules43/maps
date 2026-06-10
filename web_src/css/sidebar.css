@@ -14,7 +14,7 @@
 }
 
 .sidebar.collapsed {
-  transform: translateX(-305px);
+  transform: translateX(-320px);
 }
 
 /* Left navigation column (always visible) */
@@ -149,7 +149,7 @@
   position: absolute;
 }
 .leaflet-anim-control-container.left-closed .leaflet-left {
-  left: 15px;
+  left: 0px;
   transition: left 0.3s ease;
   position: absolute;
 }
