@@ -185,6 +185,7 @@
 
   "chocolate_egg"     : {"type": "pin",   "style": "fas",   "iconName": "egg",                      "bg": "#3f000f"                         },
   "egg"               : {"type": "pin",   "style": "fas",   "iconName": "egg",                      "bg": "orange"                          },
+  "eggopener"         : {"type": "pin",   "style": "fas",   "iconName": "egg",                      "bg": "red"                             },
   "guide"             : {"type": "pin",   "style": "fas",   "iconName": "receipt",                  "bg": "peru"                            },
   "gumball_machine"   : {"type": "pin",   "style": "fas",   "iconName": "blender",                  "bg": "red"                             },
   "handcuffs"         : {"type": "pin",   "style": "fas",   "iconName": "handcuffs",                "bg": "green"                           },
