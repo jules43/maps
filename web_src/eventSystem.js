@@ -1,132 +1,120 @@
 // ====================================================================================================================
 // class EventSystem
 //
-// A simple event class that maps an eventId to a set of listeners.
+// Topic - maps a topic name and a default payload to a set of listener callbacks.
+// TopicRegistry - maps topic names to topics and provides methods to add/remove listeners and fire events.
+// listener - function pointer, self pointer and context to be called when an event is fired.
+// payload - some data to be passed to a listener when an event is fired.
+// removeId - optional unique identifier for a listener to help with removing it later.
 //
-// eventId's are unique dictionary keys (generally strings).
-// listener's are a self pointer, function pointer and context to be called
-//   self.fn(context, eventData)
-// defaultData is data that will be passed to a listener if the event provides none.
+// Usage:
 //
-// Typical usage:
-//	const eventSystem = new EventSystem();
-//	eventSystem.setDefaultData('found.it', true);
-//  eventSystem.addListener('found.it', { fn: onFoundCallback, self: this, context: null });
-export class EventSystem {
-  _events = {};
+//   const myTopicRegistry = new TopicRegistry();
+//   myTopicRegistry.addListener('myTopic', (event) => console.log(event.topicName, event.payload), this);
+//   myTopicRegistry.setDefaultPayload('myTopic', false);
+//
+//   myTopicRegistry.fireEvent('myTopic');
+//
+//   myTopicRegistry.removeListener('myTopic', this);
+//   myTopicRegistry.removeTopic('myTopic');
 
-  // Constructor for an empty event
-  static _emptyEvent() {
-    return { defaultData: null, listeners: [] };
+// ====================================================================================================================
+// class Topic
+//
+// A simple topic class that maps a topic name to a set of listeners and a default payload.
+export class Topic {
+  // Constructor for an empty topic
+  constructor(topicName, defaultPayload) {
+    this.topicName = topicName;
+    this.defaultPayload = defaultPayload;
+
+    // Map from from removeId to listener callback. removeId is either the callback function
+    // pointer or a provided unique id (such as a class instance this pointer).
+    this.listeners = new Map();
   }
 
-  constructor({ onAddListener = null, onRemoveListener = null } = {}) {
-    this.onAddListener = onAddListener;
-    this.onRemoveListener = onRemoveListener;
+  // Set the default payload for the topic. This will be used if fireEvent is called without a payload.
+  setDefaultPayload(defaultPayload) {
+    this.defaultPayload = defaultPayload;
   }
 
-  // Set the default data that will be passed to a listener if none provided
-  setDefaultData(eventId, eventData) {
-    this._events[eventId] ??= this.constructor._emptyEvent();
-    this._events[eventId].defaultData = eventData;
+  // Call all listeners for the topic with the provided payload or default payload if none provided.
+  fireEvent(payload) {
+    this.listeners.forEach((listener) => listener(this.topicName, payload ?? this.defaultPayload));
+  }
+}
+
+// ====================================================================================================================
+// class TopicRegistry
+//
+// A simple topic registry that maps topic names to topics. Provides methods to add/remove listeners to fired events
+// with a default payload.
+export class TopicRegistry {
+  // Constructor for an empty topic registry
+  constructor() {
+    this.topics = {};
   }
 
-  // Returns default data set for event or undefined if none
-  getDefaultData(eventId) {
-    return this._events[eventId]?.defaultData;
+  // Returns true if there is at least one listener for the topicName
+  hasListener(topicName) {
+    return this.topics[topicName]?.listeners.size > 0;
   }
 
-  // Add a listener for the specified event
-  // Calls onAddListener after listener is added
-  addListener(eventId, { fn, self = null, context = null, defaultValue = null } = {}) {
-    if (typeof fn == 'function') {
-      const event = (this._events[eventId] ??= this.constructor._emptyEvent());
-
-      if (defaultValue) {
-        event.defaultValue = defaultValue;
-      }
-
-      event.listeners.push({ fn, self, context });
-
-      if (typeof this.onAddListener == 'function') {
-        this.onAddListener(eventId, { fn, self, context });
-      }
+  // Add a listener callback for the specified topic. If listenerId is provided, it can be used to remove the listener later.
+  addListener(topicName, listener, removeId = null) {
+    if (typeof listener == 'function') {
+      this.topics[topicName] ??= new Topic(topicName);
+      this.topics[topicName].listeners.set(removeId ?? listener, listener);
     }
   }
 
-  // Remove the listeners that match criteria. If fn, self, context are null
-  // they are not used for match. Thus if all three are null then all listeners
-  // are removed.
-  // Calls this.onRemoveListener after listeners are removed
-  removeListener(eventId, { fn, self = null, context = null } = {}) {
-    const event = this._events[eventId];
-    if (event) {
-      // Split the listener list into listeners to keep and remove
-      const keepList = [],
-        removeList = [];
-      event.listeners.forEach((item) => {
-        if (
-          (fn == null || item.fn == fn) &&
-          (self == null || item.self == self) &&
-          (context == null || item.context == self)
-        ) {
-          removeList.push(item);
-          item.fn = () => false;
-        } else {
-          keepList.push(item);
+  // Remove a listener for the specified topic. removeId can be the listener function pointer
+  // or the previously provided removeId. If removeId is not provided, all listeners for the
+  // topic will be removed.
+  removeListener(topicName, removeId = null) {
+    const topic = this.topics[topicName];
+    if (!topic) {
+      return;
+    }
+    if (removeId == null) {
+      topic.listeners.clear();
+      return;
+    }
+    if (!topic.listeners.delete(removeId)) {
+      topic.listeners.forEach((l, key) => {
+        if (l === removeId) {
+          topic.listeners.delete(key);
         }
       });
-
-      event.listeners = keepList;
-
-      // Call the onRemoveListener for all the ones we've removed
-      if (typeof this.onRemoveListener == 'function') {
-        removeList.forEach((item) => {
-          this.onRemoveListener(eventId, item);
-        });
-      }
     }
   }
 
-  // Removes all listeners and clears the default data for the specified eventId
-  // Calls onRemoveListener after each listener is removed
-  deleteEvent(eventId) {
-    this.removeListener(eventId);
-    delete this._events[eventId];
+  // Set the default payload for the specified topic. This will be used if fireEvent is called without a payload.
+  setDefaultPayload(topicName, defaultPayload) {
+    this.topics[topicName] ??= new Topic(topicName);
+    this.topics[topicName].setDefaultPayload(defaultPayload);
   }
 
-  // Clears all listeners resetting the system completely
+  // Returns default payload set for topic or undefined if none
+  getDefaultPayload(topicName) {
+    return this.topics[topicName]?.defaultPayload;
+  }
+
+  getTopics() {
+    return Object.keys(this.topics);
+  }
+
+  // Remove the topic and all its listeners.
+  removeTopic(topicName) {
+    delete this.topics[topicName];
+  }
+
   reset() {
-    for (const eventId in Object.keys(this._events)) {
-      this.deleteEvent(eventId);
-    }
+    this.topics = {};
   }
 
-  // Returns an array of event ids for which we have listeners
-  getEventIds() {
-    return Object.keys(this._events);
-  }
-
-  // Returns number of listeners for the specified event
-  listenerCount(eventId) {
-    return this._events[eventId]?.listeners.length ?? 0;
-  }
-
-  hasListener(eventId) {
-    return this.listenerCount(eventId) != 0;
-  }
-
-  // Call all listeners with the data specified or otherwise defaultData.
-  //   self.fn(context, eventData)
-  // Returns true if any listener was called
-  fire(eventId, eventData) {
-    const event = this._events[eventId];
-    if (event) {
-      eventData = eventData ?? event.defaultData;
-      const currentListeners = [...event.listeners];
-      currentListeners.forEach((listener) => listener.fn.call(listener.self, listener.context, eventData));
-      return currentListeners.length != 0;
-    }
-    return false;
+  // Call all listeners for the specified topic with the provided payload or default payload if none provided.
+  fireEvent(topicName, payload) {
+    this.topics[topicName]?.fireEvent(payload);
   }
 }

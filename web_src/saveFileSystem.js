@@ -1,6 +1,6 @@
 import { UESaveObject } from './lib/UE4Reader.js';
 import { browser } from './utils.js';
-import { EventSystem } from './eventSystem.js';
+import { TopicRegistry } from './eventSystem.js';
 import { Settings } from './settings.js';
 import { MapObject } from './mapObject.jsx';
 import { UE5SaveDecoder } from './UE5SaveDecoder.js';
@@ -12,11 +12,8 @@ import { UE5SaveDecoder } from './UE5SaveDecoder.js';
 // Handles saving of property states to Settings for any properties with listeners
 
 export class SaveFileSystem {
-  static _saveListeners = new EventSystem();
-  static _decodeHandlers = new EventSystem({
-    onAddListener: (handlerId, listener) => SaveFileSystem.onAddDecodeHandler(handlerId, listener),
-    onRemoveListener: (handlerId, listener) => SaveFileSystem.onRemoveDecodeHandler(handlerId, listener),
-  });
+  static _saveListeners = new TopicRegistry();
+  static _decodeHandlers = new TopicRegistry();
   static _outerHandlerIds = [];
 
   //-----------------------------------------------------------------------------------------------
@@ -36,18 +33,19 @@ export class SaveFileSystem {
   // fn: function(ctx: any, id: string, data: varies): called when save data for instance changes
   // context: object: used as this pointer for callbacks
   // defaultValue: any: data specific to listener instance class [false]
-  static setListener(id, { fn, self = null, context = null, defaultValue = false } = {}) {
-    this._saveListeners.addListener(id, { fn, self, context, defaultValue });
+  static setListener(id, fn, removeId = null, defaultValue = false) {
+    this._saveListeners.setDefaultPayload(id, defaultValue);
+    this._saveListeners.addListener(id, fn, removeId);
   }
 
   // Remove function/context to be removed as listener to specified event
-  static clearListener(id, { fn, self = null, context = null }) {
-    this._saveListeners.removeListener(id, { fn, self, context });
+  static clearListener(id, removeId = null) {
+    this._saveListeners.removeListener(id, removeId);
   }
 
   // Call all functions listening for event
   static callListener(id, data) {
-    return this._saveListeners.fire(id, data);
+    return this._saveListeners.fireEvent(id, data);
   }
 
   //-----------------------------------------------------------------------------------------------
@@ -55,7 +53,7 @@ export class SaveFileSystem {
   // instances, if they are present in the file then the listener is called with 'true'.
   //
   // To customise behaviour for non-instance strings or specific properties within instance data
-  // a decoderHandler is called to provide the opportunity to transform what is done.
+  // a DecodeHandler is called to provide the opportunity to transform what is done.
   //
   // Id is normally a game class, but can be any string.
 
@@ -65,33 +63,29 @@ export class SaveFileSystem {
   }
 
   // Set the decodeHandler for a specific instance type or key string
-  static setDecodeHandler(handlerId, { fn, self = null, isOuterHandler = false } = {}) {
-    this._decodeHandlers.removeListener(handlerId);
-    this._decodeHandlers.addListener(handlerId, { fn, self, context: { isOuterHandler } });
-  }
-
-  static onAddDecodeHandler(handlerId, listener) {
-    if (listener.context.isOuterHandler) {
+  static setDecodeHandler(handlerId, fn, isOuterHandler = false) {
+    this._decodeHandlers.removeTopic(handlerId);
+    this._decodeHandlers.addListener(handlerId, fn);
+    if (isOuterHandler) {
       this._outerHandlerIds.push(handlerId);
     }
   }
 
   // Clear the corresponding decode handler
-  static clearDecodeHandler(handlerId, { fn, self = null } = {}) {
-    this._decodeHandlers.removeListener(handlerId, { fn, self });
-  }
-
-  static onRemoveDecodeHandler(handlerId) {
-    const idx = this._outerHandlerIds.indexOf(handlerId);
-    if (idx > -1) {
-      this._outerHandlerIds.splice(idx, 1);
+  static clearDecodeHandler(handlerId, isOuterHandler = false) {
+    this._decodeHandlers.removeTopic(handlerId);
+    if (isOuterHandler) {
+      const idx = this._outerHandlerIds.indexOf(handlerId);
+      if (idx > -1) {
+        this._outerHandlerIds.splice(idx, 1);
+      }
     }
   }
 
   // If there's a decoder then call it (used for global properties in save
   // file such as LastCheckpointActor)
-  static callDecoderHandler(saveDecoder) {
-    return this._decodeHandlers.fire(saveDecoder.handlerId, saveDecoder);
+  static callDecodeHandler(saveDecoder) {
+    return this._decodeHandlers.fireEvent(saveDecoder.handlerId, saveDecoder);
   }
 
   // If there is a listener for this object then add it as found (data)
@@ -125,14 +119,14 @@ export class SaveFileSystem {
     if (data !== undefined) {
       return data;
     }
-    const defaultValue = this._saveListeners.getDefaultData(id);
+    const defaultValue = this._saveListeners.getDefaultPayload(id);
     return defaultValue !== undefined ? defaultValue : false;
   }
 
   // Called to set property to a specific value (commits Settings so inefficient for multiple calls)
   static setData(id, data) {
     if (this._saveListeners.listenerCount > 0) {
-      const defaultValue = this._saveListeners.getDefaultData(id) ?? false;
+      const defaultValue = this._saveListeners.getDefaultPayload(id) ?? false;
       if (data === defaultValue) {
         delete Settings.map.saveData[id];
       } else {
@@ -140,7 +134,7 @@ export class SaveFileSystem {
       }
       Settings.commit();
 
-      this._saveListeners.fire(id, data);
+      this._saveListeners.fireEvent(id, data);
     }
   }
 
@@ -149,8 +143,8 @@ export class SaveFileSystem {
   static LoadSettings() {
     Settings.mapSetDefault('saveData', {});
 
-    for (const id of this._saveListeners.getEventIds()) {
-      this._saveListeners.fire(id, this.getData(id));
+    for (const id of this._saveListeners.getTopics()) {
+      this._saveListeners.fireEvent(id, this.getData(id));
     }
   }
 
@@ -159,8 +153,8 @@ export class SaveFileSystem {
     Settings.map.saveData = {};
     Settings.commit();
 
-    for (const id of this._saveListeners.getEventIds()) {
-      this._saveListeners.fire(id, this._saveListeners.getDefaultData(id));
+    for (const id of this._saveListeners.getTopics()) {
+      this._saveListeners.fireEvent(id, this._saveListeners.getDefaultPayload(id));
     }
   }
 
@@ -174,7 +168,7 @@ export class SaveFileSystem {
     saveDecoder.area = 'Supraworld';
     while (saveDecoder.nextOuterString()) {
       saveDecoder.handlerId = saveDecoder.match;
-      this.callDecoderHandler(saveDecoder);
+      this.callDecodeHandler(saveDecoder);
     }
 
     Settings.commit();
@@ -210,7 +204,7 @@ export class SaveFileSystem {
         const re_match = new RegExp('(DLC2_[^\\0.:]*)[\\0][\\s\\S]{4}PersistentLevel.([^\\0]*?pipe[^\\0]*)', 'gi');
         let m;
         while ((m = re_match.exec(actorSaveData)) != null) {
-          this.callDecoderHandler({ parent: o.name, area: m[1], handlerId: 'PersistentLevel.', postmatch: m[2] });
+          this.callDecodeHandler({ parent: o.name, area: m[1], handlerId: 'PersistentLevel.', postmatch: m[2] });
         }
       } else if (o.type == 'ArrayProperty') {
         // One of 'ThingsToRemove', 'ThingsToActivate', 'ThingsToOpenForever'
@@ -221,7 +215,7 @@ export class SaveFileSystem {
           if (name != 'None') {
             name = name.capitalised(); // Shell2_1957 appears as shell2_1957 in the save file
 
-            this.callDecoderHandler({ parent: o.name, area: area, handlerId: 'PersistentLevel.', postmatch: name });
+            this.callDecodeHandler({ parent: o.name, area: area, handlerId: 'PersistentLevel.', postmatch: name });
           }
         }
       } else {
@@ -229,7 +223,7 @@ export class SaveFileSystem {
           console.log(o.name);
         }
         // Mostly Player upgrade and other properties
-        this.callDecoderHandler({ handlerId: o.name, data: o.value });
+        this.callDecodeHandler({ handlerId: o.name, data: o.value });
       }
     }
 
