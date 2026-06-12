@@ -114,17 +114,23 @@ export class MapLayer {
   }
 
   // When this layer is activated (normally via layer control) record that we're active and update settings
-  onAdd() {
+  onAdd(e) {
     this.active = true;
     Settings.map.activeLayers[this.id] = true;
     Settings.commit();
+
+    const event = { ...e, type: 'maplayeradd', layer: this.layerObj, name: this.name };
+    this.constructor._map.fire(event.type, event);
   }
 
   // When this layer is de-activated (normally via layer control) record that we're inactive and update settings
-  onRemove() {
+  onRemove(e) {
     this.active = false;
     delete Settings.map.activeLayers[this.id];
     Settings.commit();
+
+    const event = { ...e, type: 'maplayerremove', layer: this.layerObj, name: this.name };
+    this.constructor._map.fire(event.type, event);
   }
 
   // Activate or deactivate this layer group

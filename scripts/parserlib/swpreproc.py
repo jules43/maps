@@ -145,6 +145,12 @@ def preproc_levels(game: str, datadir: Path, sourcedir: Path) -> None:  # noqa: 
         if level_changed:
             save_json_file(data=level, path=filename)
 
+    for otype, gc in game_classes.items():
+        if game in gc.get('games', ['sl', 'slc', 'siu']):
+            otype = '/' + (otype[0:-2] if otype[-2:] == '_C' else otype)
+            if not any(obp.endswith(otype) for obp in bp_assetlist):
+                bp_assetlist.add(otype)
+
     save_assetlist(items=bp_assetlist, filelist=gamefilelist, path=sourcedir.joinpath('bpassetlist.txt'))
     save_assetlist(
         items=ueenums.types, filelist=gamefilelist, path=sourcedir.joinpath('enumassetlist.txt'), prefer="Enums"

@@ -219,9 +219,6 @@ export class SaveFileSystem {
           }
         }
       } else {
-        if (o.name == 'Player Position') {
-          console.log(o.name);
-        }
         // Mostly Player upgrade and other properties
         this.callDecodeHandler({ handlerId: o.name, data: o.value });
       }

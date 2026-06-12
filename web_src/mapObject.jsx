@@ -118,7 +118,7 @@ export class MapObject {
       }
     }
 
-    const playerDeltaZ = this.getPlayerDeltaZ(mapId);
+    const playerDeltaZ = this.getPlayerDeltaZ();
     if (!friendly) {
       text += ' of ' + o.type;
     }
@@ -157,18 +157,12 @@ export class MapObject {
   createGroupMarker(map) {
     let c = GameClasses.get(this.o.type);
 
-    // I feel like this is a bit of a hack because it requires awareness of the layer names which
-    // is supposed to be just data but I can't currently think of a better way to do it.
-    // TODO: reverse sense - make collectable but if it has a price then put it in shop
-    // If nospoiler is shop but it has no price - put it on the collectable nospoiler layer (as opposed to shop)
-    const layerId = c.nospoiler != 'shop' || (this.o.cost && this.o.price_type != 7) ? c.nospoiler : 'collectable';
-    if (!layerId) return;
-
+    const layerId = c.nospoiler;
     let cicon = c.noSpoilIcon || (this.o.spawns && c.icon);
 
     // Group marker uses icon from layer it is on (ignores class/spawns/object icon)
     let marker;
-    if ((marker = this.createMarker(map, layerId, cicon))) {
+    if (layerId && (marker = this.createMarker(map, layerId, cicon))) {
       this.groupMarker = marker;
     }
   }
@@ -180,7 +174,7 @@ export class MapObject {
     const layerId = sc?.layer || c.layer;
     const icon = sc?.icon || c.icon;
     let marker;
-    if ((marker = this.createMarker(map, layerId, icon))) {
+    if (layerId && (marker = this.createMarker(map, layerId, icon))) {
       this.primeMarker = marker;
     }
   }
@@ -407,7 +401,7 @@ export class MapObject {
       menuContent.movePlayerPosition = true;
     }
 
-    if (this.primeMarker.options.layerId != '_map') {
+    if (!(this.primeMarker?.options.layerId == '_map' || this.groupMarker?.options.layerId == '_map')) {
       menuContent.hideMarker = true;
     }
 
@@ -447,7 +441,7 @@ export class MapObject {
     buildMode.marker = this;
     buildMode.object = o;
 
-    const playerDeltaZ = this.getPlayerDeltaZ(mapId);
+    const playerDeltaZ = this.getPlayerDeltaZ();
     const popUpContentDiv = document.createElement('div');
     const sidepanelRoot = createRoot(popUpContentDiv);
     const leafletMap = e.target._map;
@@ -470,9 +464,9 @@ export class MapObject {
     e.popup.setContent(popUpContentDiv);
   }
 
-  getPlayerDeltaZ(mapId) {
+  getPlayerDeltaZ() {
     const playerZ = MapObject._mapObjects?.PlayerPosition?.o.alt;
-    let playerDeltaZ = this.o.alt - (mapId == 'sw' && playerZ ? playerZ : 0);
+    let playerDeltaZ = this.o.alt - (playerZ !== undefined ? playerZ : 0);
     return playerDeltaZ;
   }
 
@@ -825,7 +819,6 @@ class MapJumppad extends MapObject {
 
   // Overloading of markFound to handle special line behaviour
   markFound(found) {
-    if (this.o.name == 'Jumppad16') console.log(this.o.name);
     if (found == undefined) {
       found = this.isFound();
     }

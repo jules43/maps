@@ -125,7 +125,22 @@ properties = [
     'Contains Coin',  # DestroyablePots_C
     'bDoesntRotate',  # Coin_C, CoinBig_C
     'Scrapamount',  # Scrap_C
+    'Loot',
+    'Loop',
 ]
+
+sl_custom_data = {
+    "Map:Juicer2": {"spawns": "BP_DoubleHealthLoot_C", "variant": "red"},
+    "Map:Juicer3": {"spawns": "_BuyHealth+10_C", "variant": "green"},
+    "Map:Juicer_286": {"spawns": "BP_A3_StrengthQuest_C", "variant": "yellow"},
+    "DLC2_Complete:BP_Area2_Uncloged_Quest_10": {"spawns": "Coin:Chest_C", "coins": 30},
+    "DLC2_Complete:BathGuyVolume_2": {"spawns": "BP_PurchaseHealth+1_C"},
+    "DLC2_Complete:BP_A3_RobBoss_2": {"spawns": "BP_PurchaseHealth+1_C"},
+    "DLC2_Complete:BP_RebuildSlum_2": {"spawns": "BP_Purchase_FasterPickaxe_C", "cost": 50},
+    "DLC2_Complete:BP_Area2_FatGuyQuest_2": {"coins": 30},
+    "DLC2_Complete:BP_ParanoidQuest_2": {"spawns": "BP_PurchaseHealth+1_C"},
+    "DLC2_Complete:BP_A3_BBQ2": {"coins": 3},
+}
 
 
 # Number of coins given by classes if not explicit
@@ -134,7 +149,9 @@ properties = [
 slcoin_defaults = {
     'Coin_C': 1,
     'CoinBig_C': 10,
+    'LotsOfCoinsBase_C': 1,
     'LotsOfCoins1_C': 1,
+    'LotsOfCoins3_C': 3,
     'LotsOfCoins5_C': 5,
     'LotsOfCoins10_C': 10,
     'LotsOfCoins15_C': 15,
@@ -142,4 +159,10 @@ slcoin_defaults = {
     'LotsOfCoins50_C': 50,
     'LotsofCoins200_C': 200,  # Note lower case 'of'
     'PhysicalCoin_C': 1,
+}
+
+slcoin_spawners = {
+    'DestroyablePots_C',
+    'Chest_C',
+    'MinecraftBrick_C',
 }
