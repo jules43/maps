@@ -5,6 +5,11 @@
     "savefileid": "Supraworld:ChocolateEgg_C_UAID_7085C2B20F0E9C5B01_1163745921"
   },
   {
+    "name": "ShopItemChip_C_UAID_ACB480ECFC84EE0403_1429067938",
+    "area": "Supraworld",
+    "savefileid": "Supraworld:ShopEgg_C_UAID_7085C2B20F0EF6BE01_1236083490"
+  },
+  {
     "name": "Shop_C_UAID_7085C2B20F0E7ED300_1296547414",
     "area": "Supraworld",
     "lat": -3039.952392578125,
@@ -17,7 +22,7 @@
     "lat": -3539.952392578125,
     "lng": 2321.389892578125,
     "alt": 322.61077880859375,
-    "saveid": "Supraworld:FirstEggOpening_C_UAID_FC3497C34610126802_1898191859"
+    "savefileid": "Supraworld:FirstEggOpening_C_UAID_FC3497C34610126802_1898191859"
   },
   {
     "name": "StandardShop_C_UAID_7085C2B20F0EE1CF01_1129516690",
