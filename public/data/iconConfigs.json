@@ -219,5 +219,6 @@
   "toothpick"         : {"type": "pin",   "style": "fas",   "iconName": "slash",                    "bg": "limegreen"                       },
   "toothpin"          : {"type": "pin",   "style": "fas",   "iconName": "map-pin",                  "bg": "grey"                            },
   "toothpin_dart"     : {"type": "pin",   "style": "fas",   "iconName": "syringe",                  "bg": "limegreen"                       },
-  "walk"              : {"type": "pin",   "style": "fas",   "iconName": "person-walking",           "bg": "limegreen"                       }
+  "walk"              : {"type": "pin",   "style": "gsrf",  "iconName": "directions_walk",          "bg": "limegreen"                       },
+  "forcefield_walk"   : {"type": "pin",   "style": "gsrf",  "iconName": "hiking",                   "bg": "limegreen"                       }
 }
