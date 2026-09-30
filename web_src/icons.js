@@ -109,7 +109,10 @@ export class Icons {
     opts.iconConfig.bg = isSupraColor(opts.variant) ? opts.variant : opts.iconConfig.bg;
 
     const ext = Icons.getImgExt(opts.iconConfig.style);
-    const imgPath = opts.iconConfig.style?.startsWith('fa') || opts.iconConfig.style?.startsWith('g') ? Icons._renderedImgPath : Icons._staticImgPath;
+    const imgPath =
+      opts.iconConfig.style?.startsWith('fa') || opts.iconConfig.style?.startsWith('g')
+        ? Icons._renderedImgPath
+        : Icons._staticImgPath;
     opts.iconUrl = `${imgPath}${[baseName, opts.variant, opts.game, ext].filter(Boolean).join('.')}`;
 
     return opts;

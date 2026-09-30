@@ -272,16 +272,15 @@ function drawFAIcon(
 
 // Function to draw Google Material Icon
 function drawGoogleIcon(ctx, style, iconName, color, drawSize, canvasSize, dy) {
-
-  const basepath = (style[1] === 'i' ? googleIconsBasePath : googleSymbolsBasePath);
+  const basepath = style[1] === 'i' ? googleIconsBasePath : googleSymbolsBasePath;
   const subdir = {
-    's': 'sharp',     // both
-    'o': 'outlined',  // both
-    'r': 'rounded',   // both
-    '2': 'two-tone',  // icons only
-    'f': 'filled',    // icons only (symbols uses -fill)
-  } [style[2]];
-  const variant = (style[1] === 's' && style[3] === 'f') ? '-fill' : '';
+    s: 'sharp', // both
+    o: 'outlined', // both
+    r: 'rounded', // both
+    2: 'two-tone', // icons only
+    f: 'filled', // icons only (symbols uses -fill)
+  }[style[2]];
+  const variant = style[1] === 's' && style[3] === 'f' ? '-fill' : '';
 
   const svgFilePath = path.join(basepath, subdir, `${iconName}${variant}.svg`);
 

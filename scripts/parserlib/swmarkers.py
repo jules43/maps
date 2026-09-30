@@ -376,7 +376,12 @@ def export_sw_markers(game: str, datadir: Path, sourcedir: Path):  # noqa: C901 
                 data[-1]['type'] = 'PickupSpawner_C'
 
             if otype == 'Pickup_Card_C':
-                data[-1]['card'] = p.get('Card', 'A').removeprefix('ECards::') + ' of ' + p.get('Suit', 'Club').removeprefix('ECardSuits::') + 's'
+                data[-1]['card'] = (
+                    p.get('Card', 'A').removeprefix('ECards::')
+                    + ' of '
+                    + p.get('Suit', 'Club').removeprefix('ECardSuits::')
+                    + 's'
+                )
 
             # Coins
             # Anything that spawns Inventory_Coin[nn]_C or RealCoinPickup_C/5Cent_C/Gumball_Machine_C
