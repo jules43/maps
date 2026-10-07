@@ -82,6 +82,16 @@
     "friendly": "Floor Town"
   },
   {
+    "name": "Pickup_Card_C_UAID_ACB480ECFC8419FC02_1105047086",
+    "area": "Supraworld",
+    "delete": 0
+  },
+  {
+    "name": "PresentBox_Lootpools_C_UAID_ACB480ECFC84D28102_1462167188",
+    "area": "Supraworld",
+    "delete": 0
+  },
+  {
     "name": "5Cent_C_UAID_ACB480ECFC84CEAD02_1804093857",
     "area": "Supraworld",
     "delete": 0
